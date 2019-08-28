@@ -1,4 +1,4 @@
-# MR Description
+# Pull Request Description
 
 #### Proposed changes
 
@@ -6,7 +6,7 @@
 
 #### Kind of Change
 What kind of change does your code introduce? Put an ```x``` in the box that applies.
-**NOTE: Please do not create MRs with different purposes. Each MR must have a single purpose: Hotfix, New Feature, or Structural Change.**
+**NOTE: Please do not create PRs with different purposes. Each PR must have a single purpose: Hotfix, New Feature, or Structural Change.**
 
 - [ ] Hotfix.    
 - [ ] New Feature. 
@@ -16,7 +16,7 @@ What kind of change does your code introduce? Put an ```x``` in the box that app
 
 Put an ```x``` in the boxes that apply.
 
-### This MR follows the base conventions of the project:
+### This PR follows the base conventions of the project:
 - [ ] Does not add commented code.
 - [ ] Does not add code with ```print```.
 - [ ] Documentation have been added / updated as needed.
@@ -29,20 +29,20 @@ Put an ```x``` in the boxes that apply.
 
 ### Tests:
 - [ ] Tests are running at 70% coverage, with success and error cases for new features, bugs, and hotfixes.
-- [ ] Does not apply to this MR
+- [ ] Does not apply to this PR
 
 ### Accessibility:
 - [ ] Accessibility have been implemented or updated.
-- [ ] Does not apply to this MR
+- [ ] Does not apply to this PR
 
 ### Third-Party Libraries:
 - [ ] A new library? It's really neccessary? Explain why
-- [ ] Does not apply to this MR
+- [ ] Does not apply to this PR
 
 ### Comments:
 
 *Comment here if necessary*
 
 # Final checks:
-- [ ] [This MR follows **all** coding standards](http://www.pudim.com.br).
+- [ ] [This PR follows **all** coding standards](https://swift.org/documentation/api-design-guidelines/).
 - [ ] **All** tests have been executed and are succeeding.
