@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5A29872316F6AD008C3D6C /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A29862316F6AD008C3D6C /* VideoPlayerView.swift */; };
+		8CAE888A23170EE7005AE113 /* VideoPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CAE888923170EE7005AE113 /* VideoPlayerView.xib */; };
 		F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F1FE2315BB1300D7334B /* AppDelegate.swift */; };
-		F215F2012315BB1300D7334B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F2002315BB1300D7334B /* ViewController.swift */; };
+		F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F2002315BB1300D7334B /* TrialViewController.swift */; };
 		F215F2042315BB1300D7334B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F2022315BB1300D7334B /* Main.storyboard */; };
 		F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */; };
 		F215F2092315BB1600D7334B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215F2082315BB1600D7334B /* Assets.xcassets */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C5A29862316F6AD008C3D6C /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		8CAE888923170EE7005AE113 /* VideoPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerView.xib; sourceTree = "<group>"; };
 		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F1FE2315BB1300D7334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F215F2002315BB1300D7334B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F215F2002315BB1300D7334B /* TrialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
 		F215F2032315BB1300D7334B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F215F2062315BB1400D7334B /* AurumFaciem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AurumFaciem.xcdatamodel; sourceTree = "<group>"; };
 		F215F2082315BB1600D7334B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +41,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C4F3376231709BA00EC85DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F215F2022315BB1300D7334B /* Main.storyboard */,
+				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
+				8C5A29862316F6AD008C3D6C /* VideoPlayerView.swift */,
+				8CAE888923170EE7005AE113 /* VideoPlayerView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F215F1F22315BB1300D7334B = {
 			isa = PBXGroup;
 			children = (
@@ -57,10 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				F215F1FE2315BB1300D7334B /* AppDelegate.swift */,
-				F215F2002315BB1300D7334B /* ViewController.swift */,
-				F215F2022315BB1300D7334B /* Main.storyboard */,
+				8C4F3376231709BA00EC85DE /* View */,
+				F215F2002315BB1300D7334B /* TrialViewController.swift */,
 				F215F2082315BB1600D7334B /* Assets.xcassets */,
-				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
 				F215F20D2315BB1600D7334B /* Info.plist */,
 				F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */,
 			);
@@ -128,6 +142,7 @@
 			files = (
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
 				F215F2092315BB1600D7334B /* Assets.xcassets in Resources */,
+				8CAE888A23170EE7005AE113 /* VideoPlayerView.xib in Resources */,
 				F215F2042315BB1300D7334B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
-				F215F2012315BB1300D7334B /* ViewController.swift in Sources */,
+				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
+				8C5A29872316F6AD008C3D6C /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RAZG7U3SR6;
+				DEVELOPMENT_TEAM = PVKHG959FC;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -327,7 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RAZG7U3SR6;
+				DEVELOPMENT_TEAM = PVKHG959FC;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
