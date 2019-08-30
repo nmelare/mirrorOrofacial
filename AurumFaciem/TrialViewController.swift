@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TrialViewController: UIViewController {
 
-    @IBOutlet weak var videoPlayer: VideoPlayerView!
+    @IBOutlet weak var videoView: VideoView!
+    @IBOutlet weak var reloadBtn: UIButton!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -20,21 +22,39 @@ class TrialViewController: UIViewController {
                     "carro", "barco", "farpa", "carpa", "mapa",
                     "rasgo", "marca", "jogo", "modo", "foco",
                     "fogo", "folga"]
-    var palavraEscolhida: String = ""
+    var chosenWord: String = ""
+
     override func viewDidLoad() {
         var palavrasRestantes = palavras
         super.viewDidLoad()
-        print(palavrasRestantes)
-        palavraEscolhida = takeRandomString(from: &palavrasRestantes)
-        print(palavraEscolhida)
-        button1.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
-        button2.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
-        button3.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
-        button4.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
-        print(palavrasRestantes)
-        
+        chosenWord = takeRandomString(from: &palavrasRestantes)
+        var buttons = [ button1, button2, button3, button4 ]
+        let chosenB = Int.random(in: 1...4)
+        switch chosenB {
+        case 1: button1.setTitle(chosenWord, for: UIControl.State.normal)
+        case 2: button2.setTitle(chosenWord, for: UIControl.State.normal)
+        case 3: button3.setTitle(chosenWord, for: UIControl.State.normal)
+        case 4: button4.setTitle(chosenWord, for: UIControl.State.normal)
+        default:
+            print("switch exausted chosen word options")
+        }
+        print("chosen word: \(chosenWord)")
+        for btn in buttons where btn?.titleLabel?.text == "Button" {
+            btn?.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
+        }
+        if let videoURL = Bundle.main.path(forResource: "IMG_0944", ofType: "MOV") {
+            videoView.configure(url: videoURL)
+            videoView.play()
+            reloadBtn.isHidden = true
+            NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)),
+                                                   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                                   object: self.videoView.player?.currentItem)
+        } else {
+            print ("Nao pôde carregar video")
+        }
+
     }
-    
+
     func takeRandomString (from array: inout [String]) -> String {
         var palavra = ""
         if let random = array.randomElement() {
@@ -44,5 +64,15 @@ class TrialViewController: UIViewController {
             print ("Couldn't get random element from array in method takeRandomString()")
         }
         return palavra
+    }
+    
+    @IBAction func reloadVideo(_ sender: Any) {
+        videoView.player?.seek(to: CMTime.zero)
+        videoView.player?.play()
+        reloadBtn.isHidden = true
+    }
+    
+    @objc func reachTheEndOfTheVideo(_ notification: Notification) {
+        reloadBtn.isHidden = false
     }
 }

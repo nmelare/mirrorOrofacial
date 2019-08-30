@@ -18,9 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dKc-u1-gg5" customClass="VideoPlayerView" customModule="AurumFaciem" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dKc-u1-gg5" customClass="VideoView" customModule="AurumFaciem" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="104" width="414" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTc-tD-TNU">
+                                        <rect key="frame" x="184" y="121" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="reloadVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7r-dk-U2M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-pk-VQ5">
@@ -56,7 +67,8 @@
                         <outlet property="button2" destination="zg8-qG-dFq" id="6md-lt-smX"/>
                         <outlet property="button3" destination="561-af-uFs" id="NYf-ww-yvo"/>
                         <outlet property="button4" destination="KgM-jZ-XmZ" id="yoS-AW-LHc"/>
-                        <outlet property="videoPlayer" destination="dKc-u1-gg5" id="deQ-eh-2Q9"/>
+                        <outlet property="reloadBtn" destination="rTc-tD-TNU" id="vg3-Z3-oJj"/>
+                        <outlet property="videoView" destination="dKc-u1-gg5" id="Kni-6Y-fOT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
