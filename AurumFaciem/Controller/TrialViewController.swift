@@ -28,7 +28,7 @@ class TrialViewController: UIViewController {
         var palavrasRestantes = palavras
         super.viewDidLoad()
         chosenWord = takeRandomString(from: &palavrasRestantes)
-        var buttons = [ button1, button2, button3, button4 ]
+        let buttons = [ button1, button2, button3, button4 ]
         let chosenB = Int.random(in: 1...4)
         switch chosenB {
         case 1: button1.setTitle(chosenWord, for: UIControl.State.normal)
@@ -59,19 +59,21 @@ class TrialViewController: UIViewController {
         var palavra = ""
         if let random = array.randomElement() {
             palavra = random
-            array.remove(at: array.firstIndex(of: random)!)
+            if let index = array.firstIndex(of: random){
+                array.remove(at: index)
+            }
         } else {
             print ("Couldn't get random element from array in method takeRandomString()")
         }
         return palavra
     }
-    
+
     @IBAction func reloadVideo(_ sender: Any) {
         videoView.player?.seek(to: CMTime.zero)
         videoView.player?.play()
         reloadBtn.isHidden = true
     }
-    
+
     @objc func reachTheEndOfTheVideo(_ notification: Notification) {
         reloadBtn.isHidden = false
     }

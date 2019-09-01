@@ -10,13 +10,14 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
 
+    @IBOutlet weak var bibliotecaTableView: UITableView!
+
+    let bibliotecaDataSource = BibliotecaTableViewDataSource(categories: ["a" , "b"])
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        bibliotecaTableView.dataSource = bibliotecaDataSource
     }
-
-
     /*
     // MARK: - Navigation
 

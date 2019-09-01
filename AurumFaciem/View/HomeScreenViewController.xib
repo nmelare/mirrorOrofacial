@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="AurumFaciem" customModuleProvider="target">
             <connections>
+                <outlet property="bibliotecaTableView" destination="Snf-f8-lYr" id="xEe-jd-MCC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -84,7 +85,19 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-kU-ybT" userLabel="BibliotecaTableView">
                                     <rect key="frame" x="0.0" y="61.5" width="382" height="347.5"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Snf-f8-lYr">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="347.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Snf-f8-lYr" secondAttribute="bottom" id="3nd-Sq-Owp"/>
+                                        <constraint firstItem="Snf-f8-lYr" firstAttribute="leading" secondItem="2sO-kU-ybT" secondAttribute="leading" id="Jtl-2N-pbY"/>
+                                        <constraint firstAttribute="trailing" secondItem="Snf-f8-lYr" secondAttribute="trailing" id="Wih-84-zd5"/>
+                                        <constraint firstItem="Snf-f8-lYr" firstAttribute="top" secondItem="2sO-kU-ybT" secondAttribute="top" id="XpP-hj-jfE"/>
+                                    </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" red="0.92156862750000001" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
