@@ -59,7 +59,7 @@ class TrialViewController: UIViewController {
         var palavra = ""
         if let random = array.randomElement() {
             palavra = random
-            if let index = array.firstIndex(of: random){
+            if let index = array.firstIndex(of: random) {
                 array.remove(at: index)
             }
         } else {

@@ -10,12 +10,11 @@ import Foundation
 import UIKit
 
 class BibliotecaTableViewDataSource: NSObject, UITableViewDataSource {
-    // We keep this public and mutable, to enable our data
-    // source to be updated as new data comes in.
-    public var categories: [String]
+
+    public var items: [String]
 
     init(categories: [String]) {
-        self.categories = categories
+        self.items = categories
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -24,19 +23,19 @@ class BibliotecaTableViewDataSource: NSObject, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return categories.count
+        return items.count
     }
 
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let category = categories[indexPath.row]
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: "reuseIdentifier",
-            for: indexPath
-        )
+        let item = items[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "bibliotecaIdentifier",
+                                                       for: indexPath) as? BibliotecaTableViewCell
+            else {
+                return UITableViewCell(style: .default, reuseIdentifier: nil)
+        }
 
-        cell.textLabel?.text = category
-        cell.detailTextLabel?.text = category
+        cell.textLabel?.text = item
         return cell
     }
 }

@@ -12,10 +12,13 @@ class HomeScreenViewController: UIViewController {
 
     @IBOutlet weak var bibliotecaTableView: UITableView!
 
-    let bibliotecaDataSource = BibliotecaTableViewDataSource(categories: ["a" , "b"])
+    let bibliotecaDataSource = BibliotecaTableViewDataSource(categories: ["a", "b"])
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        bibliotecaTableView.register(UINib(nibName: "BibliotecaTableViewCell",
+                                           bundle: nil),
+                                     forCellReuseIdentifier: "bibliotecaIdentifier")
         bibliotecaTableView.dataSource = bibliotecaDataSource
     }
     /*

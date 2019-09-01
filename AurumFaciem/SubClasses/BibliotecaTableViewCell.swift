@@ -12,6 +12,8 @@ class BibliotecaTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.tintColor = .blue
+        self.backgroundColor = .gray
         // Initialization code
     }
 
@@ -20,5 +22,4 @@ class BibliotecaTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
