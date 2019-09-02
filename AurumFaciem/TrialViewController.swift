@@ -26,6 +26,7 @@ class TrialViewController: UIViewController {
                     "fogo", "folga"]
     var chosenWord: String = ""
     var index = 0
+    let videosAmount = 10
     let buttonColor: UIColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
 
     override func viewDidLoad() {
@@ -77,19 +78,13 @@ class TrialViewController: UIViewController {
 
     func checkResponse(sender: UIButton) {
         if sender.titleLabel?.text == chosenWord {
-            rightAnswer(button: sender)
+            loadTrial()
+            videoView.configure(url: "IMG_0001")
+            index += 1
+            progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
         } else {
-            wrongAnswer(button: sender)
+            sender.backgroundColor = .gray
         }
-    }
-
-    func wrongAnswer(button: UIButton) {
-        button.backgroundColor = .gray
-    }
-
-    func rightAnswer(button: UIButton) {
-        loadTrial()
-        videoView.configure(url: "IMG_0001")
     }
 
     @IBAction func closePressed(_ sender: Any) {
