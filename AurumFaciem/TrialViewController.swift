@@ -25,6 +25,8 @@ class TrialViewController: UIViewController {
     var chosenWord: String = ""
 
     override func viewDidLoad() {
+        let libraryViewController = LibraryInfoViewController(nibName: "LibraryInfoViewController", bundle: nil)
+        present(libraryViewController, animated: false, completion: nil)
         var palavrasRestantes = palavras
         super.viewDidLoad()
         chosenWord = takeRandomString(from: &palavrasRestantes)

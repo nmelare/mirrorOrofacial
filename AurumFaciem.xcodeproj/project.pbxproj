@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
+		6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */; };
 		8C62B88F23199321009F006B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62B88E23199321009F006B /* VideoView.swift */; };
-		8C62B89123199B25009F006B /* IMG_0001.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8C62B89023199B25009F006B /* IMG_0001.MOV */; };
-		8C8C44092319B8FA00799633 /* IMG_0944.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8C8C44082319B8FA00799633 /* IMG_0944.MOV */; };
 		F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F1FE2315BB1300D7334B /* AppDelegate.swift */; };
 		F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F2002315BB1300D7334B /* TrialViewController.swift */; };
 		F215F2042315BB1300D7334B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F2022315BB1300D7334B /* Main.storyboard */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfoViewController.swift; sourceTree = "<group>"; };
+		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryInfoViewController.xib; sourceTree = "<group>"; };
 		8C62B88E23199321009F006B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		8C62B89023199B25009F006B /* IMG_0001.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IMG_0001.MOV; path = ../../../Desktop/Academy/videos4Apple/IMG_0001.MOV; sourceTree = "<group>"; };
-		8C8C44082319B8FA00799633 /* IMG_0944.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IMG_0944.MOV; path = ../../../Downloads/IMG_0944.MOV; sourceTree = "<group>"; };
 		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F1FE2315BB1300D7334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F215F2002315BB1300D7334B /* TrialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 				F215F1FE2315BB1300D7334B /* AppDelegate.swift */,
 				8C4F3376231709BA00EC85DE /* View */,
 				F215F2002315BB1300D7334B /* TrialViewController.swift */,
-				8C62B89023199B25009F006B /* IMG_0001.MOV */,
-				8C8C44082319B8FA00799633 /* IMG_0944.MOV */,
+				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
+				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
 				F215F20D2315BB1600D7334B /* Info.plist */,
 				F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */,
 			);
@@ -141,9 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
-				8C8C44092319B8FA00799633 /* IMG_0944.MOV in Resources */,
+				6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */,
 				F215F2042315BB1300D7334B /* Main.storyboard in Resources */,
-				8C62B89123199B25009F006B /* IMG_0001.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C62B88F23199321009F006B /* VideoView.swift in Sources */,
+				6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */,
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
@@ -325,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PVKHG959FC;
+				DEVELOPMENT_TEAM = 679BRJ4243;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,7 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PVKHG959FC;
+				DEVELOPMENT_TEAM = 679BRJ4243;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
