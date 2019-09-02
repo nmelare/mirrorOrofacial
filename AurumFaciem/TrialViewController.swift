@@ -25,34 +25,32 @@ class TrialViewController: UIViewController {
                     "rasgo", "marca", "jogo", "modo", "foco",
                     "fogo", "folga"]
     var chosenWord: String = ""
+    var index = 0
+    let buttonColor: UIColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var palavrasRestantes = palavras
-        chosenWord = takeRandomString(from: &palavrasRestantes)
-        var buttons = [ button1, button2, button3, button4 ]
-        let chosenB = Int.random(in: 1...4)
-        switch chosenB {
-        case 1: button1.setTitle(chosenWord, for: UIControl.State.normal)
-        case 2: button2.setTitle(chosenWord, for: UIControl.State.normal)
-        case 3: button3.setTitle(chosenWord, for: UIControl.State.normal)
-        case 4: button4.setTitle(chosenWord, for: UIControl.State.normal)
-        default:
-            print("switch exausted chosen word options")
+        loadTrial()
+    }
+    
+    @IBAction func button1Click(_ sender: Any) {
+        if button1.titleLabel?.text != nil {
+            checkResponse(sender: button1)
         }
-        print("chosen word: \(chosenWord)")
-        for btn in buttons where btn?.titleLabel?.text == "Button" {
-            btn?.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
+    }
+    @IBAction func button2Click(_ sender: Any) {
+        if button2.titleLabel?.text != nil {
+            checkResponse(sender: button2)
         }
-        if let videoURL = Bundle.main.path(forResource: "IMG_0944", ofType: "MOV") {
-            videoView.configure(url: videoURL)
-            videoView.play()
-            reloadBtn.isHidden = true
-            NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)),
-                                                   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-                                                   object: self.videoView.player?.currentItem)
-        } else {
-            print ("Nao pôde carregar video")
+    }
+    @IBAction func button3Click(_ sender: Any) {
+        if button3.titleLabel?.text != nil {
+            checkResponse(sender: button3)
+        }
+    }
+    @IBAction func button4Click(_ sender: Any) {
+        if button4.titleLabel?.text != nil {
+            checkResponse(sender: button4)
         }
     }
 
@@ -75,5 +73,52 @@ class TrialViewController: UIViewController {
 
     @objc func reachTheEndOfTheVideo(_ notification: Notification) {
         reloadBtn.isHidden = false
+    }
+
+    func checkResponse(sender: UIButton) {
+        if sender.titleLabel?.text == chosenWord {
+            rightAnswer(button: sender)
+        } else {
+            wrongAnswer(button: sender)
+        }
+    }
+
+    func wrongAnswer(button: UIButton) {
+        button.backgroundColor = .gray
+    }
+
+    func rightAnswer(button: UIButton) {
+        loadTrial()
+        videoView.configure(url: "IMG_0001")
+    }
+
+    @IBAction func closePressed(_ sender: Any) {
+        print("closing window")
+    }
+
+    func loadTrial() {
+        var palavrasRestantes = palavras
+        chosenWord = takeRandomString(from: &palavrasRestantes)
+        let buttons = [ button1, button2, button3, button4 ]
+        for btn in buttons {
+            btn?.backgroundColor = buttonColor
+            btn?.setTitle("Button", for: UIControl.State.normal)
+        }
+        let chosenB = Int.random(in: 0...3)
+        buttons[chosenB]?.setTitle(chosenWord, for: UIControl.State.normal)
+        print("chosen word: \(chosenWord)")
+        for btn in buttons where btn != buttons[chosenB] {
+            btn?.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
+        }
+        if let videoURL = Bundle.main.path(forResource: "IMG_0944", ofType: "MOV") {
+            videoView.configure(url: videoURL)
+            videoView.play()
+            reloadBtn.isHidden = true
+            NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)),
+                                                   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                                   object: self.videoView.player?.currentItem)
+        } else {
+            print ("Couldn't load video")
+        }
     }
 }
