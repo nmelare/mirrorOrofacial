@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
 		6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */; };
+		6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B1D231DADFD006F6680 /* Media.xcassets */; };
 		8C62B88F23199321009F006B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62B88E23199321009F006B /* VideoView.swift */; };
 		F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F1FE2315BB1300D7334B /* AppDelegate.swift */; };
 		F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F2002315BB1300D7334B /* TrialViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfoViewController.swift; sourceTree = "<group>"; };
 		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryInfoViewController.xib; sourceTree = "<group>"; };
+		6F580B1D231DADFD006F6680 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		8C62B88E23199321009F006B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F1FE2315BB1300D7334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		F215F1F22315BB1300D7334B = {
 			isa = PBXGroup;
 			children = (
+				6F580B1D231DADFD006F6680 /* Media.xcassets */,
 				F215F1FD2315BB1300D7334B /* AurumFaciem */,
 				F215F1FC2315BB1300D7334B /* Products */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
 				6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */,
+				6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */,
 				F215F2042315BB1300D7334B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
