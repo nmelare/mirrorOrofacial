@@ -11,6 +11,8 @@ import AVFoundation
 
 class TrialViewController: UIViewController {
 
+    @IBOutlet weak var progressBar: ProgressBar!
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var videoView: VideoView!
     @IBOutlet weak var reloadBtn: UIButton!
     @IBOutlet weak var button1: UIButton!
@@ -25,8 +27,8 @@ class TrialViewController: UIViewController {
     var chosenWord: String = ""
 
     override func viewDidLoad() {
-        var palavrasRestantes = palavras
         super.viewDidLoad()
+        var palavrasRestantes = palavras
         chosenWord = takeRandomString(from: &palavrasRestantes)
         var buttons = [ button1, button2, button3, button4 ]
         let chosenB = Int.random(in: 1...4)
@@ -52,7 +54,6 @@ class TrialViewController: UIViewController {
         } else {
             print ("Nao pôde carregar video")
         }
-
     }
 
     func takeRandomString (from array: inout [String]) -> String {
@@ -65,13 +66,13 @@ class TrialViewController: UIViewController {
         }
         return palavra
     }
-    
+
     @IBAction func reloadVideo(_ sender: Any) {
         videoView.player?.seek(to: CMTime.zero)
         videoView.player?.play()
         reloadBtn.isHidden = true
     }
-    
+
     @objc func reachTheEndOfTheVideo(_ notification: Notification) {
         reloadBtn.isHidden = false
     }
