@@ -15,6 +15,8 @@ class TreinoCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.layer.cornerRadius = 12.0
+        self.clipsToBounds = true
     }
 
 }

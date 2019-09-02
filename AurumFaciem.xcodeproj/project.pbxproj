@@ -13,6 +13,8 @@
 		F215F2042315BB1300D7334B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F2022315BB1300D7334B /* Main.storyboard */; };
 		F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */; };
 		F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */; };
+		F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */; };
+		F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */; };
 		F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */; };
 		F29B3010231C84C8007546CE /* TreinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */; };
 		F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */; };
@@ -32,6 +34,8 @@
 		F215F2062315BB1400D7334B /* AurumFaciem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AurumFaciem.xcdatamodel; sourceTree = "<group>"; };
 		F215F20B2315BB1600D7334B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F215F20D2315BB1600D7334B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewDelegate.swift; sourceTree = "<group>"; };
+		F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceObj.swift; sourceTree = "<group>"; };
 		F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			children = (
 				8C62B88E23199321009F006B /* VideoView.swift */,
 				F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */,
+				F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */,
+				F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */,
 				F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */,
 				F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */,
 				F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */,
@@ -211,9 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C62B88F23199321009F006B /* VideoView.swift in Sources */,
+				F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */,
 				F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */,
 				F2E23932231C3197005DE28B /* BibliotecaTableViewCell.swift in Sources */,
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
+				F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */,
 				F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */,
 				F29B3010231C84C8007546CE /* TreinoCollectionViewCell.swift in Sources */,
 				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
