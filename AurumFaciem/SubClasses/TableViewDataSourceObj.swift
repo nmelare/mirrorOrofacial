@@ -9,12 +9,14 @@
 import Foundation
 import UIKit
 
-class BibliotecaTableViewDataSource: NSObject, UITableViewDataSource {
+class TableViewDataSourceObj: NSObject, UITableViewDataSource {
 
-    public var items: [String]
+    private var items: [String]
+    private var cellIdentifier: String
 
-    init(categories: [String]) {
-        self.items = categories
+    init(cellIdentifier: String, items: [String]) {
+        self.items = items
+        self.cellIdentifier = cellIdentifier
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,13 +31,14 @@ class BibliotecaTableViewDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "bibliotecaIdentifier",
-                                                       for: indexPath) as? BibliotecaTableViewCell
-            else {
-                return UITableViewCell(style: .default, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier,
+                                                 for: indexPath)
+        switch cell {
+        case let bibliotecaCell as BibliotecaTableViewCell:
+            bibliotecaCell.textLabel?.text = item
+        default:
+            cell.isHidden = true
         }
-
-        cell.textLabel?.text = item
         return cell
     }
 }

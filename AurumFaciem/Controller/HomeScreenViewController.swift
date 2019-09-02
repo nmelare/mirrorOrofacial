@@ -10,9 +10,13 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
 
+    @IBOutlet weak var treinoCollectionView: UICollectionView!
     @IBOutlet weak var bibliotecaTableView: UITableView!
 
-    let bibliotecaDataSource = BibliotecaTableViewDataSource(categories: ["a", "b"])
+    let bibliotecaDataSource = TableViewDataSourceObj(cellIdentifier: "bibliotecaIdentifier",
+                                                      items: ["a", "b"])
+    let treinoDataSource = CollectionViewDataSourceObj(cellIdentifier: "treinoIdentifier",
+                                                       items: ["a", "b"], details: ["c", "d"])
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,15 +24,8 @@ class HomeScreenViewController: UIViewController {
                                            bundle: nil),
                                      forCellReuseIdentifier: "bibliotecaIdentifier")
         bibliotecaTableView.dataSource = bibliotecaDataSource
+        treinoCollectionView.register(UINib(nibName: "TreinoCollectionViewCell", bundle: nil),
+                                      forCellWithReuseIdentifier: "treinoIdentifier")
+        treinoCollectionView.dataSource = treinoDataSource
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="AurumFaciem" customModuleProvider="target">
             <connections>
                 <outlet property="bibliotecaTableView" destination="Snf-f8-lYr" id="xEe-jd-MCC"/>
+                <outlet property="treinoCollectionView" destination="lul-xF-9Of" id="b3K-oa-n7t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -47,7 +48,25 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rk8-mE-YfK" userLabel="TreinoCardsView">
                                     <rect key="frame" x="0.0" y="71" width="382" height="235.5"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" scrollEnabled="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lul-xF-9Of">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="235.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lOc-sS-jwQ">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                        </collectionView>
+                                    </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lul-xF-9Of" firstAttribute="leading" secondItem="rk8-mE-YfK" secondAttribute="leading" id="9Il-Sc-p3x"/>
+                                        <constraint firstAttribute="bottom" secondItem="lul-xF-9Of" secondAttribute="bottom" id="BWx-yB-4kW"/>
+                                        <constraint firstAttribute="trailing" secondItem="lul-xF-9Of" secondAttribute="trailing" id="THg-qz-0TQ"/>
+                                        <constraint firstItem="lul-xF-9Of" firstAttribute="top" secondItem="rk8-mE-YfK" secondAttribute="top" id="gar-GQ-QyT"/>
+                                    </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" red="0.92156862750000001" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
