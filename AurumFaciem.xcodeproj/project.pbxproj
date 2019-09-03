@@ -11,6 +11,11 @@
 		6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */; };
 		6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B1D231DADFD006F6680 /* Media.xcassets */; };
 		8C62B88F23199321009F006B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62B88E23199321009F006B /* VideoView.swift */; };
+		8C62B89123199B25009F006B /* IMG_0001.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8C62B89023199B25009F006B /* IMG_0001.MOV */; };
+		8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */; };
+		8C8A2EBF231DA9200043FD87 /* ProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */; };
+		8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */; };
+		8C8C44092319B8FA00799633 /* IMG_0944.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8C8C44082319B8FA00799633 /* IMG_0944.MOV */; };
 		F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F1FE2315BB1300D7334B /* AppDelegate.swift */; };
 		F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F2002315BB1300D7334B /* TrialViewController.swift */; };
 		F215F2042315BB1300D7334B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F2022315BB1300D7334B /* Main.storyboard */; };
@@ -23,6 +28,11 @@
 		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryInfoViewController.xib; sourceTree = "<group>"; };
 		6F580B1D231DADFD006F6680 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		8C62B88E23199321009F006B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		8C62B89023199B25009F006B /* IMG_0001.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IMG_0001.MOV; path = ../../../Desktop/Academy/videos4Apple/IMG_0001.MOV; sourceTree = "<group>"; };
+		8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressBar.xib; sourceTree = "<group>"; };
+		8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		8C8C44082319B8FA00799633 /* IMG_0944.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IMG_0944.MOV; path = ../../../Downloads/IMG_0944.MOV; sourceTree = "<group>"; };
 		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F1FE2315BB1300D7334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F215F2002315BB1300D7334B /* TrialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +59,9 @@
 				F215F2022315BB1300D7334B /* Main.storyboard */,
 				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
 				8C62B88E23199321009F006B /* VideoView.swift */,
+				8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */,
+				8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */,
+				8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
+				8C8C44092319B8FA00799633 /* IMG_0944.MOV in Resources */,
+				8C8A2EBF231DA9200043FD87 /* ProgressBar.xib in Resources */,
 				6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */,
 				6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */,
 				F215F2042315BB1300D7334B /* Main.storyboard in Resources */,
@@ -179,9 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C62B88F23199321009F006B /* VideoView.swift in Sources */,
+				8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */,
 				6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */,
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
+				8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
