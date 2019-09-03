@@ -66,7 +66,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="LibraryInfo" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZF-Xi-6Qv">
-                    <rect key="frame" x="300" y="766" width="94" height="44"/>
+                    <rect key="frame" x="150" y="766" width="244" height="44"/>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <state key="normal" title="Button     ">
                         <color key="titleColor" red="0.83264410499999997" green="0.2655204833" blue="0.10577636209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -84,12 +84,13 @@
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="trailing" secondItem="v7d-OA-vPP" secondAttribute="trailing" constant="150" id="KBA-QB-Bcu"/>
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="trailing" secondItem="aSM-Dj-NEA" secondAttribute="trailing" constant="20" id="MM6-ae-dro"/>
                 <constraint firstItem="v7d-OA-vPP" firstAttribute="leading" secondItem="EX9-7T-Za8" secondAttribute="leading" constant="20" id="QLJ-aR-UlA"/>
-                <constraint firstItem="tZF-Xi-6Qv" firstAttribute="leading" secondItem="EX9-7T-Za8" secondAttribute="leading" constant="300" id="XbB-VT-byP"/>
+                <constraint firstItem="tZF-Xi-6Qv" firstAttribute="leading" secondItem="EX9-7T-Za8" secondAttribute="leading" constant="150" id="XbB-VT-byP"/>
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="trailing" secondItem="W52-lt-uaV" secondAttribute="trailing" constant="29" id="Xhk-Vl-FfK"/>
                 <constraint firstItem="Fd7-rB-gYL" firstAttribute="leading" secondItem="EX9-7T-Za8" secondAttribute="leading" constant="20" id="aXG-sE-UPc"/>
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="bottom" secondItem="tZF-Xi-6Qv" secondAttribute="bottom" constant="52" id="b67-W1-PLB"/>
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="bottom" secondItem="v7d-OA-vPP" secondAttribute="bottom" constant="52" id="dHg-Y0-fsn"/>
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="trailing" secondItem="wfM-EW-vQa" secondAttribute="trailing" constant="60" id="g6Z-Os-tOb"/>
+                <constraint firstItem="W52-lt-uaV" firstAttribute="height" secondItem="EX9-7T-Za8" secondAttribute="height" multiplier="1/3" id="m6T-sj-98y"/>
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="trailing" secondItem="Fd7-rB-gYL" secondAttribute="trailing" constant="29" id="nal-Rq-NRf"/>
                 <constraint firstItem="EX9-7T-Za8" firstAttribute="trailing" secondItem="tZF-Xi-6Qv" secondAttribute="trailing" constant="20" id="ugj-M4-Wyx"/>
                 <constraint firstItem="v7d-OA-vPP" firstAttribute="top" secondItem="Fd7-rB-gYL" secondAttribute="bottom" constant="60" id="xMD-ip-hZE"/>
