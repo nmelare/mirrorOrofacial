@@ -42,5 +42,5 @@ class CollectionViewDataSourceObj: NSObject, UICollectionViewDataSource {
         }
         return cell
     }
-    
+
 }
