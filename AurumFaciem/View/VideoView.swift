@@ -12,10 +12,9 @@ import AVFoundation
 
 class VideoView: UIView {
 
+    @IBOutlet weak var reloadButton: UIButton!
     var playerLayer: AVPlayerLayer?
     var player: AVPlayer?
-    var isLoop: Bool = false
-    
     let cornerRadius: CGFloat = 12
 
     override func draw(_ rect: CGRect) {
@@ -47,5 +46,15 @@ class VideoView: UIView {
     func stop() {
         player?.pause()
         player?.seek(to: CMTime.zero)
+    }
+
+    @IBAction func reloadVideo(_ sender: Any) {
+        self.player?.seek(to: CMTime.zero)
+        self.player?.play()
+        reloadButton.isHidden = true
+    }
+
+    @objc func reachTheEndOfTheVideo(_ notification: Notification) {
+        self.reloadButton.isHidden = false
     }
 }

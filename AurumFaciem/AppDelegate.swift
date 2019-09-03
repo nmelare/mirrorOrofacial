@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let libraryViewController = LibraryInfoViewController(nibName: nil, bundle: nil)
+        let initialViewController = TrialViewController(nibName: nil, bundle: nil)
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = libraryViewController
+        window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()
         return true
     }

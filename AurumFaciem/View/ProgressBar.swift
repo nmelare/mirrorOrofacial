@@ -23,7 +23,9 @@ class ProgressBar: UIView {
         layer.cornerRadius = self.cornerRadius
         clipsToBounds = true
 
-        var path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: progress * self.frame.width, height: self.frame.height))
+        var path = UIBezierPath(rect: CGRect(x: 0, y: 0,
+                                             width: progress * self.frame.width,
+                                             height: self.frame.height))
         progressColor.setFill()
         path.fill()
     }
