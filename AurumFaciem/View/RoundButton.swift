@@ -8,10 +8,10 @@
 
 import UIKit
 
-class RoundButton : UIButton {
-    
+class RoundButton: UIButton {
+
     let cornerRadius: CGFloat = 12
-    
+
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = self.cornerRadius
         self.clipsToBounds = true
