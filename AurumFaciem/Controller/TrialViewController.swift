@@ -30,9 +30,18 @@ class TrialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadTrial()
+        let buttons = [ button1, button2, button3, button4 ]
+        let chosenB = Int.random(in: 1...4)
+        switch chosenB {
+        case 1: button1.setTitle(chosenWord, for: UIControl.State.normal)
+        case 2: button2.setTitle(chosenWord, for: UIControl.State.normal)
+        case 3: button3.setTitle(chosenWord, for: UIControl.State.normal)
+        case 4: button4.setTitle(chosenWord, for: UIControl.State.normal)
+        default:
+            print("switch exausted chosen word options")
+            loadTrial()
+        }
     }
-    
     @IBAction func button1Click(_ sender: Any) {
         if button1.titleLabel?.text != nil {
             checkResponse(sender: button1)
@@ -58,7 +67,9 @@ class TrialViewController: UIViewController {
         var palavra = ""
         if let random = array.randomElement() {
             palavra = random
-            array.remove(at: array.firstIndex(of: random)!)
+            if let index = array.firstIndex(of: random) {
+                array.remove(at: index)
+            }
         } else {
             print ("Couldn't get random element from array in method takeRandomString()")
         }

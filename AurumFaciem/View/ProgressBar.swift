@@ -22,14 +22,13 @@ class ProgressBar: UIView {
         self.backgroundColor = .white
         layer.cornerRadius = self.cornerRadius
         clipsToBounds = true
-
         var path = UIBezierPath(rect: CGRect(x: 0, y: 0,
                                              width: progress * self.frame.width,
                                              height: self.frame.height))
         progressColor.setFill()
         path.fill()
     }
-    
+
     func setProgress(_ value: CGFloat) {
         progress = value
         setNeedsDisplay()

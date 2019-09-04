@@ -12,7 +12,18 @@ import Foundation
 class LibraryInfoViewController: UIViewController {
 
     var index: Int = 0
-    var explicativeText: [String] = ["zero", "um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze"]
+    var explicativeText: [String] = ["zero",
+                                     "um",
+                                     "dois",
+                                     "tres",
+                                     "quatro",
+                                     "cinco",
+                                     "seis",
+                                     "sete",
+                                     "oito",
+                                     "nove",
+                                     "dez",
+                                     "onze"]
 
     @IBOutlet weak var closeButton: UIButton!
 

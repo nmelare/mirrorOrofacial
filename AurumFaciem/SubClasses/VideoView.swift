@@ -18,6 +18,9 @@ class VideoView: UIView {
     let cornerRadius: CGFloat = 12
     var greyView: UIView!
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = self.cornerRadius
         clipsToBounds = true
