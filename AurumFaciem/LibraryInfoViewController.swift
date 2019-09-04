@@ -12,19 +12,11 @@ import Foundation
 class LibraryInfoViewController: UIViewController {
 
     var index: Int = 0
-    var explicativeText: [String] = ["zero",
-                                     "um",
-                                     "dois",
-                                     "tres",
-                                     "quatro",
-                                     "cinco",
-                                     "seis",
-                                     "sete",
-                                     "oito",
-                                     "nove",
-                                     "dez",
-                                     "onze"]
+    var explicativeText: [String] = ["zero", "um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze"]
 
+    @IBOutlet weak var video: UIView!
+    @IBOutlet weak var lastInfoImage: UIImageView!
+    @IBOutlet weak var newInfoImage: UIImageView!
     @IBOutlet weak var closeButton: UIButton!
 
     @IBAction func closeButton(_ sender: Any) {
@@ -55,9 +47,10 @@ class LibraryInfoViewController: UIViewController {
     func load() {
         lastInformationButton.isHidden = (index == 0) ? true : false
         newInformationButton.isHidden = (index == 10) ? true : false
+        newInfoImage.isHidden  = (newInformationButton.isHidden == true) ? true : false
+        lastInfoImage.isHidden = (lastInformationButton.isHidden == true) ? true : false
         informationVideo.text = explicativeText[index]
         lastInformationButton.setTitle((index == 0) ? nil : explicativeText[index - 1], for: .normal)
         newInformationButton.setTitle((index == 10) ? nil : explicativeText[index + 1], for: .normal)
     }
-
 }

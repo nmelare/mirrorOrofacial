@@ -29,6 +29,9 @@ class TrialViewController: UIViewController {
     let buttonColor: UIColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
 
     override func viewDidLoad() {
+        let libraryViewController = LibraryInfoViewController(nibName: "LibraryInfoViewController", bundle: nil)
+        present(libraryViewController, animated: false, completion: nil)
+        var palavrasRestantes = palavras
         super.viewDidLoad()
         let buttons = [ button1, button2, button3, button4 ]
         let chosenB = Int.random(in: 1...4)

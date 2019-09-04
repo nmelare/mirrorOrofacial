@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
 		6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */; };
+		6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B1D231DADFD006F6680 /* Media.xcassets */; };
+		6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */; };
+		6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */; };
+		6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */; };
+		6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */; };
 		8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */; };
 		8C3AD1DB231F116E007F94B8 /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AD1DA231F116E007F94B8 /* VideoView.xib */; };
 		8C4DBB082320526F00461EDF /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DBB072320526E00461EDF /* TrialViewController.swift */; };
@@ -37,10 +43,14 @@
 
 /* Begin PBXFileReference section */
 		6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfoViewController.swift; sourceTree = "<group>"; };
-		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryInfoViewController.xib; sourceTree = "<group>"; };
+		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryInfoViewController.xib; path = ../LibraryInfoViewController.xib; sourceTree = "<group>"; };
+		6F580B1D231DADFD006F6680 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
+		6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryTableViewController.xib; path = ../LibraryTableViewController.xib; sourceTree = "<group>"; };
+		6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
+		6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
 		8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrialViewController.xib; sourceTree = "<group>"; };
 		8C3AD1DA231F116E007F94B8 /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
-		8C44FD282320335700EC37C4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../.Trash/Media.xcassets; sourceTree = "<group>"; };
 		8C4DBB072320526E00461EDF /* TrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrialViewController.swift; path = Controller/TrialViewController.swift; sourceTree = "<group>"; };
 		8C62B88E23199321009F006B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -91,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
+				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
+				6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */,
+				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
 				8C3AD1DA231F116E007F94B8 /* VideoView.xib */,
 				F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */,
 				F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */,
@@ -113,6 +126,7 @@
 		F215F1F22315BB1300D7334B = {
 			isa = PBXGroup;
 			children = (
+				6F580B1D231DADFD006F6680 /* Media.xcassets */,
 				F215F1FD2315BB1300D7334B /* AurumFaciem */,
 				F215F1FC2315BB1300D7334B /* Products */,
 				8C3AD1D1231F07BF007F94B8 /* Recovered References */,
@@ -135,12 +149,13 @@
 				F215F1FE2315BB1300D7334B /* AppDelegate.swift */,
 				F2704E3A231EA56D00D080B5 /* Model */,
 				8C4F3376231709BA00EC85DE /* View */,
+				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
+				6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */,
+				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
 				8C4DBB072320526E00461EDF /* TrialViewController.swift */,
 				8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */,
 				F2A1F3B2231A98470000B94B /* Controller */,
 				F2A1F3B3231A98500000B94B /* SubClasses */,
-				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
-				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
 				F215F20D2315BB1600D7334B /* Info.plist */,
 				F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */,
 				8CA590042320351800B63953 /* Resources */,
@@ -251,9 +266,12 @@
 				8CA590032320348600B63953 /* IMG_0711.TRIM.MOV in Resources */,
 				8C3AD1DB231F116E007F94B8 /* VideoView.xib in Resources */,
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
-				8C8A2EBF231DA9200043FD87 /* ProgressBar.xib in Resources */,
-				8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */,
 				6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */,
+				6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */,
+				6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */,
+				6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */,
+				F215F2042315BB1300D7334B /* Main.storyboard in Resources */,
+				8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */,
 				F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */,
 				F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */,
 				F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */,
@@ -289,7 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */,
 				8C62B88F23199321009F006B /* VideoView.swift in Sources */,
+				6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */,
+				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
+				6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */,
 				F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */,
 				F2704E44231EB54F00D080B5 /* Lesson+CoreDataProperties.swift in Sources */,
 				F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */,
@@ -444,7 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PVKHG959FC;
+				DEVELOPMENT_TEAM = 679BRJ4243;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,7 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PVKHG959FC;
+				DEVELOPMENT_TEAM = 679BRJ4243;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

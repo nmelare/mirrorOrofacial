@@ -13,8 +13,10 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+//    let libraryinfo = LibraryInfoViewController.init()
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         let homeViewController = HomeScreenViewController(nibName: nil,
                                                           bundle: nil)
         window = UIWindow(frame: UIScreen.main.bounds)
