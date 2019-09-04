@@ -16,13 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    let libraryinfo = LibraryInfoViewController.init()
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let libraryViewController = LibraryInfoViewController(nibName: nil, bundle: nil)
-//        let libraryTableViewController = LibraryTableViewController(nibName: nil, bundle: nil)
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = libraryViewController
-        window?.makeKeyAndVisible()
 
+        let homeViewController = HomeScreenViewController(nibName: nil,
+                                                          bundle: nil)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = homeViewController
+        window?.makeKeyAndVisible()
         return true
     }
 
