@@ -16,9 +16,14 @@ class VideoView: UIView {
     var player: AVPlayer?
     var isLoop: Bool = false
 
+    let cornerRadius: CGFloat = 12
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
+    override func draw(_ rect: CGRect) {
+        layer.cornerRadius = self.cornerRadius
+        clipsToBounds = true
     }
 
     func configure(url: String) {
