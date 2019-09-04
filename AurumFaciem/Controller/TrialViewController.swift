@@ -31,7 +31,7 @@ class TrialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        chosenWord = takeRandomString(from: &palavrasRestantes)
+//        chosenWord = takeRandomString(from: &palavrasRestantes)
         let buttons = [ button1, button2, button3, button4 ]
         let chosenB = Int.random(in: 1...4)
         switch chosenB {
@@ -41,9 +41,9 @@ class TrialViewController: UIViewController {
         case 4: button4.setTitle(chosenWord, for: UIControl.State.normal)
         default:
             print("switch exausted chosen word options")
-        loadTrial()
+            loadTrial()
+        }
     }
-
     @IBAction func button1Click(_ sender: Any) {
         if button1.titleLabel?.text != nil {
             checkResponse(sender: button1)
