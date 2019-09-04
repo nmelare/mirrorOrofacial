@@ -34,11 +34,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSM-Dj-NEA">
                     <rect key="frame" x="364" y="72" width="30" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-<<<<<<< HEAD
                     <state key="normal">
-=======
-                    <state key="normal" title="X">
->>>>>>> develop
                         <color key="titleColor" red="0.91929662229999998" green="0.57049870489999999" blue="0.47448396679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>
