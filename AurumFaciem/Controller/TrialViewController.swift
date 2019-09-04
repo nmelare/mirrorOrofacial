@@ -31,7 +31,6 @@ class TrialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        chosenWord = takeRandomString(from: &palavrasRestantes)
         let buttons = [ button1, button2, button3, button4 ]
         let chosenB = Int.random(in: 1...4)
         switch chosenB {
