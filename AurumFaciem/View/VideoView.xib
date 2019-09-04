@@ -10,25 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoView" customModule="AurumFaciem" customModuleProvider="target">
-            <connections>
-                <outlet property="reloadButton" destination="FXh-Zc-S00" id="Vkx-od-ZPL"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoView" customModule="AurumFaciem" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoView" customModule="AurumFaciem" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXh-Zc-S00">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="RELOAD"/>
-                    <connections>
-                        <action selector="reloadVideo:" destination="-1" eventType="touchUpInside" id="9XQ-sT-nSr"/>
-                    </connections>
-                </button>
-            </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

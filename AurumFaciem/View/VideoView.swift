@@ -12,7 +12,8 @@ import AVFoundation
 
 class VideoView: UIView {
 
-    @IBOutlet weak var reloadButton: UIButton!
+    var reloadButton: UIButton!
+    var reloadImg: UIImage!
     var playerLayer: AVPlayerLayer?
     var player: AVPlayer?
     let cornerRadius: CGFloat = 12
@@ -20,6 +21,16 @@ class VideoView: UIView {
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = self.cornerRadius
         clipsToBounds = true
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        reloadButton = UIButton(frame: self.bounds)
+        reloadButton.addTarget(self, action: #selector(reloadVideo(_:)), for: .touchUpInside)
+        reloadButton.setImage(UIImage(named: "Player"), for: UIControl.State.normal)
+        reloadButton.imageView?.contentMode = .scaleAspectFill
+        self.addSubview(reloadButton)
+        reloadButton.isHidden = true
     }
 
     func configure(url: String) {
@@ -48,7 +59,7 @@ class VideoView: UIView {
         player?.seek(to: CMTime.zero)
     }
 
-    @IBAction func reloadVideo(_ sender: Any) {
+    @objc func reloadVideo(_ sender: Any) {
         self.player?.seek(to: CMTime.zero)
         self.player?.play()
         reloadButton.isHidden = true
