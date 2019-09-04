@@ -14,7 +14,6 @@ class TrialViewController: UIViewController {
     @IBOutlet weak var progressBar: ProgressBar!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var videoView: VideoView!
-    @IBOutlet weak var reloadBtn: UIButton!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -77,20 +76,9 @@ class TrialViewController: UIViewController {
         return palavra
     }
 
-    @IBAction func reloadVideo(_ sender: Any) {
-        videoView.player?.seek(to: CMTime.zero)
-        videoView.player?.play()
-        reloadBtn.isHidden = true
-    }
-
-    @objc func reachTheEndOfTheVideo(_ notification: Notification) {
-        reloadBtn.isHidden = false
-    }
-
     func checkResponse(sender: UIButton) {
         if sender.titleLabel?.text == chosenWord {
             loadTrial()
-            videoView.configure(url: "IMG_0001")
             index += 1
             progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
         } else {
@@ -116,11 +104,10 @@ class TrialViewController: UIViewController {
         for btn in buttons where btn != buttons[chosenB] {
             btn?.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
         }
-        if let videoURL = Bundle.main.path(forResource: "IMG_0944", ofType: "MOV") {
+        if let videoURL = Bundle.main.path(forResource: "IMG_0711.TRIM", ofType: "MOV") {
             videoView.configure(url: videoURL)
             videoView.play()
-            reloadBtn.isHidden = true
-            NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)),
+            NotificationCenter.default.addObserver(videoView, selector: #selector(videoView.reachTheEndOfTheVideo(_:)),
                                                    name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
                                                    object: self.videoView.player?.currentItem)
         } else {
