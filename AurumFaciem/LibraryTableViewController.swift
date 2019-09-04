@@ -10,9 +10,7 @@ import UIKit
 
 class LibraryTableViewController: UITableViewController {
 
-    @IBOutlet weak var navigationLibrary: UINavigationBar!
-
-    var aulas: [String] = ["zero", "um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze","doze","treze","catorze"]
+    var aulas: [String] = ["zero", "um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +35,5 @@ class LibraryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let library = LibraryInfoViewController() as UIViewController
         navigationController?.pushViewController(library, animated: true)
-        
     }
 }
