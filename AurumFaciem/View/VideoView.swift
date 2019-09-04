@@ -13,10 +13,10 @@ import AVFoundation
 class VideoView: UIView {
 
     var reloadButton: UIButton!
-    var reloadImg: UIImage!
     var playerLayer: AVPlayerLayer?
     var player: AVPlayer?
     let cornerRadius: CGFloat = 12
+    var greyView: UIView!
 
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = self.cornerRadius
@@ -25,6 +25,10 @@ class VideoView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        greyView = UIView(frame: self.bounds)
+        greyView.backgroundColor = #colorLiteral(red: 0.2335334718, green: 0.2321515977, blue: 0.2345997691, alpha: 0.5)
+        self.addSubview(greyView)
+        greyView.isHidden = true
         reloadButton = UIButton(frame: self.bounds)
         reloadButton.addTarget(self, action: #selector(reloadVideo(_:)), for: .touchUpInside)
         reloadButton.setImage(UIImage(named: "Player"), for: UIControl.State.normal)
@@ -63,9 +67,11 @@ class VideoView: UIView {
         self.player?.seek(to: CMTime.zero)
         self.player?.play()
         reloadButton.isHidden = true
+        greyView.isHidden = true
     }
 
     @objc func reachTheEndOfTheVideo(_ notification: Notification) {
         self.reloadButton.isHidden = false
+        greyView.isHidden = false
     }
 }
