@@ -9,31 +9,34 @@
 import UIKit
 
 class LibraryTableViewController: UITableViewController {
-        
+
+    @IBOutlet weak var navigationLibrary: UINavigationBar!
+
+    var aulas: [String] = ["zero", "um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze","doze","treze","catorze"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.register(UINib(nibName: "InformationTableViewCell", bundle: nil), forCellReuseIdentifier: "Information")
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return aulas.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "Information", for: indexPath) as? InformationTableViewCell {
+            cell.titleLesson?.text = aulas[indexPath.row]
+            cell.playImage?.image = UIImage(named: "Player")
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        return UITableViewCell()
     }
-    */
-    
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let library = LibraryInfoViewController() as UIViewController
+        navigationController?.pushViewController(library, animated: true)
+        
+    }
 }

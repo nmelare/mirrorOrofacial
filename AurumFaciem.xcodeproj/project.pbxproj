@@ -10,8 +10,10 @@
 		6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
 		6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */; };
 		6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B1D231DADFD006F6680 /* Media.xcassets */; };
-		6FD44C92231F0081008D99D2 /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */; };
+		6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */; };
 		6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */; };
+		6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */; };
+		6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */; };
 		8C62B88F23199321009F006B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62B88E23199321009F006B /* VideoView.swift */; };
 		F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F1FE2315BB1300D7334B /* AppDelegate.swift */; };
 		F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F2002315BB1300D7334B /* TrialViewController.swift */; };
@@ -22,10 +24,12 @@
 
 /* Begin PBXFileReference section */
 		6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfoViewController.swift; sourceTree = "<group>"; };
-		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryInfoViewController.xib; sourceTree = "<group>"; };
+		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryInfoViewController.xib; path = ../LibraryInfoViewController.xib; sourceTree = "<group>"; };
 		6F580B1D231DADFD006F6680 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
-		6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryTableViewController.xib; sourceTree = "<group>"; };
+		6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryTableViewController.xib; path = ../LibraryTableViewController.xib; sourceTree = "<group>"; };
+		6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
+		6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
 		8C62B88E23199321009F006B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F1FE2315BB1300D7334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,9 @@
 				F215F2022315BB1300D7334B /* Main.storyboard */,
 				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
 				8C62B88E23199321009F006B /* VideoView.swift */,
+				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
+				6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */,
+				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -82,8 +89,7 @@
 				F215F2002315BB1300D7334B /* TrialViewController.swift */,
 				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
 				6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */,
-				6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */,
-				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
+				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
 				F215F20D2315BB1600D7334B /* Info.plist */,
 				F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */,
 			);
@@ -151,6 +157,7 @@
 			files = (
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
 				6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */,
+				6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */,
 				6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */,
 				6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */,
 				F215F2042315BB1300D7334B /* Main.storyboard in Resources */,
@@ -185,11 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD44C92231F0081008D99D2 /* LibraryTableViewController.swift in Sources */,
+				6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */,
 				8C62B88F23199321009F006B /* VideoView.swift in Sources */,
 				6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */,
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
+				6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
