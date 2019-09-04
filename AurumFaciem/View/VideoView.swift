@@ -22,7 +22,7 @@ class VideoView: UIView {
         layer.cornerRadius = self.cornerRadius
         clipsToBounds = true
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         greyView = UIView(frame: self.bounds)
