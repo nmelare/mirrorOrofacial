@@ -29,21 +29,9 @@ class TrialViewController: UIViewController {
     let buttonColor: UIColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
 
     override func viewDidLoad() {
-        let libraryViewController = LibraryInfoViewController(nibName: "LibraryInfoViewController", bundle: nil)
-        present(libraryViewController, animated: false, completion: nil)
-        var palavrasRestantes = palavras
+        navigationController?.navigationBar.isHidden = true
         super.viewDidLoad()
-        let buttons = [ button1, button2, button3, button4 ]
-        let chosenB = Int.random(in: 1...4)
-        switch chosenB {
-        case 1: button1.setTitle(chosenWord, for: UIControl.State.normal)
-        case 2: button2.setTitle(chosenWord, for: UIControl.State.normal)
-        case 3: button3.setTitle(chosenWord, for: UIControl.State.normal)
-        case 4: button4.setTitle(chosenWord, for: UIControl.State.normal)
-        default:
-            print("switch exausted chosen word options")
-            loadTrial()
-        }
+        loadTrial()
     }
     @IBAction func button1Click(_ sender: Any) {
         if button1.titleLabel?.text != nil {
@@ -90,7 +78,7 @@ class TrialViewController: UIViewController {
     }
 
     @IBAction func closePressed(_ sender: Any) {
-        print("closing window")
+        self.dismiss(animated: true, completion: nil)
     }
 
     func loadTrial() {

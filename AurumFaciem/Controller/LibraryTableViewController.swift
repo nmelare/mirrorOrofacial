@@ -34,6 +34,7 @@ class LibraryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let library = LibraryInfoViewController() as UIViewController
-        navigationController?.pushViewController(library, animated: true)
+//        navigationController?.pushViewController(library, animated: true)
+        present(library, animated: true, completion: nil)
     }
 }

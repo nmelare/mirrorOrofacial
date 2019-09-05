@@ -22,6 +22,9 @@ class HomeScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        treinoDelegate.viewController = self
+        bibliotecaDelegate.viewController = self
+        navigationController?.navigationBar.isTranslucent = true
         bibliotecaTableView.register(UINib(nibName: "BibliotecaTableViewCell",
                                            bundle: nil),
                                      forCellReuseIdentifier: "bibliotecaIdentifier")
@@ -33,5 +36,13 @@ class HomeScreenViewController: UIViewController {
                                       forCellWithReuseIdentifier: "treinoIdentifier")
         treinoCollectionView.dataSource = treinoDataSource
         treinoCollectionView.delegate = treinoDelegate
+    }
+    
+    func changeView(controller: TrialViewController) {
+        present(controller, animated: true, completion: nil)
+    }
+    
+    func changeView(controller: LibraryTableViewController) {
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
