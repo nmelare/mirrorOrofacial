@@ -12,8 +12,8 @@ import UIKit
 
 struct PersistedEntity {
 
-    static var video = "Video"
-    static var lesson = "Lesson"
+    static var video = "CDVideo"
+    static var lesson = "CDLesson"
 
 }
 

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Lesson" representedClassName="Lesson" syncable="YES">
+    <entity name="CDLesson" representedClassName="CDLesson" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pending" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Video" inverseName="isPartOf" inverseEntity="Video" syncable="YES"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CDVideo" inverseName="isPartOf" inverseEntity="CDVideo" syncable="YES"/>
     </entity>
-    <entity name="Video" representedClassName="Video" syncable="YES">
+    <entity name="CDVideo" representedClassName="CDVideo" syncable="YES">
         <attribute name="category" attributeType="String" syncable="YES"/>
         <attribute name="path" attributeType="URI" syncable="YES"/>
         <attribute name="word" attributeType="String" syncable="YES"/>
-        <relationship name="isPartOf" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Lesson" inverseName="videos" inverseEntity="Lesson" syncable="YES"/>
+        <relationship name="isPartOf" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CDLesson" inverseName="videos" inverseEntity="CDLesson" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Lesson" positionX="165.5" positionY="-14.78515625" width="116.79296875" height="103"/>
-        <element name="Video" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="CDLesson" positionX="165.5" positionY="-14.78515625" width="116.79296875" height="105"/>
+        <element name="CDVideo" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

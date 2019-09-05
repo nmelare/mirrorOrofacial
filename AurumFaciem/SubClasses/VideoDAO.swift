@@ -1,5 +1,5 @@
 //
-//  VideoDAO.swift
+//  CDVideoDAO.swift
 //  AurumFaciem
 //
 //  Created by Rafael Galdino on 05/09/19.
@@ -9,48 +9,48 @@
 import Foundation
 import CoreData
 
-class VideoDAO {
+class CDVideoDAO {
 //    Data Analysis Object
     func create(from path: URL,
                 word: String,
                 category: String) {
-        let newVideo = Video.newVideo()
-        newVideo.registerVideo(path: path,
+        let newCDVideo = CDVideo.newCDVideo()
+        newCDVideo.registerCDVideo(path: path,
                                word: word,
                                category: category)
         PersistencyManager.saveContext()
     }
 
-    func fetchAllVideos() -> [Video] {
-        let persistedVideos: [Video] = []
+    func fetchAllVideos() -> [CDVideo] {
+        let persistedCDVideos: [CDVideo] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.video)
         do {
-            guard let persistedVideos = try PersistencyManager.getContext().fetch(fetchRequest) as? [Video] else {
-                fatalError("fetchAll failure casting as Video")
+            guard let persistedCDVideos = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDVideo] else {
+                fatalError("fetchAll failure casting as CDVideo")
             }
-            return persistedVideos
+            return persistedCDVideos
         } catch let error {
-            print("Video's fetchAll task failed", error.localizedDescription)
+            print("CDVideo's fetchAll task failed", error.localizedDescription)
         }
-        return persistedVideos
+        return persistedCDVideos
     }
 
-    func fetchByCategory(category: String) -> [Video] {
-        let foundVideos: [Video] = []
+    func fetchByCategory(category: String) -> [CDVideo] {
+        let foundCDVideos: [CDVideo] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.video)
         fetchRequest.predicate = NSPredicate(format: "categoy = %@", category)
         do {
-            guard let foundVideos = try PersistencyManager.getContext().fetch(fetchRequest) as? [Video] else {
-                fatalError("fetchByCategory failure casting as Video")
+            guard let foundCDVideos = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDVideo] else {
+                fatalError("fetchByCategory failure casting as CDVideo")
             }
-            return foundVideos
+            return foundCDVideos
         } catch let error {
-            print("Video's fetchByCategory task failed", error.localizedDescription)
+            print("CDVideo's fetchByCategory task failed", error.localizedDescription)
         }
-        return foundVideos
+        return foundCDVideos
     }
 
-    func delete(video: Video) {
+    func delete(video: CDVideo) {
         PersistencyManager.getContext().delete(video)
         PersistencyManager.saveContext()
     }

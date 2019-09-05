@@ -1,5 +1,5 @@
 //
-//  LessonDAO.swift
+//  CDLessonDAO.swift
 //  AurumFaciem
 //
 //  Created by Rafael Galdino on 05/09/19.
@@ -9,53 +9,53 @@
 import Foundation
 import CoreData
 
-class LessonDAO {
+class CDLessonDAO {
     //    Data Analysis Object
     func create(name: String, score: Int32, pending: Int32) {
-        let newLesson = Lesson.newLesson()
-        newLesson.registerLesson(name: name,
+        let newCDLesson = CDLesson.newCDLesson()
+        newCDLesson.registerCDLesson(name: name,
                                  score: score,
                                  pending: pending)
         PersistencyManager.saveContext()
     }
-    
-    func fetchAllLessons() -> [Lesson] {
-        let persistedLessons: [Lesson] = []
+
+    func fetchAllCDLessons() -> [CDLesson] {
+        let persistedCDLessons: [CDLesson] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.lesson)
         do {
-            guard let persistedLessons = try PersistencyManager.getContext().fetch(fetchRequest) as? [Lesson] else {
-                fatalError("fetchAll failure casting as Lesson")
+            guard let persistedCDLessons = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDLesson] else {
+                fatalError("fetchAll failure casting as CDLesson")
             }
-            return persistedLessons
+            return persistedCDLessons
         } catch let error {
-            print("Lesson's fetchAll task failed", error.localizedDescription)
+            print("CDLesson's fetchAll task failed", error.localizedDescription)
         }
-        return persistedLessons
+        return persistedCDLessons
     }
-    
-    func fetchByCategory(category: String) -> [Lesson] {
-        let foundLessons: [Lesson] = []
+
+    func fetchByCategory(category: String) -> [CDLesson] {
+        let foundCDLessons: [CDLesson] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.lesson)
         fetchRequest.predicate = NSPredicate(format: "categoy = %@", category)
         do {
-            guard let foundLessons = try PersistencyManager.getContext().fetch(fetchRequest) as? [Lesson] else {
-                fatalError("fetchByCategory failure casting as Lesson")
+            guard let foundCDLessons = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDLesson] else {
+                fatalError("fetchByCategory failure casting as CDLesson")
             }
-            return foundLessons
+            return foundCDLessons
         } catch let error {
-            print("Lesson's fetchByCategory task failed", error.localizedDescription)
+            print("CDLesson's fetchByCategory task failed", error.localizedDescription)
         }
-        return foundLessons
+        return foundCDLessons
     }
-    
-    func delete(lesson: Lesson) {
+
+    func delete(lesson: CDLesson) {
         PersistencyManager.getContext().delete(lesson)
         PersistencyManager.saveContext()
     }
-    
+
     func deleteAll() {
         let context = PersistencyManager.getContext()
-        let lessons = fetchAllLessons()
+        let lessons = fetchAllCDLessons()
         for lesson in lessons {
             context.delete(lesson)
         }
