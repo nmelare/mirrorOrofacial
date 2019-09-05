@@ -12,9 +12,10 @@ import Foundation
 class LibraryInfoViewController: UIViewController {
 
     var index: Int = 0
-    var explicativeText: [String] = ["zero","um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze"]
+    var explicativeText: [String] = ["zero","um","dois","tres","quatro","cinco",
+                                     "seis","sete","oito","nove","dez"]
 
-    @IBOutlet weak var video: UIView!
+    @IBOutlet weak var video: VideoView!
     @IBOutlet weak var lastInfoImage: UIImageView!
     @IBOutlet weak var newInfoImage: UIImageView!
     @IBOutlet weak var closeButton: UIButton!
@@ -53,5 +54,6 @@ class LibraryInfoViewController: UIViewController {
         informationVideo.text = explicativeText[index]
         lastInformationButton.setTitle((index == 0) ? nil : explicativeText[index - 1], for: .normal)
         newInformationButton.setTitle((index == 10) ? nil : explicativeText[index + 1], for: .normal)
+        video.setVideo(name: "IMG_0711.TRIM")
     }
 }

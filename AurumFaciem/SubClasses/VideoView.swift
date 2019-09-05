@@ -40,7 +40,7 @@ class VideoView: UIView {
         reloadButton.isHidden = true
     }
 
-    func configure(url: String) {
+    private func configure(url: String) {
             player = AVPlayer(url: URL(fileURLWithPath: url))
             playerLayer = AVPlayerLayer(player: player)
             playerLayer?.frame = bounds
@@ -51,19 +51,32 @@ class VideoView: UIView {
             }
     }
 
-    func play() {
+    private func play() {
         if player?.timeControlStatus != AVPlayer.TimeControlStatus.playing {
             player?.play()
+            greyView.isHidden = true
         }
     }
 
-    func pause() {
+    private func pause() {
         player?.pause()
     }
 
-    func stop() {
+    private func stop() {
         player?.pause()
         player?.seek(to: CMTime.zero)
+    }
+    
+    func setVideo(name: String) {
+        if let videoURL = Bundle.main.path(forResource: name, ofType: "MOV") {
+            configure(url: videoURL)
+            play()
+            NotificationCenter.default.addObserver(self, selector: #selector(self.reachTheEndOfTheVideo(_:)),
+                                                   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                                   object: self.player?.currentItem)
+        } else {
+            print ("Couldn't load video")
+        }
     }
 
     @objc func reloadVideo(_ sender: Any) {
