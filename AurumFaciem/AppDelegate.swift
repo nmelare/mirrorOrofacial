@@ -24,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                           bundle: nil)
         window = UIWindow(frame: UIScreen.main.bounds)
         navigationController = UINavigationController(rootViewController: homeViewController)
+        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true

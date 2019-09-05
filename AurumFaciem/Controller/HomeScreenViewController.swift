@@ -13,7 +13,8 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var treinoCollectionView: UICollectionView!
     @IBOutlet weak var bibliotecaTableView: UITableView!
     let treinoDataSource = CollectionViewDataSourceObj(cellIdentifier: "treinoIdentifier",
-                                                       items: ["akjasndk", "bdawh", "ddasin"], details: ["caaa", "dfads", "dsdf"])
+                                                       items: ["akjasndk", "bdawh", "ddasin"],
+                                                       details: ["caaa", "dfads", "dsdf"])
     let treinoDelegate = TreinoCollectionViewDelegate()
     let bibliotecaDataSource = TableViewDataSourceObj(cellIdentifier: "bibliotecaIdentifier",
                                                       items: ["A, E, I, O, U", "Abacaxi", "É isso aí"])
@@ -23,7 +24,7 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         treinoDelegate.viewController = self
         bibliotecaDelegate.viewController = self
-        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.isTranslucent = false
         bibliotecaTableView.register(UINib(nibName: "BibliotecaTableViewCell",
                                            bundle: nil),
                                      forCellReuseIdentifier: "bibliotecaIdentifier")
@@ -36,15 +37,15 @@ class HomeScreenViewController: UIViewController {
         treinoCollectionView.dataSource = treinoDataSource
         treinoCollectionView.delegate = treinoDelegate
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
     }
-    
+
     func changeView(controller: TrialViewController) {
         present(controller, animated: true, completion: nil)
     }
-    
+
     func changeView(controller: LibraryTableViewController) {
         self.navigationController?.pushViewController(controller, animated: true)
     }

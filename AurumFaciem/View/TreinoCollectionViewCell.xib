@@ -49,7 +49,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.98823529409999999" green="0.46666666670000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.56862745098039214" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ew3-hI-OFf" firstAttribute="width" secondItem="JTX-2B-x7s" secondAttribute="width" multiplier="0.9" id="Gcb-9K-JQl"/>
                             <constraint firstItem="ew3-hI-OFf" firstAttribute="centerY" secondItem="JTX-2B-x7s" secondAttribute="centerY" id="Qtd-tf-q1J"/>

@@ -15,11 +15,14 @@ class LibraryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.2509803922, green: 0.2392156863, blue: 0.3450980392, alpha: 1)
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2509803922, green: 0.2392156863, blue: 0.3450980392, alpha: 1)
+        navigationItem.title = "Título Genérico"
         tableView.register(UINib(nibName: "InformationTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "Information")
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         if navigationController?.navigationBar.isHidden ?? false {
             navigationController?.navigationBar.isHidden = false
