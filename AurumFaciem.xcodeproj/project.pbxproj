@@ -29,6 +29,7 @@
 		F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */; };
 		F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */; };
 		F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */; };
+		F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DFC2622321811D00D80D30 /* VideoDAO.swift */; };
 		F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */; };
 		F2E23932231C3197005DE28B /* BibliotecaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */; };
 		F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */; };
@@ -61,6 +62,7 @@
 		F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoCollectionViewCell.xib; sourceTree = "<group>"; };
 		F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		F2DFC2622321811D00D80D30 /* VideoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDAO.swift; sourceTree = "<group>"; };
 		F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceObj.swift; sourceTree = "<group>"; };
 		F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewCell.swift; sourceTree = "<group>"; };
 		F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliotecaTableViewCell.xib; sourceTree = "<group>"; };
@@ -91,6 +93,8 @@
 				8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */,
 				8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */,
 				8C62B88E23199321009F006B /* VideoView.swift */,
+				F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */,
+				F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,10 +165,9 @@
 				F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */,
 				F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */,
 				F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */,
+				F2DFC2622321811D00D80D30 /* VideoDAO.swift */,
 				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
 				F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */,
-				F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */,
-				F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */,
 			);
 			path = SubClasses;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				F28D142D23203A0300FF3B8A /* LibraryInfoViewController.swift in Sources */,
 				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
 				8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */,
+				F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
 				F2704E42231EB54F00D080B5 /* Video+CoreDataProperties.swift in Sources */,
 				F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */,
