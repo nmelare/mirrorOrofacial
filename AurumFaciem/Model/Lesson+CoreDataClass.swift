@@ -12,16 +12,17 @@ import CoreData
 
 @objc(Lesson)
 public class Lesson: NSManagedObject {
-    func registerLesson(score: Int32, pending: Int32) {
-        self.pending = score
+    func registerLesson(name: String, score: Int32, pending: Int32) {
+        self.name = name
+        self.score = score
         self.pending = pending
     }
 
-    static func newVideo() -> Video {
-        guard let video = (NSEntityDescription.insertNewObject(forEntityName: PersistedEntity.video,
-                                                               into: PersistencyManager.getContext())) as? Video else {
+    static func newLesson() -> Lesson {
+        guard let lesson = (NSEntityDescription.insertNewObject(forEntityName: PersistedEntity.lesson,
+                                                               into: PersistencyManager.getContext())) as? Lesson else {
                                                                 fatalError("Não foi possívwl salvar um vídeo")
         }
-        return video
+        return lesson
     }
 }

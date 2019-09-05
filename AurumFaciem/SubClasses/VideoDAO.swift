@@ -30,7 +30,7 @@ class VideoDAO {
             }
             return persistedVideos
         } catch let error {
-            print("fetchAll task failed", error.localizedDescription)
+            print("Video's fetchAll task failed", error.localizedDescription)
         }
         return persistedVideos
     }
@@ -45,7 +45,7 @@ class VideoDAO {
             }
             return foundVideos
         } catch let error {
-            print("fetchByCategory task failed", error.localizedDescription)
+            print("Video's fetchByCategory task failed", error.localizedDescription)
         }
         return foundVideos
     }
