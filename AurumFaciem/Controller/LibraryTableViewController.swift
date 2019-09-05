@@ -10,12 +10,14 @@ import UIKit
 
 class LibraryTableViewController: UITableViewController {
 
-    var aulas: [String] = ["zero", "um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze"]
+    var aulas: [String] = ["zero","um","dois","tres","quatro","cinco",
+                           "seis","sete","oito","nove","dez"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(UINib(nibName: "InformationTableViewCell", bundle: nil), forCellReuseIdentifier: "Information")
+        tableView.register(UINib(nibName: "InformationTableViewCell", bundle: nil),
+                           forCellReuseIdentifier: "Information")
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,7 +26,8 @@ class LibraryTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "Information", for: indexPath) as? InformationTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "Information",
+                                                    for: indexPath) as? InformationTableViewCell {
             cell.titleLesson?.text = aulas[indexPath.row]
             cell.playImage?.image = UIImage(named: "Player")
         return cell
@@ -33,7 +36,8 @@ class LibraryTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let library = LibraryInfoViewController() as UIViewController
+        let library = LibraryInfoViewController()
+        library.index = indexPath.row
 //        navigationController?.pushViewController(library, animated: true)
         present(library, animated: true, completion: nil)
     }

@@ -95,14 +95,6 @@ class TrialViewController: UIViewController {
         for btn in buttons where btn != buttons[chosenB] {
             btn?.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
         }
-        if let videoURL = Bundle.main.path(forResource: "IMG_0711.TRIM", ofType: "MOV") {
-            videoView.configure(url: videoURL)
-            videoView.play()
-            NotificationCenter.default.addObserver(videoView, selector: #selector(videoView.reachTheEndOfTheVideo(_:)),
-                                                   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-                                                   object: self.videoView.player?.currentItem)
-        } else {
-            print ("Couldn't load video")
-        }
+        videoView.setVideo(name: "IMG_0711.TRIM")
     }
 }
