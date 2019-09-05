@@ -13,6 +13,9 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var navigationController: UINavigationController?
+    
 //    let libraryinfo = LibraryInfoViewController.init()
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -20,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeViewController = HomeScreenViewController(nibName: nil,
                                                           bundle: nil)
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = homeViewController
+        navigationController = UINavigationController(rootViewController: homeViewController)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true
     }

@@ -11,6 +11,8 @@ import UIKit
 
 class BibliotecaTableViewDelegate: NSObject, UITableViewDelegate {
 
+    public weak var viewController: HomeScreenViewController?
+    
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
         print("selected")
@@ -20,6 +22,8 @@ class BibliotecaTableViewDelegate: NSObject, UITableViewDelegate {
                                       animated: true)
             }
         }
+        let libraryTableViewController = LibraryTableViewController(nibName: nil, bundle: nil)
+        viewController?.changeView(controller: libraryTableViewController)
     }
 
     func tableView(_ tableView: UITableView,

@@ -51,7 +51,7 @@
 		6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
 		8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrialViewController.xib; sourceTree = "<group>"; };
 		8C3AD1DA231F116E007F94B8 /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
-		8C4DBB072320526E00461EDF /* TrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrialViewController.swift; path = Controller/TrialViewController.swift; sourceTree = "<group>"; };
+		8C4DBB072320526E00461EDF /* TrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
 		8C62B88E23199321009F006B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressBar.xib; sourceTree = "<group>"; };
@@ -101,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
+				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
 				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
 				6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */,
 				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
@@ -111,6 +112,7 @@
 				8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */,
 				8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */,
 				8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */,
+				8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,15 +147,9 @@
 		F215F1FD2315BB1300D7334B /* AurumFaciem */ = {
 			isa = PBXGroup;
 			children = (
-				8C44FD282320335700EC37C4 /* Media.xcassets */,
 				F215F1FE2315BB1300D7334B /* AppDelegate.swift */,
 				F2704E3A231EA56D00D080B5 /* Model */,
 				8C4F3376231709BA00EC85DE /* View */,
-				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
-				6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */,
-				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
-				8C4DBB072320526E00461EDF /* TrialViewController.swift */,
-				8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */,
 				F2A1F3B2231A98470000B94B /* Controller */,
 				F2A1F3B3231A98500000B94B /* SubClasses */,
 				F215F20D2315BB1600D7334B /* Info.plist */,
@@ -185,7 +181,10 @@
 		F2A1F3B2231A98470000B94B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
+				6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */,
 				F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */,
+				8C4DBB072320526E00461EDF /* TrialViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,7 +269,6 @@
 				6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */,
 				6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */,
 				6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */,
-				F215F2042315BB1300D7334B /* Main.storyboard in Resources */,
 				8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */,
 				F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */,
 				F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */,

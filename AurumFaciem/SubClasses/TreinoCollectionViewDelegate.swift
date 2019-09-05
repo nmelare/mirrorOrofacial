@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 
 class TreinoCollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    weak var viewController: HomeScreenViewController?
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -44,6 +47,8 @@ class TreinoCollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollec
             collectionView.deselectItem(at: indexPath,
                                         animated: true)
         }
+        let trialViewController = TrialViewController(nibName: nil, bundle: nil)
+        viewController?.changeView(controller: trialViewController)
     }
     func collectionView(_ collectionView: UICollectionView,
                         didDeselectItemAt indexPath: IndexPath) {
