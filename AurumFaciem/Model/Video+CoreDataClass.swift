@@ -12,5 +12,9 @@ import CoreData
 
 @objc(Video)
 public class Video: NSManagedObject {
-
+    func registerVideo(path: URL, word: String, category: String) throws {
+        self.path = path
+        self.word = word
+        self.category = category
+    }
 }
