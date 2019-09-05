@@ -12,8 +12,8 @@ import Foundation
 class LibraryInfoViewController: UIViewController {
 
     var index: Int = 0
-    var explicativeText: [String] = ["zero","um","dois","tres","quatro","cinco",
-                                     "seis","sete","oito","nove","dez"]
+    var explicativeText: [String] = ["zero", "um", "dois", "tres", "quatro", "cinco",
+                                     "seis", "sete", "oito", "nove", "dez"]
 
     @IBOutlet weak var video: VideoView!
     @IBOutlet weak var lastInfoImage: UIImageView!

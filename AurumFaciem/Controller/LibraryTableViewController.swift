@@ -10,18 +10,23 @@ import UIKit
 
 class LibraryTableViewController: UITableViewController {
 
-    var aulas: [String] = ["zero","um","dois","tres","quatro","cinco",
-                           "seis","sete","oito","nove","dez"]
+    var aulas: [String] = ["zero", "um", "dois", "tres", "quatro", "cinco",
+                           "seis", "sete", "oito", "nove", "dez"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         tableView.register(UINib(nibName: "InformationTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "Information")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if navigationController?.navigationBar.isHidden ?? false {
+            navigationController?.navigationBar.isHidden = false
+        }
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return aulas.count
     }
 
@@ -38,7 +43,6 @@ class LibraryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let library = LibraryInfoViewController()
         library.index = indexPath.row
-//        navigationController?.pushViewController(library, animated: true)
         present(library, animated: true, completion: nil)
     }
 }

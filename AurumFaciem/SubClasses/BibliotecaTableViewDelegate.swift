@@ -15,7 +15,6 @@ class BibliotecaTableViewDelegate: NSObject, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        print("selected")
         if let cell = tableView.cellForRow(at: indexPath) {
             if cell.isSelected == true {
                 tableView.deselectRow(at: indexPath,
@@ -28,6 +27,5 @@ class BibliotecaTableViewDelegate: NSObject, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView,
                    didDeselectRowAt indexPath: IndexPath) {
-        print("desselected")
     }
 }
