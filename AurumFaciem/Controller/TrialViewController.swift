@@ -14,7 +14,6 @@ class TrialViewController: UIViewController {
     @IBOutlet weak var progressBar: ProgressBar!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var videoView: VideoView!
-    @IBOutlet weak var reloadBtn: UIButton!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -30,18 +29,9 @@ class TrialViewController: UIViewController {
     let buttonColor: UIColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
 
     override func viewDidLoad() {
+        navigationController?.navigationBar.isHidden = true
         super.viewDidLoad()
-        let buttons = [ button1, button2, button3, button4 ]
-        let chosenB = Int.random(in: 1...4)
-        switch chosenB {
-        case 1: button1.setTitle(chosenWord, for: UIControl.State.normal)
-        case 2: button2.setTitle(chosenWord, for: UIControl.State.normal)
-        case 3: button3.setTitle(chosenWord, for: UIControl.State.normal)
-        case 4: button4.setTitle(chosenWord, for: UIControl.State.normal)
-        default:
-            print("switch exausted chosen word options")
-            loadTrial()
-        }
+        loadTrial()
     }
     @IBAction func button1Click(_ sender: Any) {
         if button1.titleLabel?.text != nil {
@@ -77,20 +67,9 @@ class TrialViewController: UIViewController {
         return palavra
     }
 
-    @IBAction func reloadVideo(_ sender: Any) {
-        videoView.player?.seek(to: CMTime.zero)
-        videoView.player?.play()
-        reloadBtn.isHidden = true
-    }
-
-    @objc func reachTheEndOfTheVideo(_ notification: Notification) {
-        reloadBtn.isHidden = false
-    }
-
     func checkResponse(sender: UIButton) {
         if sender.titleLabel?.text == chosenWord {
             loadTrial()
-            videoView.configure(url: "IMG_0001")
             index += 1
             progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
         } else {
@@ -99,7 +78,12 @@ class TrialViewController: UIViewController {
     }
 
     @IBAction func closePressed(_ sender: Any) {
-        print("closing window")
+        let alert = UIAlertController(title: "Certeza que quer sair?", message: "Você perderá todo seu progresso até agora.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
     }
 
     func loadTrial() {
@@ -116,15 +100,6 @@ class TrialViewController: UIViewController {
         for btn in buttons where btn != buttons[chosenB] {
             btn?.setTitle(takeRandomString(from: &palavrasRestantes), for: UIControl.State.normal)
         }
-        if let videoURL = Bundle.main.path(forResource: "IMG_0944", ofType: "MOV") {
-            videoView.configure(url: videoURL)
-            videoView.play()
-            reloadBtn.isHidden = true
-            NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)),
-                                                   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-                                                   object: self.videoView.player?.currentItem)
-        } else {
-            print ("Couldn't load video")
-        }
+        videoView.setVideo(name: "IMG_0711.TRIM")
     }
 }

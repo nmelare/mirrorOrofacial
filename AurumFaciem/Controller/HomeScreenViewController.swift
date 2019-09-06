@@ -41,6 +41,9 @@ class HomeScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        treinoDelegate.viewController = self
+        bibliotecaDelegate.viewController = self
+        navigationController?.navigationBar.isTranslucent = false
         treinoDataSource.titles = getLessonsNames()
         treinoDataSource.details = getVideosCategories()
         bibliotecaDataSource.items = getVideosNames()
@@ -57,6 +60,17 @@ class HomeScreenViewController: UIViewController {
         treinoCollectionView.delegate = treinoDelegate
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
+
+    func changeView(controller: TrialViewController) {
+        present(controller, animated: true, completion: nil)
+    }
+
+    func changeView(controller: LibraryTableViewController) {
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
     func getLessonsNames() -> [String] {
         var names: [String] = []
         names = lessons.map({ (lesson) -> String in

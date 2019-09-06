@@ -13,6 +13,10 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var navigationController: UINavigationController?
+    
+//    let libraryinfo = LibraryInfoViewController.init()
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let videoDAO = CDVideoDAO()
@@ -21,9 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                           bundle: nil,
                                                           videoDAO: videoDAO,
                                                           lessonDAO: lessonDAO)
-        let navController = UINavigationController(rootViewController: homeViewController)
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navController
+        navigationController = UINavigationController(rootViewController: homeViewController)
+        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true
     }
