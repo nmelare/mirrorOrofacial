@@ -11,7 +11,7 @@ import UIKit
 
 class TableViewDataSourceObj: NSObject, UITableViewDataSource {
 
-    private var items: [String]
+    public var items: [String]
     private var cellIdentifier: String
 
     init(cellIdentifier: String, items: [String]) {

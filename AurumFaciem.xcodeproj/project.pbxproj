@@ -26,19 +26,23 @@
 		F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */; };
 		F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */; };
 		F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */; };
-		F2704E41231EB54F00D080B5 /* Video+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2704E3D231EB54F00D080B5 /* Video+CoreDataClass.swift */; };
-		F2704E42231EB54F00D080B5 /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2704E3E231EB54F00D080B5 /* Video+CoreDataProperties.swift */; };
-		F2704E43231EB54F00D080B5 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2704E3F231EB54F00D080B5 /* Lesson+CoreDataClass.swift */; };
-		F2704E44231EB54F00D080B5 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2704E40231EB54F00D080B5 /* Lesson+CoreDataProperties.swift */; };
+		F28D142D23203A0300FF3B8A /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
 		F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */; };
 		F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */; };
 		F29B3010231C84C8007546CE /* TreinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */; };
 		F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */; };
 		F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */; };
 		F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */; };
+		F2D879B82321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B42321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift */; };
+		F2D879B92321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B52321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift */; };
+		F2D879BA2321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B62321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift */; };
+		F2D879BB2321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B72321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift */; };
+		F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DFC2622321811D00D80D30 /* VideoDAO.swift */; };
+		F2DFC2652321A1C200D80D30 /* LessonDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DFC2642321A1C200D80D30 /* LessonDAO.swift */; };
 		F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */; };
 		F2E23932231C3197005DE28B /* BibliotecaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */; };
 		F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */; };
+		F2EE81BC232044930072B99D /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE81BB232044930072B99D /* PersistencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,19 +69,22 @@
 		F215F20B2315BB1600D7334B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F215F20D2315BB1600D7334B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewDelegate.swift; sourceTree = "<group>"; };
-		F2704E3D231EB54F00D080B5 /* Video+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F2704E3E231EB54F00D080B5 /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F2704E3F231EB54F00D080B5 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F2704E40231EB54F00D080B5 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceObj.swift; sourceTree = "<group>"; };
 		F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoCollectionViewCell.xib; sourceTree = "<group>"; };
 		F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		F2D879B42321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVideo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F2D879B52321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVideo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2D879B62321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F2D879B72321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2DFC2622321811D00D80D30 /* VideoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDAO.swift; sourceTree = "<group>"; };
+		F2DFC2642321A1C200D80D30 /* LessonDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDAO.swift; sourceTree = "<group>"; };
 		F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceObj.swift; sourceTree = "<group>"; };
 		F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewCell.swift; sourceTree = "<group>"; };
 		F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliotecaTableViewCell.xib; sourceTree = "<group>"; };
+		F2EE81BB232044930072B99D /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,7 @@
 				8C3AD1DA231F116E007F94B8 /* VideoView.xib */,
 				F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */,
 				F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */,
+				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
 				F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */,
 				8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */,
 				8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */,
@@ -163,10 +171,10 @@
 		F2704E3A231EA56D00D080B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F2704E3D231EB54F00D080B5 /* Video+CoreDataClass.swift */,
-				F2704E3E231EB54F00D080B5 /* Video+CoreDataProperties.swift */,
-				F2704E3F231EB54F00D080B5 /* Lesson+CoreDataClass.swift */,
-				F2704E40231EB54F00D080B5 /* Lesson+CoreDataProperties.swift */,
+				F2D879B42321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift */,
+				F2D879B52321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift */,
+				F2D879B62321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift */,
+				F2D879B72321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,7 +182,6 @@
 		F28FF5A723203064008DEA92 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				8C8C44082319B8FA00799633 /* IMG_0944.MOV */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -193,13 +200,13 @@
 		F2A1F3B3231A98500000B94B /* SubClasses */ = {
 			isa = PBXGroup;
 			children = (
-				8C62B88E23199321009F006B /* VideoView.swift */,
 				F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */,
 				F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */,
 				F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */,
+				F2DFC2622321811D00D80D30 /* VideoDAO.swift */,
+				F2DFC2642321A1C200D80D30 /* LessonDAO.swift */,
+				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
 				F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */,
-				F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */,
-				F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */,
 			);
 			path = SubClasses;
 			sourceTree = "<group>";
@@ -312,21 +319,25 @@
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */,
 				F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */,
-				F2704E44231EB54F00D080B5 /* Lesson+CoreDataProperties.swift in Sources */,
+				F2D879BA2321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift in Sources */,
 				F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */,
 				F2E23932231C3197005DE28B /* BibliotecaTableViewCell.swift in Sources */,
 				8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */,
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */,
 				F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */,
-				F2704E41231EB54F00D080B5 /* Video+CoreDataClass.swift in Sources */,
+				F2D879B82321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift in Sources */,
+				F2DFC2652321A1C200D80D30 /* LessonDAO.swift in Sources */,
 				F29B3010231C84C8007546CE /* TreinoCollectionViewCell.swift in Sources */,
-				F2704E43231EB54F00D080B5 /* Lesson+CoreDataClass.swift in Sources */,
-				8C4DBB082320526F00461EDF /* TrialViewController.swift in Sources */,
+				F2EE81BC232044930072B99D /* PersistencyManager.swift in Sources */,
+				F28D142D23203A0300FF3B8A /* LibraryInfoViewController.swift in Sources */,
+				F2D879BB2321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift in Sources */,
+				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
 				8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */,
+				F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
-				F2704E42231EB54F00D080B5 /* Video+CoreDataProperties.swift in Sources */,
 				F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */,
+				F2D879B92321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
