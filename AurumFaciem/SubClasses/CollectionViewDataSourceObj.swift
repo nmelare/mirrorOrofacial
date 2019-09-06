@@ -10,8 +10,8 @@ import UIKit
 
 class CollectionViewDataSourceObj: NSObject, UICollectionViewDataSource {
 
-    private var titles: [String]
-    private var details: [String]
+    public var titles: [String]
+    public var details: [String]
     private var cellIdentifier: String
 
     init(cellIdentifier: String, items: [String], details: [String]) {

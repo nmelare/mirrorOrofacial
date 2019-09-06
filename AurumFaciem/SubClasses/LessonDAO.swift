@@ -19,7 +19,7 @@ class CDLessonDAO {
         PersistencyManager.saveContext()
     }
 
-    func fetchAllCDLessons() -> [CDLesson] {
+    func fetchAllLessons() -> [CDLesson] {
         let persistedCDLessons: [CDLesson] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.lesson)
         do {
@@ -33,21 +33,6 @@ class CDLessonDAO {
         return persistedCDLessons
     }
 
-    func fetchByCategory(category: String) -> [CDLesson] {
-        let foundCDLessons: [CDLesson] = []
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.lesson)
-        fetchRequest.predicate = NSPredicate(format: "categoy = %@", category)
-        do {
-            guard let foundCDLessons = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDLesson] else {
-                fatalError("fetchByCategory failure casting as CDLesson")
-            }
-            return foundCDLessons
-        } catch let error {
-            print("CDLesson's fetchByCategory task failed", error.localizedDescription)
-        }
-        return foundCDLessons
-    }
-
     func delete(lesson: CDLesson) {
         PersistencyManager.getContext().delete(lesson)
         PersistencyManager.saveContext()
@@ -55,7 +40,7 @@ class CDLessonDAO {
 
     func deleteAll() {
         let context = PersistencyManager.getContext()
-        let lessons = fetchAllCDLessons()
+        let lessons = fetchAllLessons()
         for lesson in lessons {
             context.delete(lesson)
         }

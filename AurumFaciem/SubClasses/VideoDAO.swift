@@ -38,7 +38,7 @@ class CDVideoDAO {
     func fetchByCategory(category: String) -> [CDVideo] {
         let foundCDVideos: [CDVideo] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.video)
-        fetchRequest.predicate = NSPredicate(format: "categoy = %@", category)
+        fetchRequest.predicate = NSPredicate(format: "category = %@", category)
         do {
             guard let foundCDVideos = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDVideo] else {
                 fatalError("fetchByCategory failure casting as CDVideo")

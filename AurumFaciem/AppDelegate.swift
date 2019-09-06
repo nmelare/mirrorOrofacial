@@ -15,8 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let homeViewController = HomeScreenViewController(nibName: nil,
-                                                          bundle: nil)
+        let videoDAO = CDVideoDAO()
+        let lessonDAO = CDLessonDAO()
+        let homeViewController = HomeScreenViewController(nibName: "HomeScreenViewController",
+                                                          bundle: nil,
+                                                          videoDAO: videoDAO,
+                                                          lessonDAO: lessonDAO)
         let navController = UINavigationController(rootViewController: homeViewController)
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navController
