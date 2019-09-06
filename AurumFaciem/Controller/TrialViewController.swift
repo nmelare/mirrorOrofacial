@@ -78,7 +78,12 @@ class TrialViewController: UIViewController {
     }
 
     @IBAction func closePressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let alert = UIAlertController(title: "Certeza que quer sair?", message: "Você perderá todo seu progresso até agora.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
     }
 
     func loadTrial() {
