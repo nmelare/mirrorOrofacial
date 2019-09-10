@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3A781E2326C021007096BB /* LessonJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A781D2326C021007096BB /* LessonJSON.json */; };
+		6F3A78202326C0E8007096BB /* VideoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A781F2326C0E8007096BB /* VideoJSON.json */; };
+		6F3A78222326C15D007096BB /* LessonJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A78212326C15D007096BB /* LessonJSONHandler.swift */; };
+		6F3A78242326C5F0007096BB /* VideoJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */; };
 		6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
-		6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */; };
 		6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B1D231DADFD006F6680 /* Media.xcassets */; };
+		6F5996E22322DD040048F13F /* BibliotecaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996DE2322DD040048F13F /* BibliotecaTableViewCell.swift */; };
+		6F5996E32322DD040048F13F /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5996DF2322DD040048F13F /* LibraryInfoViewController.xib */; };
+		6F5996E42322DD040048F13F /* TreinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996E02322DD040048F13F /* TreinoCollectionViewCell.swift */; };
+		6F5996E52322DD040048F13F /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996E12322DD040048F13F /* VideoView.swift */; };
+		6F5996E72322E8F90048F13F /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996E62322E8F90048F13F /* TrialViewController.swift */; };
 		6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */; };
 		6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */; };
 		6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */; };
 		6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */; };
 		8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */; };
 		8C3AD1DB231F116E007F94B8 /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AD1DA231F116E007F94B8 /* VideoView.xib */; };
-		8C4DBB082320526F00461EDF /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DBB072320526E00461EDF /* TrialViewController.swift */; };
-		8C62B88F23199321009F006B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62B88E23199321009F006B /* VideoView.swift */; };
 		8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */; };
 		8C8A2EBF231DA9200043FD87 /* ProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */; };
 		8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */; };
@@ -29,7 +35,6 @@
 		F28D142D23203A0300FF3B8A /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
 		F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */; };
 		F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */; };
-		F29B3010231C84C8007546CE /* TreinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */; };
 		F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */; };
 		F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */; };
 		F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */; };
@@ -40,27 +45,32 @@
 		F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DFC2622321811D00D80D30 /* VideoDAO.swift */; };
 		F2DFC2652321A1C200D80D30 /* LessonDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DFC2642321A1C200D80D30 /* LessonDAO.swift */; };
 		F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */; };
-		F2E23932231C3197005DE28B /* BibliotecaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */; };
 		F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */; };
 		F2EE81BC232044930072B99D /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE81BB232044930072B99D /* PersistencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F3A781D2326C021007096BB /* LessonJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LessonJSON.json; sourceTree = "<group>"; };
+		6F3A781F2326C0E8007096BB /* VideoJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoJSON.json; sourceTree = "<group>"; };
+		6F3A78212326C15D007096BB /* LessonJSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonJSONHandler.swift; sourceTree = "<group>"; };
+		6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoJSONHandler.swift; sourceTree = "<group>"; };
 		6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfoViewController.swift; sourceTree = "<group>"; };
 		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryInfoViewController.xib; path = ../LibraryInfoViewController.xib; sourceTree = "<group>"; };
 		6F580B1D231DADFD006F6680 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6F5996DE2322DD040048F13F /* BibliotecaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BibliotecaTableViewCell.swift; path = AurumFaciem/View/BibliotecaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		6F5996DF2322DD040048F13F /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LibraryInfoViewController.xib; path = AurumFaciem/View/LibraryInfoViewController.xib; sourceTree = SOURCE_ROOT; };
+		6F5996E02322DD040048F13F /* TreinoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreinoCollectionViewCell.swift; path = AurumFaciem/View/TreinoCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		6F5996E12322DD040048F13F /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoView.swift; path = AurumFaciem/View/VideoView.swift; sourceTree = SOURCE_ROOT; };
+		6F5996E62322E8F90048F13F /* TrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
 		6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
 		6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryTableViewController.xib; path = ../LibraryTableViewController.xib; sourceTree = "<group>"; };
 		6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
 		6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
 		8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrialViewController.xib; sourceTree = "<group>"; };
 		8C3AD1DA231F116E007F94B8 /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
-		8C4DBB072320526E00461EDF /* TrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
-		8C62B88E23199321009F006B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressBar.xib; sourceTree = "<group>"; };
 		8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		8C8C44082319B8FA00799633 /* IMG_0944.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = IMG_0944.MOV; path = ../../../Downloads/IMG_0944.MOV; sourceTree = "<group>"; };
 		8CA590022320348600B63953 /* IMG_0711.TRIM.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0711.TRIM.MOV; sourceTree = "<group>"; };
 		8CA7842B2322C32F000A558C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +81,6 @@
 		F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewDelegate.swift; sourceTree = "<group>"; };
 		F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceObj.swift; sourceTree = "<group>"; };
-		F29B300E231C84C8007546CE /* TreinoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoCollectionViewCell.xib; sourceTree = "<group>"; };
 		F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
@@ -82,7 +91,6 @@
 		F2DFC2622321811D00D80D30 /* VideoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDAO.swift; sourceTree = "<group>"; };
 		F2DFC2642321A1C200D80D30 /* LessonDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDAO.swift; sourceTree = "<group>"; };
 		F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceObj.swift; sourceTree = "<group>"; };
-		F2E23930231C3197005DE28B /* BibliotecaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewCell.swift; sourceTree = "<group>"; };
 		F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliotecaTableViewCell.xib; sourceTree = "<group>"; };
 		F2EE81BB232044930072B99D /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +120,6 @@
 				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
 				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
 				6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */,
-				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
 				8C3AD1DA231F116E007F94B8 /* VideoView.xib */,
 				F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */,
 				F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */,
@@ -175,6 +182,10 @@
 				F2D879B52321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift */,
 				F2D879B62321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift */,
 				F2D879B72321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift */,
+				6F3A781D2326C021007096BB /* LessonJSON.json */,
+				6F3A781F2326C0E8007096BB /* VideoJSON.json */,
+				6F3A78212326C15D007096BB /* LessonJSONHandler.swift */,
+				6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,8 +202,8 @@
 			children = (
 				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
 				6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */,
+				6F5996E62322E8F90048F13F /* TrialViewController.swift */,
 				F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */,
-				8C4DBB072320526E00461EDF /* TrialViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +215,10 @@
 				F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */,
 				F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */,
 				F2DFC2622321811D00D80D30 /* VideoDAO.swift */,
+				6F5996DE2322DD040048F13F /* BibliotecaTableViewCell.swift */,
+				6F5996DF2322DD040048F13F /* LibraryInfoViewController.xib */,
+				6F5996E02322DD040048F13F /* TreinoCollectionViewCell.swift */,
+				6F5996E12322DD040048F13F /* VideoView.swift */,
 				F2DFC2642321A1C200D80D30 /* LessonDAO.swift */,
 				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
 				F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */,
@@ -252,6 +267,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 				"pt-BR",
 			);
@@ -271,14 +287,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA590032320348600B63953 /* IMG_0711.TRIM.MOV in Resources */,
+				6F5996E32322DD040048F13F /* LibraryInfoViewController.xib in Resources */,
 				8C3AD1DB231F116E007F94B8 /* VideoView.xib in Resources */,
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
-				6F580B182319BE79006F6680 /* LibraryInfoViewController.xib in Resources */,
 				6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */,
+				6F3A78202326C0E8007096BB /* VideoJSON.json in Resources */,
 				6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */,
 				6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */,
 				8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */,
 				F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */,
+				6F3A781E2326C021007096BB /* LessonJSON.json in Resources */,
 				F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */,
 				F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */,
 				8C8A2EBF231DA9200043FD87 /* ProgressBar.xib in Resources */,
@@ -314,26 +332,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */,
-				8C62B88F23199321009F006B /* VideoView.swift in Sources */,
 				6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */,
+				6F5996E72322E8F90048F13F /* TrialViewController.swift in Sources */,
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */,
 				F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */,
 				F2D879BA2321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift in Sources */,
 				F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */,
-				F2E23932231C3197005DE28B /* BibliotecaTableViewCell.swift in Sources */,
+				6F3A78222326C15D007096BB /* LessonJSONHandler.swift in Sources */,
 				8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */,
 				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */,
 				F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */,
 				F2D879B82321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift in Sources */,
 				F2DFC2652321A1C200D80D30 /* LessonDAO.swift in Sources */,
-				F29B3010231C84C8007546CE /* TreinoCollectionViewCell.swift in Sources */,
+				6F3A78242326C5F0007096BB /* VideoJSONHandler.swift in Sources */,
+				6F5996E52322DD040048F13F /* VideoView.swift in Sources */,
 				F2EE81BC232044930072B99D /* PersistencyManager.swift in Sources */,
 				F28D142D23203A0300FF3B8A /* LibraryInfoViewController.swift in Sources */,
 				F2D879BB2321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift in Sources */,
-				F215F2012315BB1300D7334B /* TrialViewController.swift in Sources */,
+				6F5996E42322DD040048F13F /* TreinoCollectionViewCell.swift in Sources */,
 				8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */,
+				6F5996E22322DD040048F13F /* BibliotecaTableViewCell.swift in Sources */,
 				F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
 				F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */,
@@ -479,7 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PVKHG959FC;
+				DEVELOPMENT_TEAM = 679BRJ4243;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PVKHG959FC;
+				DEVELOPMENT_TEAM = 679BRJ4243;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

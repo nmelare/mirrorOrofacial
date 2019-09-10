@@ -34,7 +34,7 @@ class VideoView: UIView {
         greyView.isHidden = true
         reloadButton = UIButton(frame: self.bounds)
         reloadButton.addTarget(self, action: #selector(reloadVideo(_:)), for: .touchUpInside)
-        reloadButton.setImage(UIImage(named: "Player"), for: UIControl.State.normal)
+        reloadButton.setImage(UIImage(named: "WhitePlayer"), for: UIControl.State.normal)
         reloadButton.imageView?.contentMode = .scaleAspectFill
         self.addSubview(reloadButton)
         reloadButton.isHidden = true
