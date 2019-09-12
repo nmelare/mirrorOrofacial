@@ -26,13 +26,16 @@ class TrialViewController: UIViewController {
     var chosenWord: String = ""
     var index = 0
     let videosAmount = 10
-    let buttonColor: UIColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
+
+    var confetti = CAEmitterLayer()
 
     override func viewDidLoad() {
         navigationController?.navigationBar.isHidden = true
         super.viewDidLoad()
         loadTrial()
+        Particles.setupConfetti(confettiLayer: confetti, view: view)
     }
+
     @IBAction func button1Click(_ sender: Any) {
         if button1.titleLabel?.text != nil {
             checkResponse(sender: button1)
@@ -69,17 +72,35 @@ class TrialViewController: UIViewController {
 
     func checkResponse(sender: UIButton) {
         if sender.titleLabel?.text == chosenWord {
-            loadTrial()
-            index += 1
-            progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
+            if index == videosAmount - 1 {
+                // make particles
+                Particles.startParticles(emitterLayer: confetti)
+                _ = Timer.scheduledTimer(withTimeInterval: 0.5,
+                                         repeats: false,
+                                         block: { (_) in
+                                            self.confetti.birthRate = 0
+                                            _ = Timer.scheduledTimer(withTimeInterval: 2,
+                                                                     repeats: false,
+                                                                     block: { (_) in
+                                                                        self.dismiss(animated: true,
+                                                                                     completion: nil)
+                                            })
+                })
+            } else {
+                loadTrial()
+                index += 1
+                progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
+            }
         } else {
             sender.backgroundColor = .gray
         }
     }
 
     @IBAction func closePressed(_ sender: Any) {
-        let alert = UIAlertController(title: "Certeza que quer sair?", message: "Você perderá todo seu progresso até agora.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: { (action) in
+        let alert = UIAlertController(title: "Certeza que quer sair?",
+                                      message: "Você perderá todo seu progresso até agora.",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: { (_) in
             self.dismiss(animated: true, completion: nil)
         }))
         alert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: nil))
@@ -91,7 +112,7 @@ class TrialViewController: UIViewController {
         chosenWord = takeRandomString(from: &palavrasRestantes)
         let buttons = [ button1, button2, button3, button4 ]
         for btn in buttons {
-            btn?.backgroundColor = buttonColor
+            btn?.backgroundColor = AppColor.orange
             btn?.setTitle("Button", for: UIControl.State.normal)
         }
         let chosenB = Int.random(in: 0...3)

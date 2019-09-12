@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Vogais",
+        "pending" : 0,
+        "score" : 0,
+        "videos" : ["a, ã, â","e, é, ê","i","en","in","on","ó, ô"]
+    },
+    {
+        "name" : "Cotidiano",
+        "pending" : 0,
+        "score" : 0,
+        "videos" : ["Saudações","Pronomes","Transporte","Estados", "Conceitos", "Numerais","Descritivos"]
+    },
+    {
+        "name" : "Consoantes 1",
+        "pending" : 0,
+        "score" : 0,
+        "videos" : ["b","d","f","g","j","k","l","lh","m","n"]
+    },
+    {
+        "name" : "Consoantes 2",
+        "pending" : 0,
+        "score" : 0,
+        "videos" : ["nh","p","r","rr","s","t","v","z","ch"]
+    }
+]

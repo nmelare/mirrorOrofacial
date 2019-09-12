@@ -7,21 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F3A781E2326C021007096BB /* LessonJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A781D2326C021007096BB /* LessonJSON.json */; };
-		6F3A78202326C0E8007096BB /* VideoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A781F2326C0E8007096BB /* VideoJSON.json */; };
-		6F3A78222326C15D007096BB /* LessonJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A78212326C15D007096BB /* LessonJSONHandler.swift */; };
-		6F3A78242326C5F0007096BB /* VideoJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */; };
 		6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
-		6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F580B1D231DADFD006F6680 /* Media.xcassets */; };
-		6F5996E22322DD040048F13F /* BibliotecaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996DE2322DD040048F13F /* BibliotecaTableViewCell.swift */; };
-		6F5996E32322DD040048F13F /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F5996DF2322DD040048F13F /* LibraryInfoViewController.xib */; };
-		6F5996E42322DD040048F13F /* TreinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996E02322DD040048F13F /* TreinoCollectionViewCell.swift */; };
-		6F5996E52322DD040048F13F /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996E12322DD040048F13F /* VideoView.swift */; };
 		6F5996E72322E8F90048F13F /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5996E62322E8F90048F13F /* TrialViewController.swift */; };
 		6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */; };
-		6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */; };
 		6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */; };
 		6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */; };
+		8C0A242F2322CBC0002D677C /* ConfettiParticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A242E2322CBC0002D677C /* ConfettiParticles.swift */; };
 		8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */; };
 		8C3AD1DB231F116E007F94B8 /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AD1DA231F116E007F94B8 /* VideoView.xib */; };
 		8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */; };
@@ -29,43 +20,191 @@
 		8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */; };
 		8CA590032320348600B63953 /* IMG_0711.TRIM.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8CA590022320348600B63953 /* IMG_0711.TRIM.MOV */; };
 		F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F1FE2315BB1300D7334B /* AppDelegate.swift */; };
-		F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */; };
 		F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */; };
+		F24D8B8B232A96060053068F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24D8B8A232A96060053068F /* Media.xcassets */; };
 		F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */; };
-		F28D142D23203A0300FF3B8A /* LibraryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */; };
+		F2815AE323289A5D004E759A /* CDVideo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815ADD23289A5D004E759A /* CDVideo+CoreDataClass.swift */; };
+		F2815AE423289A5D004E759A /* CDVideo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815ADE23289A5D004E759A /* CDVideo+CoreDataProperties.swift */; };
+		F2815AE523289A5D004E759A /* CDLesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815ADF23289A5D004E759A /* CDLesson+CoreDataClass.swift */; };
+		F2815AE623289A5D004E759A /* CDLesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AE023289A5D004E759A /* CDLesson+CoreDataProperties.swift */; };
+		F2815AEC23295EA6004E759A /* TreinoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2815AEB23295EA6004E759A /* TreinoCollectionViewCell.xib */; };
+		F2815AF123295EC3004E759A /* TreinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AED23295EC2004E759A /* TreinoCollectionViewCell.swift */; };
+		F2815AF223295EC3004E759A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AEE23295EC2004E759A /* VideoView.swift */; };
+		F2815AF323295EC3004E759A /* BibliotecaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AEF23295EC2004E759A /* BibliotecaTableViewCell.swift */; };
+		F2815AF423295EC3004E759A /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2815AF023295EC3004E759A /* LibraryInfoViewController.xib */; };
+		F2815AF723296354004E759A /* CDCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AF523296354004E759A /* CDCategory+CoreDataClass.swift */; };
+		F2815AF823296354004E759A /* CDCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AF623296354004E759A /* CDCategory+CoreDataProperties.swift */; };
 		F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */; };
 		F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */; };
-		F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */; };
 		F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */; };
 		F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */; };
-		F2D879B82321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B42321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift */; };
-		F2D879B92321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B52321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift */; };
-		F2D879BA2321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B62321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift */; };
-		F2D879BB2321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D879B72321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift */; };
-		F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DFC2622321811D00D80D30 /* VideoDAO.swift */; };
-		F2DFC2652321A1C200D80D30 /* LessonDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DFC2642321A1C200D80D30 /* LessonDAO.swift */; };
 		F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */; };
 		F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */; };
 		F2EE81BC232044930072B99D /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EE81BB232044930072B99D /* PersistencyManager.swift */; };
+		F2F34726232A8F3B00520194 /* otimo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34693232A8F3200520194 /* otimo.mp4 */; };
+		F2F34727232A8F3B00520194 /* zero.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34694232A8F3200520194 /* zero.mp4 */; };
+		F2F34728232A8F3B00520194 /* onda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34695232A8F3200520194 /* onda.mp4 */; };
+		F2F34729232A8F3B00520194 /* cabana.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34696232A8F3200520194 /* cabana.mp4 */; };
+		F2F3472A232A8F3B00520194 /* bilhete.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34697232A8F3200520194 /* bilhete.mp4 */; };
+		F2F3472B232A8F3B00520194 /* genro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34698232A8F3200520194 /* genro.mp4 */; };
+		F2F3472C232A8F3B00520194 /* negar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34699232A8F3200520194 /* negar.mp4 */; };
+		F2F3472D232A8F3B00520194 /* ombro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3469A232A8F3200520194 /* ombro.mp4 */; };
+		F2F3472E232A8F3B00520194 /* prato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3469B232A8F3200520194 /* prato.mp4 */; };
+		F2F3472F232A8F3B00520194 /* um.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3469C232A8F3200520194 /* um.mp4 */; };
+		F2F34730232A8F3B00520194 /* dito.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3469D232A8F3200520194 /* dito.mp4 */; };
+		F2F34731232A8F3B00520194 /* dente.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3469E232A8F3200520194 /* dente.mp4 */; };
+		F2F34732232A8F3B00520194 /* opera.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3469F232A8F3200520194 /* opera.mp4 */; };
+		F2F34733232A8F3B00520194 /* gordo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A0232A8F3200520194 /* gordo.mp4 */; };
+		F2F34734232A8F3B00520194 /* bule.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A1232A8F3300520194 /* bule.mp4 */; };
+		F2F34735232A8F3B00520194 /* biblia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A2232A8F3300520194 /* biblia.mp4 */; };
+		F2F34736232A8F3B00520194 /* janeiro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A3232A8F3300520194 /* janeiro.mp4 */; };
+		F2F34737232A8F3B00520194 /* foi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A4232A8F3300520194 /* foi.mp4 */; };
+		F2F34738232A8F3B00520194 /* estanho.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A5232A8F3300520194 /* estanho.mp4 */; };
+		F2F34739232A8F3B00520194 /* enfase.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A6232A8F3300520194 /* enfase.mp4 */; };
+		F2F3473A232A8F3B00520194 /* dois.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A7232A8F3300520194 /* dois.mp4 */; };
+		F2F3473B232A8F3B00520194 /* historia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A8232A8F3300520194 /* historia.mp4 */; };
+		F2F3473C232A8F3B00520194 /* cinco.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346A9232A8F3300520194 /* cinco.mp4 */; };
+		F2F3473D232A8F3B00520194 /* frio.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346AA232A8F3300520194 /* frio.mp4 */; };
+		F2F3473E232A8F3B00520194 /* brincar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346AB232A8F3300520194 /* brincar.mp4 */; };
+		F2F3473F232A8F3B00520194 /* coisa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346AC232A8F3300520194 /* coisa.mp4 */; };
+		F2F34740232A8F3B00520194 /* quarto.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346AD232A8F3300520194 /* quarto.mp4 */; };
+		F2F34741232A8F3B00520194 /* bem_vindo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346AE232A8F3300520194 /* bem_vindo.mp4 */; };
+		F2F34742232A8F3B00520194 /* nos.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346AF232A8F3300520194 /* nos.mp4 */; };
+		F2F34743232A8F3B00520194 /* nove.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B0232A8F3300520194 /* nove.mp4 */; };
+		F2F34744232A8F3B00520194 /* passo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B1232A8F3300520194 /* passo.mp4 */; };
+		F2F34745232A8F3B00520194 /* pomba.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B2232A8F3300520194 /* pomba.mp4 */; };
+		F2F34746232A8F3B00520194 /* tinta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B3232A8F3300520194 /* tinta.mp4 */; };
+		F2F34747232A8F3B00520194 /* figo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B4232A8F3400520194 /* figo.mp4 */; };
+		F2F34748232A8F3B00520194 /* erro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B5232A8F3400520194 /* erro.mp4 */; };
+		F2F34749232A8F3B00520194 /* caro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B6232A8F3400520194 /* caro.mp4 */; };
+		F2F3474A232A8F3B00520194 /* ferro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B7232A8F3400520194 /* ferro.mp4 */; };
+		F2F3474B232A8F3B00520194 /* onibus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B8232A8F3400520194 /* onibus.mp4 */; };
+		F2F3474C232A8F3B00520194 /* quente.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346B9232A8F3400520194 /* quente.mp4 */; };
+		F2F3474D232A8F3B00520194 /* sonda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346BA232A8F3400520194 /* sonda.mp4 */; };
+		F2F3474E232A8F3B00520194 /* quatro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346BB232A8F3400520194 /* quatro.mp4 */; };
+		F2F3474F232A8F3B00520194 /* barco.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346BC232A8F3400520194 /* barco.mp4 */; };
+		F2F34750232A8F3B00520194 /* dado.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346BD232A8F3400520194 /* dado.mp4 */; };
+		F2F34751232A8F3B00520194 /* milho.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346BE232A8F3400520194 /* milho.mp4 */; };
+		F2F34752232A8F3B00520194 /* jugo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346BF232A8F3400520194 /* jugo.mp4 */; };
+		F2F34753232A8F3B00520194 /* baralho.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C0232A8F3400520194 /* baralho.mp4 */; };
+		F2F34754232A8F3B00520194 /* colina.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C1232A8F3400520194 /* colina.mp4 */; };
+		F2F34755232A8F3B00520194 /* cadela.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C2232A8F3400520194 /* cadela.mp4 */; };
+		F2F34756232A8F3B00520194 /* calha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C3232A8F3400520194 /* calha.mp4 */; };
+		F2F34757232A8F3B00520194 /* barulho.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C4232A8F3500520194 /* barulho.mp4 */; };
+		F2F34758232A8F3B00520194 /* tomar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C5232A8F3500520194 /* tomar.mp4 */; };
+		F2F34759232A8F3B00520194 /* bala.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C6232A8F3500520194 /* bala.mp4 */; };
+		F2F3475A232A8F3B00520194 /* lhama.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C7232A8F3500520194 /* lhama.mp4 */; };
+		F2F3475B232A8F3B00520194 /* couro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C8232A8F3500520194 /* couro.mp4 */; };
+		F2F3475C232A8F3B00520194 /* ilha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346C9232A8F3500520194 /* ilha.mp4 */; };
+		F2F3475D232A8F3B00520194 /* capim.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346CA232A8F3500520194 /* capim.mp4 */; };
+		F2F3475E232A8F3B00520194 /* ruim.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346CB232A8F3500520194 /* ruim.mp4 */; };
+		F2F3475F232A8F3B00520194 /* rede.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346CC232A8F3500520194 /* rede.mp4 */; };
+		F2F34760232A8F3B00520194 /* tres.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346CD232A8F3500520194 /* tres.mp4 */; };
+		F2F34761232A8F3B00520194 /* ola.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346CE232A8F3500520194 /* ola.mp4 */; };
+		F2F34762232A8F3B00520194 /* embate.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346CF232A8F3500520194 /* embate.mp4 */; };
+		F2F34763232A8F3B00520194 /* loteria.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D0232A8F3500520194 /* loteria.mp4 */; };
+		F2F34764232A8F3B00520194 /* amarelo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D1232A8F3500520194 /* amarelo.mp4 */; };
+		F2F34765232A8F3B00520194 /* caneta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D2232A8F3500520194 /* caneta.mp4 */; };
+		F2F34766232A8F3B00520194 /* rato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D3232A8F3600520194 /* rato.mp4 */; };
+		F2F34767232A8F3B00520194 /* assim.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D4232A8F3600520194 /* assim.mp4 */; };
+		F2F34768232A8F3B00520194 /* bela.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D5232A8F3600520194 /* bela.mp4 */; };
+		F2F34769232A8F3B00520194 /* ate_logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D6232A8F3600520194 /* ate_logo.mp4 */; };
+		F2F3476A232A8F3B00520194 /* bom.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D7232A8F3600520194 /* bom.mp4 */; };
+		F2F3476B232A8F3B00520194 /* brilho.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D8232A8F3600520194 /* brilho.mp4 */; };
+		F2F3476C232A8F3B00520194 /* oito.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346D9232A8F3600520194 /* oito.mp4 */; };
+		F2F3476D232A8F3B00520194 /* escolta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346DA232A8F3600520194 /* escolta.mp4 */; };
+		F2F3476E232A8F3B00520194 /* impar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346DB232A8F3600520194 /* impar.mp4 */; };
+		F2F3476F232A8F3B00520194 /* pessimo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346DC232A8F3600520194 /* pessimo.mp4 */; };
+		F2F34770232A8F3B00520194 /* razao.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346DD232A8F3600520194 /* razao.mp4 */; };
+		F2F34771232A8F3B00520194 /* seis.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346DE232A8F3600520194 /* seis.mp4 */; };
+		F2F34772232A8F3B00520194 /* teste.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346DF232A8F3600520194 /* teste.mp4 */; };
+		F2F34773232A8F3B00520194 /* medo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E0232A8F3600520194 /* medo.mp4 */; };
+		F2F34774232A8F3B00520194 /* adeus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E1232A8F3600520194 /* adeus.mp4 */; };
+		F2F34775232A8F3B00520194 /* geleira.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E2232A8F3600520194 /* geleira.mp4 */; };
+		F2F34776232A8F3B00520194 /* gato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E3232A8F3600520194 /* gato.mp4 */; };
+		F2F34777232A8F3B00520194 /* parada.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E4232A8F3700520194 /* parada.mp4 */; };
+		F2F34778232A8F3B00520194 /* sofa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E5232A8F3700520194 /* sofa.mp4 */; };
+		F2F34779232A8F3B00520194 /* sete.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E6232A8F3700520194 /* sete.mp4 */; };
+		F2F3477A232A8F3B00520194 /* velho.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E7232A8F3700520194 /* velho.mp4 */; };
+		F2F3477B232A8F3B00520194 /* rio.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E8232A8F3700520194 /* rio.mp4 */; };
+		F2F3477C232A8F3B00520194 /* cem.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346E9232A8F3700520194 /* cem.mp4 */; };
+		F2F3477D232A8F3B00520194 /* cama.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346EA232A8F3700520194 /* cama.mp4 */; };
+		F2F3477E232A8F3B00520194 /* carro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346EB232A8F3700520194 /* carro.mp4 */; };
+		F2F3477F232A8F3B00520194 /* nacional.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346EC232A8F3700520194 /* nacional.mp4 */; };
+		F2F34780232A8F3B00520194 /* queijo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346ED232A8F3700520194 /* queijo.mp4 */; };
+		F2F34781232A8F3B00520194 /* sala.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346EE232A8F3700520194 /* sala.mp4 */; };
+		F2F34782232A8F3B00520194 /* embolo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346EF232A8F3700520194 /* embolo.mp4 */; };
+		F2F34783232A8F3B00520194 /* andar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F0232A8F3700520194 /* andar.mp4 */; };
+		F2F34784232A8F3B00520194 /* abanar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F1232A8F3700520194 /* abanar.mp4 */; };
+		F2F34785232A8F3B00520194 /* ainda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F2232A8F3700520194 /* ainda.mp4 */; };
+		F2F34786232A8F3B00520194 /* camera.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F3232A8F3800520194 /* camera.mp4 */; };
+		F2F34787232A8F3B00520194 /* jovem.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F4232A8F3800520194 /* jovem.mp4 */; };
+		F2F34788232A8F3B00520194 /* barata.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F5232A8F3800520194 /* barata.mp4 */; };
+		F2F34789232A8F3B00520194 /* cova.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F6232A8F3800520194 /* cova.mp4 */; };
+		F2F3478A232A8F3B00520194 /* tipo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F7232A8F3800520194 /* tipo.mp4 */; };
+		F2F3478B232A8F3B00520194 /* macho.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F8232A8F3800520194 /* macho.mp4 */; };
+		F2F3478C232A8F3B00520194 /* amanha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346F9232A8F3800520194 /* amanha.mp4 */; };
+		F2F3478D232A8F3B00520194 /* barganha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346FA232A8F3800520194 /* barganha.mp4 */; };
+		F2F3478E232A8F3B00520194 /* alto.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346FB232A8F3800520194 /* alto.mp4 */; };
+		F2F3478F232A8F3B00520194 /* vulto.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346FC232A8F3800520194 /* vulto.mp4 */; };
+		F2F34790232A8F3B00520194 /* jilo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346FD232A8F3800520194 /* jilo.mp4 */; };
+		F2F34791232A8F3B00520194 /* gula.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346FE232A8F3800520194 /* gula.mp4 */; };
+		F2F34792232A8F3B00520194 /* feixe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F346FF232A8F3800520194 /* feixe.mp4 */; };
+		F2F34793232A8F3B00520194 /* enrolar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34700232A8F3800520194 /* enrolar.mp4 */; };
+		F2F34794232A8F3B00520194 /* dez.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34701232A8F3800520194 /* dez.mp4 */; };
+		F2F34795232A8F3B00520194 /* faca.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34702232A8F3800520194 /* faca.mp4 */; };
+		F2F34796232A8F3B00520194 /* estudar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34703232A8F3900520194 /* estudar.mp4 */; };
+		F2F34797232A8F3B00520194 /* pomar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34704232A8F3900520194 /* pomar.mp4 */; };
+		F2F34798232A8F3B00520194 /* berco.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34705232A8F3900520194 /* berco.mp4 */; };
+		F2F34799232A8F3B00520194 /* sono.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34706232A8F3900520194 /* sono.mp4 */; };
+		F2F3479A232A8F3B00520194 /* vendo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34707232A8F3900520194 /* vendo.mp4 */; };
+		F2F3479B232A8F3B00520194 /* banheiro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34708232A8F3900520194 /* banheiro.mp4 */; };
+		F2F3479C232A8F3B00520194 /* geleia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34709232A8F3900520194 /* geleia.mp4 */; };
+		F2F3479D232A8F3B00520194 /* porta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3470A232A8F3900520194 /* porta.mp4 */; };
+		F2F3479E232A8F3B00520194 /* descer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3470B232A8F3900520194 /* descer.mp4 */; };
+		F2F3479F232A8F3B00520194 /* lembrete.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3470C232A8F3900520194 /* lembrete.mp4 */; };
+		F2F347A0232A8F3B00520194 /* furo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3470D232A8F3900520194 /* furo.mp4 */; };
+		F2F347A1232A8F3B00520194 /* cabide.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3470E232A8F3900520194 /* cabide.mp4 */; };
+		F2F347A2232A8F3B00520194 /* eu.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3470F232A8F3900520194 /* eu.mp4 */; };
+		F2F347A3232A8F3B00520194 /* cedo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34710232A8F3900520194 /* cedo.mp4 */; };
+		F2F347A4232A8F3B00520194 /* lamina.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34711232A8F3900520194 /* lamina.mp4 */; };
+		F2F347A5232A8F3B00520194 /* certo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34712232A8F3900520194 /* certo.mp4 */; };
+		F2F347A6232A8F3B00520194 /* livro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34713232A8F3A00520194 /* livro.mp4 */; };
+		F2F347A7232A8F3B00520194 /* senhora.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34714232A8F3A00520194 /* senhora.mp4 */; };
+		F2F347A8232A8F3B00520194 /* tampa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34715232A8F3A00520194 /* tampa.mp4 */; };
+		F2F347A9232A8F3B00520194 /* voce.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34716232A8F3A00520194 /* voce.mp4 */; };
+		F2F347AA232A8F3B00520194 /* falar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34717232A8F3A00520194 /* falar.mp4 */; };
+		F2F347AB232A8F3B00520194 /* idoso.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34718232A8F3A00520194 /* idoso.mp4 */; };
+		F2F347AC232A8F3B00520194 /* elas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34719232A8F3A00520194 /* elas.mp4 */; };
+		F2F347AD232A8F3B00520194 /* muro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3471A232A8F3A00520194 /* muro.mp4 */; };
+		F2F347AE232A8F3B00520194 /* guerra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3471B232A8F3A00520194 /* guerra.mp4 */; };
+		F2F347AF232A8F3B00520194 /* baixo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3471C232A8F3A00520194 /* baixo.mp4 */; };
+		F2F347B0232A8F3B00520194 /* exame.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3471D232A8F3A00520194 /* exame.mp4 */; };
+		F2F347B1232A8F3B00520194 /* cheiro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3471E232A8F3A00520194 /* cheiro.mp4 */; };
+		F2F347B2232A8F3B00520194 /* errado.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F3471F232A8F3A00520194 /* errado.mp4 */; };
+		F2F347B3232A8F3B00520194 /* trem.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34720232A8F3A00520194 /* trem.mp4 */; };
+		F2F347B4232A8F3B00520194 /* duro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34721232A8F3A00520194 /* duro.mp4 */; };
+		F2F347B5232A8F3B00520194 /* esperar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34722232A8F3A00520194 /* esperar.mp4 */; };
+		F2F347B6232A8F3B00520194 /* vista.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34723232A8F3B00520194 /* vista.mp4 */; };
+		F2F347B7232A8F3B00520194 /* chato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34724232A8F3B00520194 /* chato.mp4 */; };
+		F2F347B8232A8F3B00520194 /* pipa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2F34725232A8F3B00520194 /* pipa.mp4 */; };
+		F2FA2DBB232A8B630031236E /* LessonJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A78212326C15D007096BB /* LessonJSONHandler.swift */; };
+		F2FA2DBC232A8B630031236E /* VideoJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */; };
+		F2FA2DBF232A8C0A0031236E /* CDLessonDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FA2DBD232A8C0A0031236E /* CDLessonDAO.swift */; };
+		F2FA2DC0232A8C0A0031236E /* CDVideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FA2DBE232A8C0A0031236E /* CDVideoDAO.swift */; };
+		F2FA2DC2232A8C1A0031236E /* LibraryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FA2DC1232A8C1A0031236E /* LibraryTableViewController.xib */; };
+		F2FA2DC4232A8C3D0031236E /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FA2DC3232A8C3D0031236E /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F3A781D2326C021007096BB /* LessonJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LessonJSON.json; sourceTree = "<group>"; };
-		6F3A781F2326C0E8007096BB /* VideoJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoJSON.json; sourceTree = "<group>"; };
 		6F3A78212326C15D007096BB /* LessonJSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonJSONHandler.swift; sourceTree = "<group>"; };
 		6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoJSONHandler.swift; sourceTree = "<group>"; };
 		6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfoViewController.swift; sourceTree = "<group>"; };
-		6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryInfoViewController.xib; path = ../LibraryInfoViewController.xib; sourceTree = "<group>"; };
-		6F580B1D231DADFD006F6680 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		6F5996DE2322DD040048F13F /* BibliotecaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BibliotecaTableViewCell.swift; path = AurumFaciem/View/BibliotecaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		6F5996DF2322DD040048F13F /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LibraryInfoViewController.xib; path = AurumFaciem/View/LibraryInfoViewController.xib; sourceTree = SOURCE_ROOT; };
-		6F5996E02322DD040048F13F /* TreinoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreinoCollectionViewCell.swift; path = AurumFaciem/View/TreinoCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		6F5996E12322DD040048F13F /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoView.swift; path = AurumFaciem/View/VideoView.swift; sourceTree = SOURCE_ROOT; };
 		6F5996E62322E8F90048F13F /* TrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
 		6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
-		6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LibraryTableViewController.xib; path = ../LibraryTableViewController.xib; sourceTree = "<group>"; };
 		6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
 		6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
+		8C0A242E2322CBC0002D677C /* ConfettiParticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiParticles.swift; sourceTree = "<group>"; };
 		8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrialViewController.xib; sourceTree = "<group>"; };
 		8C3AD1DA231F116E007F94B8 /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
 		8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -78,21 +217,177 @@
 		F215F2062315BB1400D7334B /* AurumFaciem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AurumFaciem.xcdatamodel; sourceTree = "<group>"; };
 		F215F20B2315BB1600D7334B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F215F20D2315BB1600D7334B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24D8B8A232A96060053068F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = AurumFaciem/Media.xcassets; sourceTree = "<group>"; };
 		F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewDelegate.swift; sourceTree = "<group>"; };
+		F2815ADD23289A5D004E759A /* CDVideo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVideo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F2815ADE23289A5D004E759A /* CDVideo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVideo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2815ADF23289A5D004E759A /* CDLesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F2815AE023289A5D004E759A /* CDLesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2815AEB23295EA6004E759A /* TreinoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreinoCollectionViewCell.xib; sourceTree = "<group>"; };
+		F2815AED23295EC2004E759A /* TreinoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewCell.swift; sourceTree = "<group>"; };
+		F2815AEE23295EC2004E759A /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		F2815AEF23295EC2004E759A /* BibliotecaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewCell.swift; sourceTree = "<group>"; };
+		F2815AF023295EC3004E759A /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryInfoViewController.xib; sourceTree = "<group>"; };
+		F2815AF523296354004E759A /* CDCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F2815AF623296354004E759A /* CDCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceObj.swift; sourceTree = "<group>"; };
-		F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreinoCollectionViewCell.xib; sourceTree = "<group>"; };
 		F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
-		F2D879B42321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVideo+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F2D879B52321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVideo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F2D879B62321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLesson+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F2D879B72321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F2DFC2622321811D00D80D30 /* VideoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDAO.swift; sourceTree = "<group>"; };
-		F2DFC2642321A1C200D80D30 /* LessonDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDAO.swift; sourceTree = "<group>"; };
 		F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceObj.swift; sourceTree = "<group>"; };
 		F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliotecaTableViewCell.xib; sourceTree = "<group>"; };
 		F2EE81BB232044930072B99D /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		F2F34693232A8F3200520194 /* otimo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = otimo.mp4; sourceTree = "<group>"; };
+		F2F34694232A8F3200520194 /* zero.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zero.mp4; sourceTree = "<group>"; };
+		F2F34695232A8F3200520194 /* onda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = onda.mp4; sourceTree = "<group>"; };
+		F2F34696232A8F3200520194 /* cabana.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cabana.mp4; sourceTree = "<group>"; };
+		F2F34697232A8F3200520194 /* bilhete.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bilhete.mp4; sourceTree = "<group>"; };
+		F2F34698232A8F3200520194 /* genro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = genro.mp4; sourceTree = "<group>"; };
+		F2F34699232A8F3200520194 /* negar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = negar.mp4; sourceTree = "<group>"; };
+		F2F3469A232A8F3200520194 /* ombro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ombro.mp4; sourceTree = "<group>"; };
+		F2F3469B232A8F3200520194 /* prato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = prato.mp4; sourceTree = "<group>"; };
+		F2F3469C232A8F3200520194 /* um.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = um.mp4; sourceTree = "<group>"; };
+		F2F3469D232A8F3200520194 /* dito.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dito.mp4; sourceTree = "<group>"; };
+		F2F3469E232A8F3200520194 /* dente.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dente.mp4; sourceTree = "<group>"; };
+		F2F3469F232A8F3200520194 /* opera.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = opera.mp4; sourceTree = "<group>"; };
+		F2F346A0232A8F3200520194 /* gordo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gordo.mp4; sourceTree = "<group>"; };
+		F2F346A1232A8F3300520194 /* bule.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bule.mp4; sourceTree = "<group>"; };
+		F2F346A2232A8F3300520194 /* biblia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = biblia.mp4; sourceTree = "<group>"; };
+		F2F346A3232A8F3300520194 /* janeiro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = janeiro.mp4; sourceTree = "<group>"; };
+		F2F346A4232A8F3300520194 /* foi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = foi.mp4; sourceTree = "<group>"; };
+		F2F346A5232A8F3300520194 /* estanho.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = estanho.mp4; sourceTree = "<group>"; };
+		F2F346A6232A8F3300520194 /* enfase.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = enfase.mp4; sourceTree = "<group>"; };
+		F2F346A7232A8F3300520194 /* dois.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dois.mp4; sourceTree = "<group>"; };
+		F2F346A8232A8F3300520194 /* historia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = historia.mp4; sourceTree = "<group>"; };
+		F2F346A9232A8F3300520194 /* cinco.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cinco.mp4; sourceTree = "<group>"; };
+		F2F346AA232A8F3300520194 /* frio.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = frio.mp4; sourceTree = "<group>"; };
+		F2F346AB232A8F3300520194 /* brincar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = brincar.mp4; sourceTree = "<group>"; };
+		F2F346AC232A8F3300520194 /* coisa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = coisa.mp4; sourceTree = "<group>"; };
+		F2F346AD232A8F3300520194 /* quarto.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = quarto.mp4; sourceTree = "<group>"; };
+		F2F346AE232A8F3300520194 /* bem_vindo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bem_vindo.mp4; sourceTree = "<group>"; };
+		F2F346AF232A8F3300520194 /* nos.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nos.mp4; sourceTree = "<group>"; };
+		F2F346B0232A8F3300520194 /* nove.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nove.mp4; sourceTree = "<group>"; };
+		F2F346B1232A8F3300520194 /* passo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = passo.mp4; sourceTree = "<group>"; };
+		F2F346B2232A8F3300520194 /* pomba.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pomba.mp4; sourceTree = "<group>"; };
+		F2F346B3232A8F3300520194 /* tinta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tinta.mp4; sourceTree = "<group>"; };
+		F2F346B4232A8F3400520194 /* figo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = figo.mp4; sourceTree = "<group>"; };
+		F2F346B5232A8F3400520194 /* erro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = erro.mp4; sourceTree = "<group>"; };
+		F2F346B6232A8F3400520194 /* caro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = caro.mp4; sourceTree = "<group>"; };
+		F2F346B7232A8F3400520194 /* ferro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ferro.mp4; sourceTree = "<group>"; };
+		F2F346B8232A8F3400520194 /* onibus.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = onibus.mp4; sourceTree = "<group>"; };
+		F2F346B9232A8F3400520194 /* quente.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = quente.mp4; sourceTree = "<group>"; };
+		F2F346BA232A8F3400520194 /* sonda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonda.mp4; sourceTree = "<group>"; };
+		F2F346BB232A8F3400520194 /* quatro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = quatro.mp4; sourceTree = "<group>"; };
+		F2F346BC232A8F3400520194 /* barco.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = barco.mp4; sourceTree = "<group>"; };
+		F2F346BD232A8F3400520194 /* dado.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dado.mp4; sourceTree = "<group>"; };
+		F2F346BE232A8F3400520194 /* milho.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = milho.mp4; sourceTree = "<group>"; };
+		F2F346BF232A8F3400520194 /* jugo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jugo.mp4; sourceTree = "<group>"; };
+		F2F346C0232A8F3400520194 /* baralho.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = baralho.mp4; sourceTree = "<group>"; };
+		F2F346C1232A8F3400520194 /* colina.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = colina.mp4; sourceTree = "<group>"; };
+		F2F346C2232A8F3400520194 /* cadela.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cadela.mp4; sourceTree = "<group>"; };
+		F2F346C3232A8F3400520194 /* calha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = calha.mp4; sourceTree = "<group>"; };
+		F2F346C4232A8F3500520194 /* barulho.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = barulho.mp4; sourceTree = "<group>"; };
+		F2F346C5232A8F3500520194 /* tomar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tomar.mp4; sourceTree = "<group>"; };
+		F2F346C6232A8F3500520194 /* bala.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bala.mp4; sourceTree = "<group>"; };
+		F2F346C7232A8F3500520194 /* lhama.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lhama.mp4; sourceTree = "<group>"; };
+		F2F346C8232A8F3500520194 /* couro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = couro.mp4; sourceTree = "<group>"; };
+		F2F346C9232A8F3500520194 /* ilha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ilha.mp4; sourceTree = "<group>"; };
+		F2F346CA232A8F3500520194 /* capim.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = capim.mp4; sourceTree = "<group>"; };
+		F2F346CB232A8F3500520194 /* ruim.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ruim.mp4; sourceTree = "<group>"; };
+		F2F346CC232A8F3500520194 /* rede.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rede.mp4; sourceTree = "<group>"; };
+		F2F346CD232A8F3500520194 /* tres.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tres.mp4; sourceTree = "<group>"; };
+		F2F346CE232A8F3500520194 /* ola.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ola.mp4; sourceTree = "<group>"; };
+		F2F346CF232A8F3500520194 /* embate.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = embate.mp4; sourceTree = "<group>"; };
+		F2F346D0232A8F3500520194 /* loteria.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loteria.mp4; sourceTree = "<group>"; };
+		F2F346D1232A8F3500520194 /* amarelo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = amarelo.mp4; sourceTree = "<group>"; };
+		F2F346D2232A8F3500520194 /* caneta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = caneta.mp4; sourceTree = "<group>"; };
+		F2F346D3232A8F3600520194 /* rato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rato.mp4; sourceTree = "<group>"; };
+		F2F346D4232A8F3600520194 /* assim.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = assim.mp4; sourceTree = "<group>"; };
+		F2F346D5232A8F3600520194 /* bela.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bela.mp4; sourceTree = "<group>"; };
+		F2F346D6232A8F3600520194 /* ate_logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ate_logo.mp4; sourceTree = "<group>"; };
+		F2F346D7232A8F3600520194 /* bom.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bom.mp4; sourceTree = "<group>"; };
+		F2F346D8232A8F3600520194 /* brilho.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = brilho.mp4; sourceTree = "<group>"; };
+		F2F346D9232A8F3600520194 /* oito.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = oito.mp4; sourceTree = "<group>"; };
+		F2F346DA232A8F3600520194 /* escolta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = escolta.mp4; sourceTree = "<group>"; };
+		F2F346DB232A8F3600520194 /* impar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = impar.mp4; sourceTree = "<group>"; };
+		F2F346DC232A8F3600520194 /* pessimo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pessimo.mp4; sourceTree = "<group>"; };
+		F2F346DD232A8F3600520194 /* razao.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = razao.mp4; sourceTree = "<group>"; };
+		F2F346DE232A8F3600520194 /* seis.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = seis.mp4; sourceTree = "<group>"; };
+		F2F346DF232A8F3600520194 /* teste.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = teste.mp4; sourceTree = "<group>"; };
+		F2F346E0232A8F3600520194 /* medo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = medo.mp4; sourceTree = "<group>"; };
+		F2F346E1232A8F3600520194 /* adeus.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = adeus.mp4; sourceTree = "<group>"; };
+		F2F346E2232A8F3600520194 /* geleira.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = geleira.mp4; sourceTree = "<group>"; };
+		F2F346E3232A8F3600520194 /* gato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gato.mp4; sourceTree = "<group>"; };
+		F2F346E4232A8F3700520194 /* parada.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = parada.mp4; sourceTree = "<group>"; };
+		F2F346E5232A8F3700520194 /* sofa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sofa.mp4; sourceTree = "<group>"; };
+		F2F346E6232A8F3700520194 /* sete.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sete.mp4; sourceTree = "<group>"; };
+		F2F346E7232A8F3700520194 /* velho.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = velho.mp4; sourceTree = "<group>"; };
+		F2F346E8232A8F3700520194 /* rio.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rio.mp4; sourceTree = "<group>"; };
+		F2F346E9232A8F3700520194 /* cem.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cem.mp4; sourceTree = "<group>"; };
+		F2F346EA232A8F3700520194 /* cama.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cama.mp4; sourceTree = "<group>"; };
+		F2F346EB232A8F3700520194 /* carro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = carro.mp4; sourceTree = "<group>"; };
+		F2F346EC232A8F3700520194 /* nacional.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nacional.mp4; sourceTree = "<group>"; };
+		F2F346ED232A8F3700520194 /* queijo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = queijo.mp4; sourceTree = "<group>"; };
+		F2F346EE232A8F3700520194 /* sala.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sala.mp4; sourceTree = "<group>"; };
+		F2F346EF232A8F3700520194 /* embolo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = embolo.mp4; sourceTree = "<group>"; };
+		F2F346F0232A8F3700520194 /* andar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = andar.mp4; sourceTree = "<group>"; };
+		F2F346F1232A8F3700520194 /* abanar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abanar.mp4; sourceTree = "<group>"; };
+		F2F346F2232A8F3700520194 /* ainda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ainda.mp4; sourceTree = "<group>"; };
+		F2F346F3232A8F3800520194 /* camera.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = camera.mp4; sourceTree = "<group>"; };
+		F2F346F4232A8F3800520194 /* jovem.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jovem.mp4; sourceTree = "<group>"; };
+		F2F346F5232A8F3800520194 /* barata.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = barata.mp4; sourceTree = "<group>"; };
+		F2F346F6232A8F3800520194 /* cova.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cova.mp4; sourceTree = "<group>"; };
+		F2F346F7232A8F3800520194 /* tipo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tipo.mp4; sourceTree = "<group>"; };
+		F2F346F8232A8F3800520194 /* macho.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = macho.mp4; sourceTree = "<group>"; };
+		F2F346F9232A8F3800520194 /* amanha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = amanha.mp4; sourceTree = "<group>"; };
+		F2F346FA232A8F3800520194 /* barganha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = barganha.mp4; sourceTree = "<group>"; };
+		F2F346FB232A8F3800520194 /* alto.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = alto.mp4; sourceTree = "<group>"; };
+		F2F346FC232A8F3800520194 /* vulto.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vulto.mp4; sourceTree = "<group>"; };
+		F2F346FD232A8F3800520194 /* jilo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jilo.mp4; sourceTree = "<group>"; };
+		F2F346FE232A8F3800520194 /* gula.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gula.mp4; sourceTree = "<group>"; };
+		F2F346FF232A8F3800520194 /* feixe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = feixe.mp4; sourceTree = "<group>"; };
+		F2F34700232A8F3800520194 /* enrolar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = enrolar.mp4; sourceTree = "<group>"; };
+		F2F34701232A8F3800520194 /* dez.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dez.mp4; sourceTree = "<group>"; };
+		F2F34702232A8F3800520194 /* faca.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = faca.mp4; sourceTree = "<group>"; };
+		F2F34703232A8F3900520194 /* estudar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = estudar.mp4; sourceTree = "<group>"; };
+		F2F34704232A8F3900520194 /* pomar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pomar.mp4; sourceTree = "<group>"; };
+		F2F34705232A8F3900520194 /* berco.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = berco.mp4; sourceTree = "<group>"; };
+		F2F34706232A8F3900520194 /* sono.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sono.mp4; sourceTree = "<group>"; };
+		F2F34707232A8F3900520194 /* vendo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vendo.mp4; sourceTree = "<group>"; };
+		F2F34708232A8F3900520194 /* banheiro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = banheiro.mp4; sourceTree = "<group>"; };
+		F2F34709232A8F3900520194 /* geleia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = geleia.mp4; sourceTree = "<group>"; };
+		F2F3470A232A8F3900520194 /* porta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = porta.mp4; sourceTree = "<group>"; };
+		F2F3470B232A8F3900520194 /* descer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = descer.mp4; sourceTree = "<group>"; };
+		F2F3470C232A8F3900520194 /* lembrete.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lembrete.mp4; sourceTree = "<group>"; };
+		F2F3470D232A8F3900520194 /* furo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = furo.mp4; sourceTree = "<group>"; };
+		F2F3470E232A8F3900520194 /* cabide.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cabide.mp4; sourceTree = "<group>"; };
+		F2F3470F232A8F3900520194 /* eu.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = eu.mp4; sourceTree = "<group>"; };
+		F2F34710232A8F3900520194 /* cedo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cedo.mp4; sourceTree = "<group>"; };
+		F2F34711232A8F3900520194 /* lamina.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lamina.mp4; sourceTree = "<group>"; };
+		F2F34712232A8F3900520194 /* certo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = certo.mp4; sourceTree = "<group>"; };
+		F2F34713232A8F3A00520194 /* livro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = livro.mp4; sourceTree = "<group>"; };
+		F2F34714232A8F3A00520194 /* senhora.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = senhora.mp4; sourceTree = "<group>"; };
+		F2F34715232A8F3A00520194 /* tampa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tampa.mp4; sourceTree = "<group>"; };
+		F2F34716232A8F3A00520194 /* voce.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = voce.mp4; sourceTree = "<group>"; };
+		F2F34717232A8F3A00520194 /* falar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = falar.mp4; sourceTree = "<group>"; };
+		F2F34718232A8F3A00520194 /* idoso.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = idoso.mp4; sourceTree = "<group>"; };
+		F2F34719232A8F3A00520194 /* elas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = elas.mp4; sourceTree = "<group>"; };
+		F2F3471A232A8F3A00520194 /* muro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = muro.mp4; sourceTree = "<group>"; };
+		F2F3471B232A8F3A00520194 /* guerra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guerra.mp4; sourceTree = "<group>"; };
+		F2F3471C232A8F3A00520194 /* baixo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = baixo.mp4; sourceTree = "<group>"; };
+		F2F3471D232A8F3A00520194 /* exame.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = exame.mp4; sourceTree = "<group>"; };
+		F2F3471E232A8F3A00520194 /* cheiro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cheiro.mp4; sourceTree = "<group>"; };
+		F2F3471F232A8F3A00520194 /* errado.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = errado.mp4; sourceTree = "<group>"; };
+		F2F34720232A8F3A00520194 /* trem.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = trem.mp4; sourceTree = "<group>"; };
+		F2F34721232A8F3A00520194 /* duro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = duro.mp4; sourceTree = "<group>"; };
+		F2F34722232A8F3A00520194 /* esperar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = esperar.mp4; sourceTree = "<group>"; };
+		F2F34723232A8F3B00520194 /* vista.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vista.mp4; sourceTree = "<group>"; };
+		F2F34724232A8F3B00520194 /* chato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chato.mp4; sourceTree = "<group>"; };
+		F2F34725232A8F3B00520194 /* pipa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pipa.mp4; sourceTree = "<group>"; };
+		F2FA2DBD232A8C0A0031236E /* CDLessonDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDLessonDAO.swift; sourceTree = "<group>"; };
+		F2FA2DBE232A8C0A0031236E /* CDVideoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDVideoDAO.swift; sourceTree = "<group>"; };
+		F2FA2DC1232A8C1A0031236E /* LibraryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryTableViewController.xib; sourceTree = "<group>"; };
+		F2FA2DC3232A8C3D0031236E /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,29 +401,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8C3AD1D1231F07BF007F94B8 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		8C4F3376231709BA00EC85DE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F2FA2DB7232A89FB0031236E /* Classes */,
+				F2FA2DB6232A89ED0031236E /* XIBs */,
 				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
-				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
-				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
-				6FD44C91231F0081008D99D2 /* LibraryTableViewController.xib */,
-				8C3AD1DA231F116E007F94B8 /* VideoView.xib */,
-				F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */,
-				F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */,
-				6F580B162319BE79006F6680 /* LibraryInfoViewController.xib */,
-				F29B300F231C84C8007546CE /* TreinoCollectionViewCell.xib */,
-				8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */,
-				8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */,
-				8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */,
-				8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +414,153 @@
 		8CA590042320351800B63953 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F2F346F1232A8F3700520194 /* abanar.mp4 */,
+				F2F346E1232A8F3600520194 /* adeus.mp4 */,
+				F2F346F2232A8F3700520194 /* ainda.mp4 */,
+				F2F346FB232A8F3800520194 /* alto.mp4 */,
+				F2F346F9232A8F3800520194 /* amanha.mp4 */,
+				F2F346D1232A8F3500520194 /* amarelo.mp4 */,
+				F2F346F0232A8F3700520194 /* andar.mp4 */,
+				F2F346D4232A8F3600520194 /* assim.mp4 */,
+				F2F346D6232A8F3600520194 /* ate_logo.mp4 */,
+				F2F3471C232A8F3A00520194 /* baixo.mp4 */,
+				F2F346C6232A8F3500520194 /* bala.mp4 */,
+				F2F34708232A8F3900520194 /* banheiro.mp4 */,
+				F2F346C0232A8F3400520194 /* baralho.mp4 */,
+				F2F346F5232A8F3800520194 /* barata.mp4 */,
+				F2F346BC232A8F3400520194 /* barco.mp4 */,
+				F2F346FA232A8F3800520194 /* barganha.mp4 */,
+				F2F346C4232A8F3500520194 /* barulho.mp4 */,
+				F2F346D5232A8F3600520194 /* bela.mp4 */,
+				F2F346AE232A8F3300520194 /* bem_vindo.mp4 */,
+				F2F34705232A8F3900520194 /* berco.mp4 */,
+				F2F346A2232A8F3300520194 /* biblia.mp4 */,
+				F2F34697232A8F3200520194 /* bilhete.mp4 */,
+				F2F346D7232A8F3600520194 /* bom.mp4 */,
+				F2F346D8232A8F3600520194 /* brilho.mp4 */,
+				F2F346AB232A8F3300520194 /* brincar.mp4 */,
+				F2F346A1232A8F3300520194 /* bule.mp4 */,
+				F2F34696232A8F3200520194 /* cabana.mp4 */,
+				F2F3470E232A8F3900520194 /* cabide.mp4 */,
+				F2F346C2232A8F3400520194 /* cadela.mp4 */,
+				F2F346C3232A8F3400520194 /* calha.mp4 */,
+				F2F346EA232A8F3700520194 /* cama.mp4 */,
+				F2F346F3232A8F3800520194 /* camera.mp4 */,
+				F2F346D2232A8F3500520194 /* caneta.mp4 */,
+				F2F346CA232A8F3500520194 /* capim.mp4 */,
+				F2F346B6232A8F3400520194 /* caro.mp4 */,
+				F2F346EB232A8F3700520194 /* carro.mp4 */,
+				F2F34710232A8F3900520194 /* cedo.mp4 */,
+				F2F346E9232A8F3700520194 /* cem.mp4 */,
+				F2F34712232A8F3900520194 /* certo.mp4 */,
+				F2F34724232A8F3B00520194 /* chato.mp4 */,
+				F2F3471E232A8F3A00520194 /* cheiro.mp4 */,
+				F2F346A9232A8F3300520194 /* cinco.mp4 */,
+				F2F346AC232A8F3300520194 /* coisa.mp4 */,
+				F2F346C1232A8F3400520194 /* colina.mp4 */,
+				F2F346C8232A8F3500520194 /* couro.mp4 */,
+				F2F346F6232A8F3800520194 /* cova.mp4 */,
+				F2F346BD232A8F3400520194 /* dado.mp4 */,
+				F2F3469E232A8F3200520194 /* dente.mp4 */,
+				F2F3470B232A8F3900520194 /* descer.mp4 */,
+				F2F34701232A8F3800520194 /* dez.mp4 */,
+				F2F3469D232A8F3200520194 /* dito.mp4 */,
+				F2F346A7232A8F3300520194 /* dois.mp4 */,
+				F2F34721232A8F3A00520194 /* duro.mp4 */,
+				F2F34719232A8F3A00520194 /* elas.mp4 */,
+				F2F346CF232A8F3500520194 /* embate.mp4 */,
+				F2F346EF232A8F3700520194 /* embolo.mp4 */,
+				F2F346A6232A8F3300520194 /* enfase.mp4 */,
+				F2F34700232A8F3800520194 /* enrolar.mp4 */,
+				F2F3471F232A8F3A00520194 /* errado.mp4 */,
+				F2F346B5232A8F3400520194 /* erro.mp4 */,
+				F2F346DA232A8F3600520194 /* escolta.mp4 */,
+				F2F34722232A8F3A00520194 /* esperar.mp4 */,
+				F2F346A5232A8F3300520194 /* estanho.mp4 */,
+				F2F34703232A8F3900520194 /* estudar.mp4 */,
+				F2F3470F232A8F3900520194 /* eu.mp4 */,
+				F2F3471D232A8F3A00520194 /* exame.mp4 */,
+				F2F34702232A8F3800520194 /* faca.mp4 */,
+				F2F34717232A8F3A00520194 /* falar.mp4 */,
+				F2F346FF232A8F3800520194 /* feixe.mp4 */,
+				F2F346B7232A8F3400520194 /* ferro.mp4 */,
+				F2F346B4232A8F3400520194 /* figo.mp4 */,
+				F2F346A4232A8F3300520194 /* foi.mp4 */,
+				F2F346AA232A8F3300520194 /* frio.mp4 */,
+				F2F3470D232A8F3900520194 /* furo.mp4 */,
+				F2F346E3232A8F3600520194 /* gato.mp4 */,
+				F2F34709232A8F3900520194 /* geleia.mp4 */,
+				F2F346E2232A8F3600520194 /* geleira.mp4 */,
+				F2F34698232A8F3200520194 /* genro.mp4 */,
+				F2F346A0232A8F3200520194 /* gordo.mp4 */,
+				F2F3471B232A8F3A00520194 /* guerra.mp4 */,
+				F2F346FE232A8F3800520194 /* gula.mp4 */,
+				F2F346A8232A8F3300520194 /* historia.mp4 */,
+				F2F34718232A8F3A00520194 /* idoso.mp4 */,
+				F2F346C9232A8F3500520194 /* ilha.mp4 */,
+				F2F346DB232A8F3600520194 /* impar.mp4 */,
+				F2F346A3232A8F3300520194 /* janeiro.mp4 */,
+				F2F346FD232A8F3800520194 /* jilo.mp4 */,
+				F2F346F4232A8F3800520194 /* jovem.mp4 */,
+				F2F346BF232A8F3400520194 /* jugo.mp4 */,
+				F2F34711232A8F3900520194 /* lamina.mp4 */,
+				F2F3470C232A8F3900520194 /* lembrete.mp4 */,
+				F2F346C7232A8F3500520194 /* lhama.mp4 */,
+				F2F34713232A8F3A00520194 /* livro.mp4 */,
+				F2F346D0232A8F3500520194 /* loteria.mp4 */,
+				F2F346F8232A8F3800520194 /* macho.mp4 */,
+				F2F346E0232A8F3600520194 /* medo.mp4 */,
+				F2F346BE232A8F3400520194 /* milho.mp4 */,
+				F2F3471A232A8F3A00520194 /* muro.mp4 */,
+				F2F346EC232A8F3700520194 /* nacional.mp4 */,
+				F2F34699232A8F3200520194 /* negar.mp4 */,
+				F2F346AF232A8F3300520194 /* nos.mp4 */,
+				F2F346B0232A8F3300520194 /* nove.mp4 */,
+				F2F346D9232A8F3600520194 /* oito.mp4 */,
+				F2F346CE232A8F3500520194 /* ola.mp4 */,
+				F2F3469A232A8F3200520194 /* ombro.mp4 */,
+				F2F34695232A8F3200520194 /* onda.mp4 */,
+				F2F346B8232A8F3400520194 /* onibus.mp4 */,
+				F2F3469F232A8F3200520194 /* opera.mp4 */,
+				F2F34693232A8F3200520194 /* otimo.mp4 */,
+				F2F346E4232A8F3700520194 /* parada.mp4 */,
+				F2F346B1232A8F3300520194 /* passo.mp4 */,
+				F2F346DC232A8F3600520194 /* pessimo.mp4 */,
+				F2F34725232A8F3B00520194 /* pipa.mp4 */,
+				F2F34704232A8F3900520194 /* pomar.mp4 */,
+				F2F346B2232A8F3300520194 /* pomba.mp4 */,
+				F2F3470A232A8F3900520194 /* porta.mp4 */,
+				F2F3469B232A8F3200520194 /* prato.mp4 */,
+				F2F346AD232A8F3300520194 /* quarto.mp4 */,
+				F2F346BB232A8F3400520194 /* quatro.mp4 */,
+				F2F346ED232A8F3700520194 /* queijo.mp4 */,
+				F2F346B9232A8F3400520194 /* quente.mp4 */,
+				F2F346D3232A8F3600520194 /* rato.mp4 */,
+				F2F346DD232A8F3600520194 /* razao.mp4 */,
+				F2F346CC232A8F3500520194 /* rede.mp4 */,
+				F2F346E8232A8F3700520194 /* rio.mp4 */,
+				F2F346CB232A8F3500520194 /* ruim.mp4 */,
+				F2F346EE232A8F3700520194 /* sala.mp4 */,
+				F2F346DE232A8F3600520194 /* seis.mp4 */,
+				F2F34714232A8F3A00520194 /* senhora.mp4 */,
+				F2F346E6232A8F3700520194 /* sete.mp4 */,
+				F2F346E5232A8F3700520194 /* sofa.mp4 */,
+				F2F346BA232A8F3400520194 /* sonda.mp4 */,
+				F2F34706232A8F3900520194 /* sono.mp4 */,
+				F2F34715232A8F3A00520194 /* tampa.mp4 */,
+				F2F346DF232A8F3600520194 /* teste.mp4 */,
+				F2F346B3232A8F3300520194 /* tinta.mp4 */,
+				F2F346F7232A8F3800520194 /* tipo.mp4 */,
+				F2F346C5232A8F3500520194 /* tomar.mp4 */,
+				F2F34720232A8F3A00520194 /* trem.mp4 */,
+				F2F346CD232A8F3500520194 /* tres.mp4 */,
+				F2F3469C232A8F3200520194 /* um.mp4 */,
+				F2F346E7232A8F3700520194 /* velho.mp4 */,
+				F2F34707232A8F3900520194 /* vendo.mp4 */,
+				F2F34723232A8F3B00520194 /* vista.mp4 */,
+				F2F34716232A8F3A00520194 /* voce.mp4 */,
+				F2F346FC232A8F3800520194 /* vulto.mp4 */,
+				F2F34694232A8F3200520194 /* zero.mp4 */,
 				8CA590022320348600B63953 /* IMG_0711.TRIM.MOV */,
 			);
 			path = Resources;
@@ -144,11 +569,9 @@
 		F215F1F22315BB1300D7334B = {
 			isa = PBXGroup;
 			children = (
-				6F580B1D231DADFD006F6680 /* Media.xcassets */,
 				F215F1FD2315BB1300D7334B /* AurumFaciem */,
+				F24D8B8A232A96060053068F /* Media.xcassets */,
 				F215F1FC2315BB1300D7334B /* Products */,
-				8C3AD1D1231F07BF007F94B8 /* Recovered References */,
-				F28FF5A723203064008DEA92 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,9 +591,9 @@
 				8C4F3376231709BA00EC85DE /* View */,
 				F2A1F3B2231A98470000B94B /* Controller */,
 				F2A1F3B3231A98500000B94B /* SubClasses */,
+				8CA590042320351800B63953 /* Resources */,
 				F215F20D2315BB1600D7334B /* Info.plist */,
 				F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */,
-				8CA590042320351800B63953 /* Resources */,
 			);
 			path = AurumFaciem;
 			sourceTree = "<group>";
@@ -178,23 +601,11 @@
 		F2704E3A231EA56D00D080B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F2D879B42321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift */,
-				F2D879B52321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift */,
-				F2D879B62321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift */,
-				F2D879B72321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift */,
-				6F3A781D2326C021007096BB /* LessonJSON.json */,
-				6F3A781F2326C0E8007096BB /* VideoJSON.json */,
-				6F3A78212326C15D007096BB /* LessonJSONHandler.swift */,
-				6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */,
+				F2FA2DBA232A8AD40031236E /* Data Analysis Objects */,
+				F2FA2DB9232A8ABF0031236E /* Data Managers */,
+				F2FA2DB8232A8A330031236E /* Entities */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F28FF5A723203064008DEA92 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		F2A1F3B2231A98470000B94B /* Controller */ = {
@@ -211,19 +622,91 @@
 		F2A1F3B3231A98500000B94B /* SubClasses */ = {
 			isa = PBXGroup;
 			children = (
-				F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */,
-				F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */,
-				F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */,
-				F2DFC2622321811D00D80D30 /* VideoDAO.swift */,
-				6F5996DE2322DD040048F13F /* BibliotecaTableViewCell.swift */,
-				6F5996DF2322DD040048F13F /* LibraryInfoViewController.xib */,
-				6F5996E02322DD040048F13F /* TreinoCollectionViewCell.swift */,
-				6F5996E12322DD040048F13F /* VideoView.swift */,
-				F2DFC2642321A1C200D80D30 /* LessonDAO.swift */,
-				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
-				F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */,
+				F2FA2DC3232A8C3D0031236E /* AppColor.swift */,
+				F2FA2DC6232A8C580031236E /* Data Sources */,
+				F2FA2DC5232A8C450031236E /* Delegates */,
 			);
 			path = SubClasses;
+			sourceTree = "<group>";
+		};
+		F2FA2DB6232A89ED0031236E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F2FA2DC1232A8C1A0031236E /* LibraryTableViewController.xib */,
+				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
+				8C3AD1DA231F116E007F94B8 /* VideoView.xib */,
+				F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */,
+				F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */,
+				F2815AEB23295EA6004E759A /* TreinoCollectionViewCell.xib */,
+				F2815AF023295EC3004E759A /* LibraryInfoViewController.xib */,
+				8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */,
+				8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		F2FA2DB7232A89FB0031236E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F2815AED23295EC2004E759A /* TreinoCollectionViewCell.swift */,
+				F2815AEE23295EC2004E759A /* VideoView.swift */,
+				8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */,
+				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
+				F2815AEF23295EC2004E759A /* BibliotecaTableViewCell.swift */,
+				8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */,
+				8C0A242E2322CBC0002D677C /* ConfettiParticles.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F2FA2DB8232A8A330031236E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F2815ADD23289A5D004E759A /* CDVideo+CoreDataClass.swift */,
+				F2815ADE23289A5D004E759A /* CDVideo+CoreDataProperties.swift */,
+				F2815ADF23289A5D004E759A /* CDLesson+CoreDataClass.swift */,
+				F2815AE023289A5D004E759A /* CDLesson+CoreDataProperties.swift */,
+				F2815AF523296354004E759A /* CDCategory+CoreDataClass.swift */,
+				F2815AF623296354004E759A /* CDCategory+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F2FA2DB9232A8ABF0031236E /* Data Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A78212326C15D007096BB /* LessonJSONHandler.swift */,
+				6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */,
+				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
+			);
+			path = "Data Managers";
+			sourceTree = "<group>";
+		};
+		F2FA2DBA232A8AD40031236E /* Data Analysis Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F2FA2DBD232A8C0A0031236E /* CDLessonDAO.swift */,
+				F2FA2DBE232A8C0A0031236E /* CDVideoDAO.swift */,
+			);
+			path = "Data Analysis Objects";
+			sourceTree = "<group>";
+		};
+		F2FA2DC5232A8C450031236E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F2704E38231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift */,
+				F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F2FA2DC6232A8C580031236E /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */,
+				F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */,
+			);
+			path = "Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,20 +769,165 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F34737232A8F3B00520194 /* foi.mp4 in Resources */,
+				F2F347B3232A8F3B00520194 /* trem.mp4 in Resources */,
+				F2F34765232A8F3B00520194 /* caneta.mp4 in Resources */,
+				F2F34753232A8F3B00520194 /* baralho.mp4 in Resources */,
+				F2F34740232A8F3B00520194 /* quarto.mp4 in Resources */,
+				F2F3472C232A8F3B00520194 /* negar.mp4 in Resources */,
+				F2F3479B232A8F3B00520194 /* banheiro.mp4 in Resources */,
+				F2F34769232A8F3B00520194 /* ate_logo.mp4 in Resources */,
+				F2F34799232A8F3B00520194 /* sono.mp4 in Resources */,
+				F2F3477F232A8F3B00520194 /* nacional.mp4 in Resources */,
+				F24D8B8B232A96060053068F /* Media.xcassets in Resources */,
+				F2F3477C232A8F3B00520194 /* cem.mp4 in Resources */,
 				8CA590032320348600B63953 /* IMG_0711.TRIM.MOV in Resources */,
-				6F5996E32322DD040048F13F /* LibraryInfoViewController.xib in Resources */,
+				F2F3472B232A8F3B00520194 /* genro.mp4 in Resources */,
+				F2F34778232A8F3B00520194 /* sofa.mp4 in Resources */,
+				F2F3472D232A8F3B00520194 /* ombro.mp4 in Resources */,
+				F2F34794232A8F3B00520194 /* dez.mp4 in Resources */,
+				F2F34735232A8F3B00520194 /* biblia.mp4 in Resources */,
+				F2815AF423295EC3004E759A /* LibraryInfoViewController.xib in Resources */,
+				F2F34784232A8F3B00520194 /* abanar.mp4 in Resources */,
+				F2F34771232A8F3B00520194 /* seis.mp4 in Resources */,
+				F2F34796232A8F3B00520194 /* estudar.mp4 in Resources */,
+				F2F3478E232A8F3B00520194 /* alto.mp4 in Resources */,
+				F2F34795232A8F3B00520194 /* faca.mp4 in Resources */,
+				F2F3473D232A8F3B00520194 /* frio.mp4 in Resources */,
+				F2F3475C232A8F3B00520194 /* ilha.mp4 in Resources */,
+				F2F3474F232A8F3B00520194 /* barco.mp4 in Resources */,
+				F2F3478F232A8F3B00520194 /* vulto.mp4 in Resources */,
+				F2F3474D232A8F3B00520194 /* sonda.mp4 in Resources */,
+				F2F34777232A8F3B00520194 /* parada.mp4 in Resources */,
+				F2F347AC232A8F3B00520194 /* elas.mp4 in Resources */,
+				F2F34726232A8F3B00520194 /* otimo.mp4 in Resources */,
+				F2F347B8232A8F3B00520194 /* pipa.mp4 in Resources */,
+				F2F347A4232A8F3B00520194 /* lamina.mp4 in Resources */,
+				F2F34790232A8F3B00520194 /* jilo.mp4 in Resources */,
+				F2F3475D232A8F3B00520194 /* capim.mp4 in Resources */,
+				F2F34782232A8F3B00520194 /* embolo.mp4 in Resources */,
+				F2F34732232A8F3B00520194 /* opera.mp4 in Resources */,
+				F2F3474C232A8F3B00520194 /* quente.mp4 in Resources */,
+				F2F34734232A8F3B00520194 /* bule.mp4 in Resources */,
+				F2F347B4232A8F3B00520194 /* duro.mp4 in Resources */,
+				F2F34747232A8F3B00520194 /* figo.mp4 in Resources */,
+				F2F3477B232A8F3B00520194 /* rio.mp4 in Resources */,
+				F2F34758232A8F3B00520194 /* tomar.mp4 in Resources */,
+				F2F3473A232A8F3B00520194 /* dois.mp4 in Resources */,
+				F2F3478D232A8F3B00520194 /* barganha.mp4 in Resources */,
+				F2815AEC23295EA6004E759A /* TreinoCollectionViewCell.xib in Resources */,
+				F2F34763232A8F3B00520194 /* loteria.mp4 in Resources */,
 				8C3AD1DB231F116E007F94B8 /* VideoView.xib in Resources */,
+				F2F3475A232A8F3B00520194 /* lhama.mp4 in Resources */,
+				F2F34745232A8F3B00520194 /* pomba.mp4 in Resources */,
+				F2F34741232A8F3B00520194 /* bem_vindo.mp4 in Resources */,
+				F2F347A3232A8F3B00520194 /* cedo.mp4 in Resources */,
+				F2F34759232A8F3B00520194 /* bala.mp4 in Resources */,
+				F2F34733232A8F3B00520194 /* gordo.mp4 in Resources */,
+				F2F34762232A8F3B00520194 /* embate.mp4 in Resources */,
+				F2F3472A232A8F3B00520194 /* bilhete.mp4 in Resources */,
+				F2F347AE232A8F3B00520194 /* guerra.mp4 in Resources */,
+				F2F347A9232A8F3B00520194 /* voce.mp4 in Resources */,
+				F2F34750232A8F3B00520194 /* dado.mp4 in Resources */,
+				F2F34781232A8F3B00520194 /* sala.mp4 in Resources */,
 				F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */,
+				F2F34744232A8F3B00520194 /* passo.mp4 in Resources */,
+				F2F34743232A8F3B00520194 /* nove.mp4 in Resources */,
+				F2F3474B232A8F3B00520194 /* onibus.mp4 in Resources */,
+				F2F3479A232A8F3B00520194 /* vendo.mp4 in Resources */,
+				F2F347A6232A8F3B00520194 /* livro.mp4 in Resources */,
+				F2F3473B232A8F3B00520194 /* historia.mp4 in Resources */,
+				F2F3473E232A8F3B00520194 /* brincar.mp4 in Resources */,
 				6FD44C97231F0DCD008D99D2 /* InformationTableViewCell.xib in Resources */,
-				6F3A78202326C0E8007096BB /* VideoJSON.json in Resources */,
-				6FD44C93231F0081008D99D2 /* LibraryTableViewController.xib in Resources */,
-				6F580B1E231DADFD006F6680 /* Media.xcassets in Resources */,
+				F2F34738232A8F3B00520194 /* estanho.mp4 in Resources */,
+				F2F34730232A8F3B00520194 /* dito.mp4 in Resources */,
+				F2F3479D232A8F3B00520194 /* porta.mp4 in Resources */,
+				F2F347B6232A8F3B00520194 /* vista.mp4 in Resources */,
+				F2F3479F232A8F3B00520194 /* lembrete.mp4 in Resources */,
+				F2F34797232A8F3B00520194 /* pomar.mp4 in Resources */,
+				F2F34749232A8F3B00520194 /* caro.mp4 in Resources */,
+				F2F34786232A8F3B00520194 /* camera.mp4 in Resources */,
+				F2F3472E232A8F3B00520194 /* prato.mp4 in Resources */,
+				F2F3476A232A8F3B00520194 /* bom.mp4 in Resources */,
+				F2F347B1232A8F3B00520194 /* cheiro.mp4 in Resources */,
+				F2F347AF232A8F3B00520194 /* baixo.mp4 in Resources */,
+				F2F34770232A8F3B00520194 /* razao.mp4 in Resources */,
+				F2F34788232A8F3B00520194 /* barata.mp4 in Resources */,
+				F2F3477D232A8F3B00520194 /* cama.mp4 in Resources */,
+				F2F3478A232A8F3B00520194 /* tipo.mp4 in Resources */,
+				F2F3474E232A8F3B00520194 /* quatro.mp4 in Resources */,
+				F2F3475F232A8F3B00520194 /* rede.mp4 in Resources */,
 				8C3AD1D9231F0C20007F94B8 /* TrialViewController.xib in Resources */,
+				F2F34760232A8F3B00520194 /* tres.mp4 in Resources */,
+				F2F34798232A8F3B00520194 /* berco.mp4 in Resources */,
+				F2F34787232A8F3B00520194 /* jovem.mp4 in Resources */,
+				F2F34767232A8F3B00520194 /* assim.mp4 in Resources */,
+				F2F34755232A8F3B00520194 /* cadela.mp4 in Resources */,
+				F2F347B5232A8F3B00520194 /* esperar.mp4 in Resources */,
+				F2F34727232A8F3B00520194 /* zero.mp4 in Resources */,
+				F2F34772232A8F3B00520194 /* teste.mp4 in Resources */,
+				F2F34774232A8F3B00520194 /* adeus.mp4 in Resources */,
+				F2F34793232A8F3B00520194 /* enrolar.mp4 in Resources */,
+				F2F34731232A8F3B00520194 /* dente.mp4 in Resources */,
+				F2F347A2232A8F3B00520194 /* eu.mp4 in Resources */,
 				F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */,
-				6F3A781E2326C021007096BB /* LessonJSON.json in Resources */,
-				F29B3011231C84C8007546CE /* TreinoCollectionViewCell.xib in Resources */,
+				F2F347A0232A8F3B00520194 /* furo.mp4 in Resources */,
+				F2F34751232A8F3B00520194 /* milho.mp4 in Resources */,
 				F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */,
+				F2F34780232A8F3B00520194 /* queijo.mp4 in Resources */,
+				F2F3473F232A8F3B00520194 /* coisa.mp4 in Resources */,
+				F2F34792232A8F3B00520194 /* feixe.mp4 in Resources */,
+				F2F34775232A8F3B00520194 /* geleira.mp4 in Resources */,
+				F2F34746232A8F3B00520194 /* tinta.mp4 in Resources */,
 				8C8A2EBF231DA9200043FD87 /* ProgressBar.xib in Resources */,
+				F2F34754232A8F3B00520194 /* colina.mp4 in Resources */,
+				F2F347A5232A8F3B00520194 /* certo.mp4 in Resources */,
+				F2F34752232A8F3B00520194 /* jugo.mp4 in Resources */,
+				F2F34728232A8F3B00520194 /* onda.mp4 in Resources */,
+				F2F34764232A8F3B00520194 /* amarelo.mp4 in Resources */,
+				F2F34791232A8F3B00520194 /* gula.mp4 in Resources */,
+				F2F3475B232A8F3B00520194 /* couro.mp4 in Resources */,
+				F2F3476E232A8F3B00520194 /* impar.mp4 in Resources */,
+				F2F34756232A8F3B00520194 /* calha.mp4 in Resources */,
+				F2F3475E232A8F3B00520194 /* ruim.mp4 in Resources */,
+				F2F34748232A8F3B00520194 /* erro.mp4 in Resources */,
+				F2F3476F232A8F3B00520194 /* pessimo.mp4 in Resources */,
+				F2F347B2232A8F3B00520194 /* errado.mp4 in Resources */,
+				F2F3476D232A8F3B00520194 /* escolta.mp4 in Resources */,
+				F2F3479E232A8F3B00520194 /* descer.mp4 in Resources */,
+				F2F34766232A8F3B00520194 /* rato.mp4 in Resources */,
+				F2F347A7232A8F3B00520194 /* senhora.mp4 in Resources */,
+				F2F34757232A8F3B00520194 /* barulho.mp4 in Resources */,
+				F2F3474A232A8F3B00520194 /* ferro.mp4 in Resources */,
+				F2F34739232A8F3B00520194 /* enfase.mp4 in Resources */,
+				F2F34783232A8F3B00520194 /* andar.mp4 in Resources */,
+				F2F3478B232A8F3B00520194 /* macho.mp4 in Resources */,
+				F2F3472F232A8F3B00520194 /* um.mp4 in Resources */,
+				F2F34789232A8F3B00520194 /* cova.mp4 in Resources */,
+				F2F347AD232A8F3B00520194 /* muro.mp4 in Resources */,
+				F2F347B7232A8F3B00520194 /* chato.mp4 in Resources */,
+				F2F34776232A8F3B00520194 /* gato.mp4 in Resources */,
+				F2F3479C232A8F3B00520194 /* geleia.mp4 in Resources */,
+				F2F3476C232A8F3B00520194 /* oito.mp4 in Resources */,
+				F2F347B0232A8F3B00520194 /* exame.mp4 in Resources */,
+				F2F347A1232A8F3B00520194 /* cabide.mp4 in Resources */,
+				F2F34761232A8F3B00520194 /* ola.mp4 in Resources */,
+				F2F3476B232A8F3B00520194 /* brilho.mp4 in Resources */,
+				F2F347AA232A8F3B00520194 /* falar.mp4 in Resources */,
+				F2F34779232A8F3B00520194 /* sete.mp4 in Resources */,
+				F2F34742232A8F3B00520194 /* nos.mp4 in Resources */,
+				F2F3473C232A8F3B00520194 /* cinco.mp4 in Resources */,
+				F2FA2DC2232A8C1A0031236E /* LibraryTableViewController.xib in Resources */,
+				F2F347AB232A8F3B00520194 /* idoso.mp4 in Resources */,
+				F2F34785232A8F3B00520194 /* ainda.mp4 in Resources */,
+				F2F347A8232A8F3B00520194 /* tampa.mp4 in Resources */,
+				F2F34736232A8F3B00520194 /* janeiro.mp4 in Resources */,
+				F2F3477E232A8F3B00520194 /* carro.mp4 in Resources */,
+				F2F34729232A8F3B00520194 /* cabana.mp4 in Resources */,
+				F2F3477A232A8F3B00520194 /* velho.mp4 in Resources */,
+				F2F34773232A8F3B00520194 /* medo.mp4 in Resources */,
+				F2F3478C232A8F3B00520194 /* amanha.mp4 in Resources */,
+				F2F34768232A8F3B00520194 /* bela.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,33 +959,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FA2DBB232A8B630031236E /* LessonJSONHandler.swift in Sources */,
 				6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */,
+				F2815AE323289A5D004E759A /* CDVideo+CoreDataClass.swift in Sources */,
 				6F580B172319BE79006F6680 /* LibraryInfoViewController.swift in Sources */,
 				6F5996E72322E8F90048F13F /* TrialViewController.swift in Sources */,
-				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
 				6FD44C96231F0DCD008D99D2 /* InformationTableViewCell.swift in Sources */,
+				F2FA2DC0232A8C0A0031236E /* CDVideoDAO.swift in Sources */,
 				F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */,
-				F2D879BA2321A5AB00CE9E7B /* CDLesson+CoreDataClass.swift in Sources */,
 				F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */,
-				6F3A78222326C15D007096BB /* LessonJSONHandler.swift in Sources */,
 				8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */,
-				F215F2072315BB1400D7334B /* AurumFaciem.xcdatamodeld in Sources */,
+				F2815AF123295EC3004E759A /* TreinoCollectionViewCell.swift in Sources */,
+				F2FA2DBF232A8C0A0031236E /* CDLessonDAO.swift in Sources */,
+				F2815AF223295EC3004E759A /* VideoView.swift in Sources */,
 				F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */,
 				F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */,
-				F2D879B82321A5AB00CE9E7B /* CDVideo+CoreDataClass.swift in Sources */,
-				F2DFC2652321A1C200D80D30 /* LessonDAO.swift in Sources */,
-				6F3A78242326C5F0007096BB /* VideoJSONHandler.swift in Sources */,
-				6F5996E52322DD040048F13F /* VideoView.swift in Sources */,
+				F2815AE623289A5D004E759A /* CDLesson+CoreDataProperties.swift in Sources */,
 				F2EE81BC232044930072B99D /* PersistencyManager.swift in Sources */,
-				F28D142D23203A0300FF3B8A /* LibraryInfoViewController.swift in Sources */,
-				F2D879BB2321A5AB00CE9E7B /* CDLesson+CoreDataProperties.swift in Sources */,
-				6F5996E42322DD040048F13F /* TreinoCollectionViewCell.swift in Sources */,
+				F2815AF823296354004E759A /* CDCategory+CoreDataProperties.swift in Sources */,
+				F2FA2DC4232A8C3D0031236E /* AppColor.swift in Sources */,
 				8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */,
-				6F5996E22322DD040048F13F /* BibliotecaTableViewCell.swift in Sources */,
-				F2DFC2632321811D00D80D30 /* VideoDAO.swift in Sources */,
+				F2815AF323295EC3004E759A /* BibliotecaTableViewCell.swift in Sources */,
+				F2815AF723296354004E759A /* CDCategory+CoreDataClass.swift in Sources */,
+				F2815AE523289A5D004E759A /* CDLesson+CoreDataClass.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
+				F2FA2DBC232A8B630031236E /* VideoJSONHandler.swift in Sources */,
+				F2815AE423289A5D004E759A /* CDVideo+CoreDataProperties.swift in Sources */,
 				F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */,
-				F2D879B92321A5AB00CE9E7B /* CDVideo+CoreDataProperties.swift in Sources */,
+				8C0A242F2322CBC0002D677C /* ConfettiParticles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,762 @@
+[
+    {
+    "category": "n",
+    "path": "abanar",
+    "word": "Abanar"
+},
+{
+    "category": "Saudações",
+    "path": "adeus",
+    "word": "Adeus"
+},
+{
+    "category": "in",
+    "path": "ainda",
+    "word": "Ainda"
+},
+{
+    "category": "Descritivos",
+    "path": "alto",
+    "word": "Alto"
+},
+{
+    "category": "a, ã, â",
+    "path": "amanha",
+    "word": "Amanhã"
+},
+{
+    "category": "r",
+    "path": "amarelo",
+    "word": "Amarelo"
+},
+{
+    "category": "Transporte",
+    "path": "andar",
+    "word": "Andar"
+},
+{
+    "category": "in",
+    "path": "assim",
+    "word": "Assim"
+},
+{
+    "category": "Saudações",
+    "path": "ate_logo",
+    "word": "Até Logo"
+},
+{
+    "category": "Descritivos",
+    "path": "baixo",
+    "word": "Baixo"
+},
+{
+    "category": "a, ã, â",
+    "path": "bala",
+    "word": "Bala"
+},
+{
+    "category": "nh",
+    "path": "banheiro",
+    "word": "Banheiro"
+},
+{
+    "category": "r",
+    "path": "baralho",
+    "word": "Baralho"
+},
+{
+    "category": "r",
+    "path": "barata",
+    "word": "Barata"
+},
+{
+    "category": "Transporte",
+    "path": "barco",
+    "word": "Barco"
+},
+{
+    "category": "nh",
+    "path": "barganha",
+    "word": "Barganha"
+},
+{
+    "category": "r",
+    "path": "barulho",
+    "word": "Barulho"
+},
+{
+    "category": "e, é, ê",
+    "path": "bela",
+    "word": "Bela"
+},
+{
+    "category": "Saudações",
+    "path": "bem_vindo",
+    "word": "Bem-vindo"
+},
+{
+    "category": "b",
+    "path": "berco",
+    "word": "Berço"
+},
+{
+    "category": "i",
+    "path": "biblia",
+    "word": "Bíblia"
+},
+{
+    "category": "e, é, ê",
+    "path": "bilhete",
+    "word": "Bilhete"
+},
+{
+    "category": "Estados",
+    "path": "bom",
+    "word": "Bom"
+},
+{
+    "category": "i",
+    "path": "brilho",
+    "word": "Brilho"
+},
+{
+    "category": "i",
+    "path": "brincar",
+    "word": "Brincar"
+},
+{
+    "category": "b",
+    "path": "bule",
+    "word": "Bule"
+},
+{
+    "category": "b",
+    "path": "cabana",
+    "word": "Cabana"
+},
+{
+    "category": "b",
+    "path": "cabide",
+    "word": "Cabide"
+},
+{
+    "category": "l",
+    "path": "cadela",
+    "word": "Cadela"
+},
+{
+    "category": "lh",
+    "path": "calha",
+    "word": "Calha"
+},
+{
+    "category": "m",
+    "path": "cama",
+    "word": "Cama"
+},
+{
+    "category": "a, ã, â",
+    "path": "camera",
+    "word": "Câmera"
+},
+{
+    "category": "n",
+    "path": "caneta",
+    "word": "Caneta"
+},
+{
+    "category": "p",
+    "path": "capim",
+    "word": "Capim"
+},
+{
+    "category": "k",
+    "path": "caro",
+    "word": "Caro"
+},
+{
+    "category": "k",
+    "path": "carro",
+    "word": "Carro"
+},
+{
+    "category": "Transporte",
+    "path": "carro",
+    "word": "Carro"
+},
+{
+    "category": "s",
+    "path": "cedo",
+    "word": "Cedo"
+},
+{
+    "category": "Numerais",
+    "path": "cem",
+    "word": "Cem"
+},
+{
+    "category": "Conceitos",
+    "path": "certo",
+    "word": "Certo"
+},
+{
+    "category": "ch",
+    "path": "chato",
+    "word": "Chato"
+},
+{
+    "category": "ch",
+    "path": "cheiro",
+    "word": "Cheiro"
+},
+{
+    "category": "Numerais",
+    "path": "cinco",
+    "word": "Cinco"
+},
+{
+    "category": "z",
+    "path": "coisas",
+    "word": "Coisa"
+},
+{
+    "category": "l",
+    "path": "colina",
+    "word": "Colina"
+},
+{
+    "category": "k",
+    "path": "couro",
+    "word": "Couro"
+},
+{
+    "category": "v",
+    "path": "cova",
+    "word": "Cova"
+},
+{
+    "category": "d",
+    "path": "dado",
+    "word": "Dado"
+},
+{
+    "category": "d",
+    "path": "dente",
+    "word": "Dente"
+},
+{
+    "category": "s",
+    "path": "descer",
+    "word": "Descer"
+},
+{
+    "category": "Numerais",
+    "path": "dez",
+    "word": "Dez"
+},
+{
+    "category": "d",
+    "path": "dito",
+    "word": "Dito"
+},
+{
+    "category": "Numerais",
+    "path": "dois",
+    "word": "Dois"
+},
+{
+    "category": "d",
+    "path": "duro",
+    "word": "Duro"
+},
+{
+    "category": "Promomes",
+    "path": "elas",
+    "word": "Elas"
+},
+{
+    "category": "en",
+    "path": "embate",
+    "word": "Embate"
+},
+{
+    "category": "en",
+    "path": "embolo",
+    "word": "Embolo"
+},
+{
+    "category": "en",
+    "path": "enfase",
+    "word": "Ênfase"
+},
+{
+    "category": "en",
+    "path": "enrolar",
+    "word": "Enrolar"
+},
+{
+    "category": "Conceitos",
+    "path": "errado",
+    "word": "Errado"
+},
+{
+    "category": "rr",
+    "path": "erro",
+    "word": "Erro"
+},
+{
+    "category": "ó, ô",
+    "path": "escolta",
+    "word": "Escolta"
+},
+{
+    "category": "e, é, ê",
+    "path": "espera",
+    "word": "Esperar"
+},
+{
+    "category": "nh",
+    "path": "estanho",
+    "word": "Estanho"
+},
+{
+    "category": "e, é, ê",
+    "path": "estudar",
+    "word": "Estudar"
+},
+{
+    "category": "Promomes",
+    "path": "eu",
+    "word": "Eu"
+},
+{
+    "category": "z",
+    "path": "exame",
+    "word": "Exame"
+},
+{
+    "category": "f",
+    "path": "faca",
+    "word": "Faca"
+},
+{
+    "category": "e, é, ê",
+    "path": "falar",
+    "word": "Falar"
+},
+{
+    "category": "ch",
+    "path": "feixe",
+    "word": "Feixe"
+},
+{
+    "category": "f",
+    "path": "ferro",
+    "word": "Ferro"
+},
+{
+    "category": "f",
+    "path": "figo",
+    "word": "Figo"
+},
+{
+    "category": "f",
+    "path": "foi",
+    "word": "Foi"
+},
+{
+    "category": "Conceitos",
+    "path": "frio",
+    "word": "Frio"
+},
+{
+    "category": "f",
+    "path": "furo",
+    "word": "Furo"
+},
+{
+    "category": "g",
+    "path": "gato",
+    "word": "Gato"
+},
+{
+    "category": "j",
+    "path": "geleia",
+    "word": "Geleia"
+},
+{
+    "category": "l",
+    "path": "geleira",
+    "word": "Geleira"
+},
+{
+    "category": "j",
+    "path": "genro",
+    "word": "Genro"
+},
+{
+    "category": "g",
+    "path": "gordo",
+    "word": "Gordo"
+},
+{
+    "category": "g",
+    "path": "guerra",
+    "word": "Guerra"
+},
+{
+    "category": "g",
+    "path": "gula",
+    "word": "Gula"
+},
+{
+    "category": "ó, ô",
+    "path": "historia",
+    "word": "História"
+},
+{
+    "category": "Descritivos",
+    "path": "idoso",
+    "word": "Idoso"
+},
+{
+    "category": "lh",
+    "path": "ilha",
+    "word": "Ilha"
+},
+{
+    "category": "in",
+    "path": "impar",
+    "word": "Ímpar"
+},
+{
+    "category": "n",
+    "path": "janeiro",
+    "word": "Janeiro"
+},
+{
+    "category": "j",
+    "path": "jilo",
+    "word": "Jiló"
+},
+{
+    "category": "Descritivos",
+    "path": "jovem",
+    "word": "Jovem"
+},
+{
+    "category": "j",
+    "path": "jugo",
+    "word": "Jugo"
+},
+{
+    "category": "a, ã, â",
+    "path": "lamina",
+    "word": "Lâmina"
+},
+{
+    "category": "e, é, ê",
+    "path": "lembrete",
+    "word": "Lembrete"
+},
+{
+    "category": "lh",
+    "path": "lhama",
+    "word": "Lhama"
+},
+{
+    "category": "i",
+    "path": "livro",
+    "word": "Livro"
+},
+{
+    "category": "l",
+    "path": "loteria",
+    "word": "Loteria"
+},
+{
+    "category": "ch",
+    "path": "macho",
+    "word": "Macho"
+},
+{
+    "category": "m",
+    "path": "medo",
+    "word": "Medo"
+},
+{
+    "category": "m",
+    "path": "milho",
+    "word": "Milho"
+},
+{
+    "category": "m",
+    "path": "muro",
+    "word": "Muro"
+},
+{
+    "category": "n",
+    "path": "nacional",
+    "word": "Nacional"
+},
+{
+    "category": "e, é, ê",
+    "path": "negar",
+    "word": "Negar"
+},
+{
+    "category": "Promomes",
+    "path": "nos",
+    "word": "Nós"
+},
+{
+    "category": "Numerais",
+    "path": "nove",
+    "word": "Nove"
+},
+{
+    "category": "Numerais",
+    "path": "oito",
+    "word": "Oito"
+},
+{
+    "category": "Saudações",
+    "path": "ola",
+    "word": "Olá"
+},
+{
+    "category": "on",
+    "path": "ombro",
+    "word": "Ombro"
+},
+{
+    "category": "on",
+    "path": "onda",
+    "word": "Onda"
+},
+{
+    "category": "ó, ô",
+    "path": "onibus",
+    "word": "Ônibus"
+},
+{
+    "category": "Transporte",
+    "path": "onibus",
+    "word": "Ônibus"
+},
+{
+    "category": "ó, ô",
+    "path": "opera",
+    "word": "Ópera"
+},
+{
+    "category": "Estados",
+    "path": "otimo",
+    "word": "Ótimo"
+},
+{
+    "category": "a, ã, â",
+    "path": "parada",
+    "word": "Parada"
+},
+{
+    "category": "s",
+    "path": "passo",
+    "word": "Passo"
+},
+{
+    "category": "Estados",
+    "path": "pessimo",
+    "word": "Péssimo"
+},
+{
+    "category": "p",
+    "path": "pipa",
+    "word": "Pipa"
+},
+{
+    "category": "ó, ô",
+    "path": "pamar",
+    "word": "Pomar"
+},
+{
+    "category": "on",
+    "path": "pomba",
+    "word": "Pomba"
+},
+{
+    "category": "ó, ô",
+    "path": "porta",
+    "word": "Porta"
+},
+{
+    "category": "p",
+    "path": "porta",
+    "word": "Porta"
+},
+{
+    "category": "p",
+    "path": "prato",
+    "word": "Prato"
+},
+{
+    "category": "k",
+    "path": "quarto",
+    "word": "Quarto"
+},
+{
+    "category": "Numerais",
+    "path": "quatro",
+    "word": "Quatro"
+},
+{
+    "category": "k",
+    "path": "queijo",
+    "word": "Queijo"
+},
+{
+    "category": "Conceitos",
+    "path": "quente",
+    "word": "Quente"
+},
+{
+    "category": "rr",
+    "path": "rato",
+    "word": "Rato"
+},
+{
+    "category": "z",
+    "path": "razao",
+    "word": "Razão"
+},
+{
+    "category": "rr",
+    "path": "rede",
+    "word": "Rede"
+},
+{
+    "category": "rr",
+    "path": "rio",
+    "word": "Rio"
+},
+{
+    "category": "Estados",
+    "path": "ruim",
+    "word": "Ruim"
+},
+{
+    "category": "a, ã, â",
+    "path": "sala",
+    "word": "Sala"
+},
+{
+    "category": "Numerais",
+    "path": "seis",
+    "word": "Seis"
+},
+{
+    "category": "nh",
+    "path": "senhora",
+    "word": "Senhora"
+},
+{
+    "category": "Numerais",
+    "path": "sete",
+    "word": "Sete"
+},
+{
+    "category": "a, ã, â",
+    "path": "sofa",
+    "word": "Sofá"
+},
+{
+    "category": "ó, ô",
+    "path": "sonda",
+    "word": "Sonda"
+},
+{
+    "category": "on",
+    "path": "sonda",
+    "word": "Sonda"
+},
+{
+    "category": "ó, ô",
+    "path": "sono",
+    "word": "Sono"
+},
+{
+    "category": "t",
+    "path": "tampa",
+    "word": "Tampa"
+},
+{
+    "category": "t",
+    "path": "teste",
+    "word": "Teste"
+},
+{
+    "category": "in",
+    "path": "tinta",
+    "word": "Tinta"
+},
+{
+    "category": "t",
+    "path": "tipo",
+    "word": "Tipo"
+},
+{
+    "category": "a, ã, â",
+    "path": "tomar",
+    "word": "Tomar"
+},
+{
+    "category": "t",
+    "path": "trem",
+    "word": "Trem"
+},
+{
+    "category": "Numerais",
+    "path": "tres",
+    "word": "Três"
+},
+{
+    "category": "Numerais",
+    "path": "um",
+    "word": "Um"
+},
+{
+    "category": "lh",
+    "path": "velho",
+    "word": "Velho"
+},
+{
+    "category": "v",
+    "path": "vendo",
+    "word": "Vendo"
+},
+{
+    "category": "v",
+    "path": "vista",
+    "word": "Vista"
+},
+{
+    "category": "Promomes",
+    "path": "voce",
+    "word": "Você"
+},
+{
+    "category": "v",
+    "path": "vulto",
+    "word": "Vulto"
+},
+{
+    "category": "z",
+    "path": "zero",
+    "word": "Zero"
+},
+{
+    "category": "Numerais",
+    "path": "zero",
+    "word": "Zero"
+}
+]
