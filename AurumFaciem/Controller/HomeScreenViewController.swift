@@ -12,15 +12,14 @@ import UIKit
 class HomeScreenViewController: UIViewController {
     let videos: [CDVideo]
     let lessons: [CDLesson]
-    var lessonsDAO: CDLessonDAO
+    var CDAccess: DAOCoordinator
 
     init(nibName: String?,
          bundle: Bundle?,
-         videoDAO: CDVideoDAO,
-         lessonDAO: CDLessonDAO) {
-        self.videos = videoDAO.getAllVideos()
-        self.lessons = lessonDAO.getAllLessons()
-        self.lessonsDAO = lessonDAO
+         CDAccess: DAOCoordinator) {
+        self.CDAccess = CDAccess
+        self.videos = CDAccess.videoDAO.getAllVideos()
+        self.lessons = CDAccess.lessonDAO.getAllLessons()
         super.init(nibName: "HomeScreenViewController",
                    bundle: nil)
     }
@@ -42,13 +41,12 @@ class HomeScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         treinoDelegate.viewController = self
         bibliotecaDelegate.viewController = self
         navigationController?.navigationBar.isTranslucent = false
-//        treinoDataSource.titles = getLessonsNames()
-//        treinoDataSource.details = getVideosCategories()
-//        bibliotecaDataSource.items = getVideosNames()
+        treinoDataSource.titles = getLessonsNames()
+        treinoDataSource.details = getLessonsCategories()
+        bibliotecaDataSource.items = getVideosNames()
         bibliotecaTableView.register(UINib(nibName: "BibliotecaTableViewCell",
                                            bundle: nil),
                                      forCellReuseIdentifier: "bibliotecaIdentifier")
@@ -72,5 +70,28 @@ class HomeScreenViewController: UIViewController {
 
     func changeView(controller: LibraryTableViewController) {
         self.navigationController?.pushViewController(controller, animated: true)
+    }
+
+    func getLessonsNames() -> [String] {
+        return lessons.map { (lesson) -> String in
+            return lesson.name ?? ""
+        }
+    }
+
+    func getLessonsCategories() -> [String] {
+        return lessons.map({ (lesson) -> String in
+            guard let categories = lesson.categories else { return "" }
+            return categories.map({ (category) -> String in
+                guard let cat = category as? CDCategory else { return "" }
+                return cat.name ?? ""
+            }).joined(separator: ", ")
+            }
+        )
+    }
+
+    func getVideosNames() -> [String] {
+        return videos.map({ (video) -> String in
+            return video.word ?? ""
+        })
     }
 }
