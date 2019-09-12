@@ -12,19 +12,21 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let videoDAO = CDVideoDAO()
-        let lessonDAO = CDLessonDAO()
-//        videoDAO.saveVideo()
-//        lessonDAO.saveLesson()
+        let CDAccess = DAOCoordinator()
+        CDAccess.loadJSONs()
         let homeViewController = HomeScreenViewController(nibName: "HomeScreenViewController",
                                                           bundle: nil,
-                                                          videoDAO: videoDAO,
-                                                          lessonDAO: lessonDAO)
-        let window = UIWindow(frame: UIScreen.main.bounds)
+                                                          CDAccess: CDAccess)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        guard let window = self.window else {
+            fatalError("AppDelegate")
+        }
         let navigationController = UINavigationController(rootViewController: homeViewController)
-        navigationController.navigationBar.tintColor = #colorLiteral(red: 0.9215686275, green: 0.568627451, blue: 0.4745098039, alpha: 1)
+        navigationController.navigationBar.tintColor = AppColor.orange
         UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         window.rootViewController = navigationController

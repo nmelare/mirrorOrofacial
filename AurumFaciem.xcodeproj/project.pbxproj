@@ -19,6 +19,11 @@
 		8C8A2EBF231DA9200043FD87 /* ProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */; };
 		8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */; };
 		8CA590032320348600B63953 /* IMG_0711.TRIM.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8CA590022320348600B63953 /* IMG_0711.TRIM.MOV */; };
+		F20A76C3232ABB4600539ADC /* CDCategoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20A76C2232ABB4600539ADC /* CDCategoryDAO.swift */; };
+		F20A76C6232ABBE000539ADC /* VideoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = F20A76C4232ABBDF00539ADC /* VideoJSON.json */; };
+		F20A76C7232ABBE000539ADC /* LessonJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = F20A76C5232ABBE000539ADC /* LessonJSON.json */; };
+		F20A76C9232AC56D00539ADC /* DAOCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20A76C8232AC56D00539ADC /* DAOCoordinator.swift */; };
+		F20A76CA232AE1EE00539ADC /* AurumFaciem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F215F2052315BB1400D7334B /* AurumFaciem.xcdatamodeld */; };
 		F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F1FE2315BB1300D7334B /* AppDelegate.swift */; };
 		F215F20C2315BB1600D7334B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */; };
 		F24D8B8B232A96060053068F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24D8B8A232A96060053068F /* Media.xcassets */; };
@@ -212,6 +217,10 @@
 		8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		8CA590022320348600B63953 /* IMG_0711.TRIM.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0711.TRIM.MOV; sourceTree = "<group>"; };
 		8CA7842B2322C32F000A558C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F20A76C2232ABB4600539ADC /* CDCategoryDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCategoryDAO.swift; sourceTree = "<group>"; };
+		F20A76C4232ABBDF00539ADC /* VideoJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoJSON.json; sourceTree = "<group>"; };
+		F20A76C5232ABBE000539ADC /* LessonJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LessonJSON.json; sourceTree = "<group>"; };
+		F20A76C8232AC56D00539ADC /* DAOCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOCoordinator.swift; sourceTree = "<group>"; };
 		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F1FE2315BB1300D7334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F215F2062315BB1400D7334B /* AurumFaciem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AurumFaciem.xcdatamodel; sourceTree = "<group>"; };
@@ -405,8 +414,8 @@
 			isa = PBXGroup;
 			children = (
 				F2FA2DB7232A89FB0031236E /* Classes */,
-				F2FA2DB6232A89ED0031236E /* XIBs */,
 				F215F20A2315BB1600D7334B /* LaunchScreen.storyboard */,
+				F2FA2DB6232A89ED0031236E /* XIBs */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -414,6 +423,9 @@
 		8CA590042320351800B63953 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F20A76C5232ABBE000539ADC /* LessonJSON.json */,
+				F20A76C4232ABBDF00539ADC /* VideoJSON.json */,
+				8CA590022320348600B63953 /* IMG_0711.TRIM.MOV */,
 				F2F346F1232A8F3700520194 /* abanar.mp4 */,
 				F2F346E1232A8F3600520194 /* adeus.mp4 */,
 				F2F346F2232A8F3700520194 /* ainda.mp4 */,
@@ -561,7 +573,6 @@
 				F2F34716232A8F3A00520194 /* voce.mp4 */,
 				F2F346FC232A8F3800520194 /* vulto.mp4 */,
 				F2F34694232A8F3200520194 /* zero.mp4 */,
-				8CA590022320348600B63953 /* IMG_0711.TRIM.MOV */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -601,7 +612,7 @@
 		F2704E3A231EA56D00D080B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F2FA2DBA232A8AD40031236E /* Data Analysis Objects */,
+				F2FA2DBA232A8AD40031236E /* Data Access Objects */,
 				F2FA2DB9232A8ABF0031236E /* Data Managers */,
 				F2FA2DB8232A8A330031236E /* Entities */,
 			);
@@ -611,10 +622,10 @@
 		F2A1F3B2231A98470000B94B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */,
 				6F580B152319BE79006F6680 /* LibraryInfoViewController.swift */,
 				6FD44C90231F0081008D99D2 /* LibraryTableViewController.swift */,
 				6F5996E62322E8F90048F13F /* TrialViewController.swift */,
-				F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -632,15 +643,15 @@
 		F2FA2DB6232A89ED0031236E /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				F2FA2DC1232A8C1A0031236E /* LibraryTableViewController.xib */,
-				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
-				8C3AD1DA231F116E007F94B8 /* VideoView.xib */,
-				F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */,
 				F2E23931231C3197005DE28B /* BibliotecaTableViewCell.xib */,
-				F2815AEB23295EA6004E759A /* TreinoCollectionViewCell.xib */,
+				F2A1F3B5231A987F0000B94B /* HomeScreenViewController.xib */,
+				6FD44C95231F0DCD008D99D2 /* InformationTableViewCell.xib */,
 				F2815AF023295EC3004E759A /* LibraryInfoViewController.xib */,
+				F2FA2DC1232A8C1A0031236E /* LibraryTableViewController.xib */,
 				8C8A2EBE231DA9200043FD87 /* ProgressBar.xib */,
+				F2815AEB23295EA6004E759A /* TreinoCollectionViewCell.xib */,
 				8C3AD1D8231F0C20007F94B8 /* TrialViewController.xib */,
+				8C3AD1DA231F116E007F94B8 /* VideoView.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -648,13 +659,13 @@
 		F2FA2DB7232A89FB0031236E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F2815AEF23295EC2004E759A /* BibliotecaTableViewCell.swift */,
+				8C0A242E2322CBC0002D677C /* ConfettiParticles.swift */,
+				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
+				8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */,
+				8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */,
 				F2815AED23295EC2004E759A /* TreinoCollectionViewCell.swift */,
 				F2815AEE23295EC2004E759A /* VideoView.swift */,
-				8C8A2EBC231D8DF20043FD87 /* RoundButton.swift */,
-				6FD44C94231F0DCD008D99D2 /* InformationTableViewCell.swift */,
-				F2815AEF23295EC2004E759A /* BibliotecaTableViewCell.swift */,
-				8C8A2EC0231DA9CD0043FD87 /* ProgressBar.swift */,
-				8C0A242E2322CBC0002D677C /* ConfettiParticles.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -662,12 +673,12 @@
 		F2FA2DB8232A8A330031236E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				F2815ADD23289A5D004E759A /* CDVideo+CoreDataClass.swift */,
-				F2815ADE23289A5D004E759A /* CDVideo+CoreDataProperties.swift */,
-				F2815ADF23289A5D004E759A /* CDLesson+CoreDataClass.swift */,
-				F2815AE023289A5D004E759A /* CDLesson+CoreDataProperties.swift */,
 				F2815AF523296354004E759A /* CDCategory+CoreDataClass.swift */,
 				F2815AF623296354004E759A /* CDCategory+CoreDataProperties.swift */,
+				F2815ADF23289A5D004E759A /* CDLesson+CoreDataClass.swift */,
+				F2815AE023289A5D004E759A /* CDLesson+CoreDataProperties.swift */,
+				F2815ADD23289A5D004E759A /* CDVideo+CoreDataClass.swift */,
+				F2815ADE23289A5D004E759A /* CDVideo+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -676,19 +687,21 @@
 			isa = PBXGroup;
 			children = (
 				6F3A78212326C15D007096BB /* LessonJSONHandler.swift */,
-				6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */,
 				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
+				F20A76C8232AC56D00539ADC /* DAOCoordinator.swift */,
+				6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */,
 			);
 			path = "Data Managers";
 			sourceTree = "<group>";
 		};
-		F2FA2DBA232A8AD40031236E /* Data Analysis Objects */ = {
+		F2FA2DBA232A8AD40031236E /* Data Access Objects */ = {
 			isa = PBXGroup;
 			children = (
+				F20A76C2232ABB4600539ADC /* CDCategoryDAO.swift */,
 				F2FA2DBD232A8C0A0031236E /* CDLessonDAO.swift */,
 				F2FA2DBE232A8C0A0031236E /* CDVideoDAO.swift */,
 			);
-			path = "Data Analysis Objects";
+			path = "Data Access Objects";
 			sourceTree = "<group>";
 		};
 		F2FA2DC5232A8C450031236E /* Delegates */ = {
@@ -703,8 +716,8 @@
 		F2FA2DC6232A8C580031236E /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */,
 				F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */,
+				F2E2392C231B40B8005DE28B /* TableViewDataSourceObj.swift */,
 			);
 			path = "Data Sources";
 			sourceTree = "<group>";
@@ -845,6 +858,7 @@
 				F2F347B6232A8F3B00520194 /* vista.mp4 in Resources */,
 				F2F3479F232A8F3B00520194 /* lembrete.mp4 in Resources */,
 				F2F34797232A8F3B00520194 /* pomar.mp4 in Resources */,
+				F20A76C7232ABBE000539ADC /* LessonJSON.json in Resources */,
 				F2F34749232A8F3B00520194 /* caro.mp4 in Resources */,
 				F2F34786232A8F3B00520194 /* camera.mp4 in Resources */,
 				F2F3472E232A8F3B00520194 /* prato.mp4 in Resources */,
@@ -872,6 +886,7 @@
 				F2F347A2232A8F3B00520194 /* eu.mp4 in Resources */,
 				F2E23933231C3197005DE28B /* BibliotecaTableViewCell.xib in Resources */,
 				F2F347A0232A8F3B00520194 /* furo.mp4 in Resources */,
+				F20A76C6232ABBE000539ADC /* VideoJSON.json in Resources */,
 				F2F34751232A8F3B00520194 /* milho.mp4 in Resources */,
 				F2A1F3B7231A987F0000B94B /* HomeScreenViewController.xib in Resources */,
 				F2F34780232A8F3B00520194 /* queijo.mp4 in Resources */,
@@ -959,6 +974,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20A76CA232AE1EE00539ADC /* AurumFaciem.xcdatamodeld in Sources */,
 				F2FA2DBB232A8B630031236E /* LessonJSONHandler.swift in Sources */,
 				6F70641823202F28000D61DE /* LibraryTableViewController.swift in Sources */,
 				F2815AE323289A5D004E759A /* CDVideo+CoreDataClass.swift in Sources */,
@@ -982,8 +998,10 @@
 				F2815AF323295EC3004E759A /* BibliotecaTableViewCell.swift in Sources */,
 				F2815AF723296354004E759A /* CDCategory+CoreDataClass.swift in Sources */,
 				F2815AE523289A5D004E759A /* CDLesson+CoreDataClass.swift in Sources */,
+				F20A76C9232AC56D00539ADC /* DAOCoordinator.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
 				F2FA2DBC232A8B630031236E /* VideoJSONHandler.swift in Sources */,
+				F20A76C3232ABB4600539ADC /* CDCategoryDAO.swift in Sources */,
 				F2815AE423289A5D004E759A /* CDVideo+CoreDataProperties.swift in Sources */,
 				F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */,
 				8C0A242F2322CBC0002D677C /* ConfettiParticles.swift in Sources */,

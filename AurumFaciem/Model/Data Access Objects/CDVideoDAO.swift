@@ -11,14 +11,13 @@ import CoreData
 
 class CDVideoDAO {
 //    Data Analysis Object
-    func video(from path: URL,
-               word: String,
-               category: [CDCategory]?) {
+    func newVideo(path: URL,
+                  word: String,
+                  category: [CDCategory]?) {
         let newCDVideo = CDVideo.newCDVideo()
         newCDVideo.modifyValues(path: path,
                                 word: word,
                                 allCategories: nil)
-        PersistencyManager.saveContext()
     }
 
     func getAllVideos() -> [CDVideo] {
@@ -38,28 +37,10 @@ class CDVideoDAO {
         return persistedCDVideos
     }
 
-    func getVideosByCategory(category: CDCategory) -> [CDVideo] {
-        let foundCDVideos: [CDVideo] = []
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.category)
-        fetchRequest.predicate = NSPredicate(format: "videos.word CONTAINS[cd] %@", category.name ?? "")
-        do {
-            guard let foundCDVideos =
-                try
-                    PersistencyManager.getContext().fetch(fetchRequest) as? [CDVideo]
-                else {
-                    fatalError("getVideosByCategory failure casting as CDVideo")
-            }
-            return foundCDVideos
-        } catch let error {
-            print("CDVideo's getVideosByCategory task failed", error.localizedDescription)
-        }
-        return foundCDVideos
-    }
-
     func getCategoriesOf(video: CDVideo) -> [CDCategory] {
         let foundCDCategories: [CDCategory] = []
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.video)
-        fetchRequest.predicate = NSPredicate(format: "category == %@", video.word ?? "")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.category)
+        fetchRequest.predicate = NSPredicate(format: "videos CONTAINS[cd] %@", video.word ?? "")
         do {
             guard let foundCDCategories =
                 try

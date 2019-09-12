@@ -10,22 +10,27 @@ import Foundation
 import CoreData
 
 class CDLessonDAO {
-    //    Data Analysis Object
-    func create(name: String, progress: Int32, score: Int32, pending: Int32) {
+    //    Data  Access Object
+    func newVideo(name: String,
+                  progress: Int32,
+                  score: Int32,
+                  categories: [CDCategory]) {
         let newCDLesson = CDLesson.newCDLesson()
         newCDLesson.modifyValues(name: name,
                                  progress: progress,
                                  score: score,
-                                 allCategories: nil)
-        PersistencyManager.saveContext()
+                                 allCategories: categories)
     }
 
     func getAllLessons() -> [CDLesson] {
         let persistedCDLessons: [CDLesson] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.lesson)
         do {
-            guard let persistedCDLessons = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDLesson] else {
-                fatalError("getAllLessons failure casting as CDLesson")
+            guard let persistedCDLessons =
+                try
+                    PersistencyManager.getContext().fetch(fetchRequest) as? [CDLesson]
+                else {
+                    fatalError("getAllLessons failure casting as CDLesson")
             }
             return persistedCDLessons
         } catch let error {
@@ -37,7 +42,7 @@ class CDLessonDAO {
     func getCategoriesOf(lesson: CDLesson) -> [CDCategory] {
         let foundCDCategories: [CDCategory] = []
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.category)
-        fetchRequest.predicate = NSPredicate(format: "categories CONTAINS[cd] %@", lesson.name ?? "")
+        fetchRequest.predicate = NSPredicate(format: "lessons CONTAINS[cd] %@", lesson.name ?? "")
         do {
             guard let foundCDVideos = try PersistencyManager.getContext().fetch(fetchRequest) as? [CDCategory] else {
                 fatalError("fetchByCategory failure casting as CDVideo")
