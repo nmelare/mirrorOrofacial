@@ -41,14 +41,19 @@ class TreinoCollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollec
 
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-        guard let cell = (collectionView.cellForItem(at: indexPath)) else { return }
-        cell.backgroundColor = .blue
+        guard let cell = (collectionView.cellForItem(at: indexPath)) as? TreinoCollectionViewCell else { return }
         if cell.isSelected == true {
             collectionView.deselectItem(at: indexPath,
                                         animated: true)
         }
-        let trialViewController = TrialViewController(nibName: nil, bundle: nil)
-        viewController?.changeView(controller: trialViewController)
+        guard let homeVC = viewController else {
+            return
+        }
+        let controller = TrialViewController(nibName: nil,
+                                             bundle: nil,
+                                             lessonName: cell.titleLabel.text ?? "",
+                                             CDAccess: homeVC.CDAccess)
+        homeVC.changeView(controller: controller)
     }
     func collectionView(_ collectionView: UICollectionView,
                         didDeselectItemAt indexPath: IndexPath) {

@@ -18,14 +18,7 @@ class DAOCoordinator {
         lessonDAO.deleteAll()
         categoryDAO.deleteAll()
 
-        let defaultCategory = categoryDAO.newCategory(name: "")
-
-        let videos = VideoHandler.getAllVideos()
-        for video in videos {
-            self.videoDAO.newVideo(path: URL(fileURLWithPath: video.path),
-                                   word: video.word,
-                                   category: [categoryDAO.fetchByName(video.category) ?? defaultCategory])
-        }
+        let defaultCategory = categoryDAO.newCategory(name: "All Words")
 
         let lessons = LessonHandler.getAllLessons()
         for lesson in lessons {
@@ -42,6 +35,13 @@ class DAOCoordinator {
                                     progress: Int32(lesson.pending),
                                     score: Int32(lesson.score),
                                     categories: categories)
+        }
+        let videos = VideoHandler.getAllVideos()
+        for video in videos {
+            self.videoDAO.newVideo(path: URL(fileURLWithPath: Bundle.main.path(forResource: video.path,
+                                                                               ofType: "mp4") ?? video.path),
+                                   word: video.word,
+                                   category: [categoryDAO.fetchByName(video.category) ?? defaultCategory])
         }
         PersistencyManager.saveContext()
     }

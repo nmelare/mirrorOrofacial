@@ -19,7 +19,9 @@ class HomeScreenViewController: UIViewController {
          CDAccess: DAOCoordinator) {
         self.CDAccess = CDAccess
         self.videos = CDAccess.videoDAO.getAllVideos()
-        self.lessons = CDAccess.lessonDAO.getAllLessons()
+        self.lessons = CDAccess.lessonDAO.getAllLessons().sorted(
+            by: { ($0.name ?? "").lowercased() < ($1.name ?? "").lowercased() }
+        )
         super.init(nibName: "HomeScreenViewController",
                    bundle: nil)
     }
@@ -45,8 +47,14 @@ class HomeScreenViewController: UIViewController {
         bibliotecaDelegate.viewController = self
         navigationController?.navigationBar.isTranslucent = false
         treinoDataSource.titles = getLessonsNames()
-        treinoDataSource.details = getLessonsCategories()
-        bibliotecaDataSource.items = getVideosNames()
+        treinoDataSource.details = getLessonsCategories().map({ (detail) -> String in
+            var formated = detail
+            if formated.count > 25 {
+                formated = formated.prefix(25) + "..."
+            }
+            return formated
+        }).sorted()
+        bibliotecaDataSource.items = getCategories().sorted()
         bibliotecaTableView.register(UINib(nibName: "BibliotecaTableViewCell",
                                            bundle: nil),
                                      forCellReuseIdentifier: "bibliotecaIdentifier")
@@ -80,18 +88,19 @@ class HomeScreenViewController: UIViewController {
 
     func getLessonsCategories() -> [String] {
         return lessons.map({ (lesson) -> String in
-            guard let categories = lesson.categories else { return "" }
-            return categories.map({ (category) -> String in
-                guard let cat = category as? CDCategory else { return "" }
-                return cat.name ?? ""
+            guard let allCategories = lesson.categories else { return "" }
+            return allCategories.map({ (category) -> String in
+                guard let lessonCategory = category as? CDCategory else { return "" }
+                return lessonCategory.name ?? ""
             }).joined(separator: ", ")
             }
         )
     }
 
-    func getVideosNames() -> [String] {
-        return videos.map({ (video) -> String in
-            return video.word ?? ""
-        })
+    func getCategories() -> [String] {
+        let categories = CDAccess.categoryDAO.getAllCategories()
+        return categories.map { (category) -> String in
+            return category.name ?? ""
+        }
     }
 }

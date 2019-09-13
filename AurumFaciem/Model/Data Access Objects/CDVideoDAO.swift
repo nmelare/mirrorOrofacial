@@ -17,7 +17,7 @@ class CDVideoDAO {
         let newCDVideo = CDVideo.newCDVideo()
         newCDVideo.modifyValues(path: path,
                                 word: word,
-                                allCategories: nil)
+                                allCategories: category)
     }
 
     func getAllVideos() -> [CDVideo] {
@@ -53,6 +53,24 @@ class CDVideoDAO {
             print("CDVideo's fetchByCategory task failed", error.localizedDescription)
         }
         return foundCDCategories
+    }
+
+    func fetchByWord(_ word: String) -> CDVideo? {
+        let persistedCDVideo: [CDVideo] = []
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.video)
+        fetchRequest.predicate = NSPredicate(format: "word ==[cd] %@", word)
+        do {
+            guard let persistedCDVideo =
+                try
+                    PersistencyManager.getContext().fetch(fetchRequest) as? [CDVideo]
+                else {
+                    fatalError("fetchByName failure casting as CDVideo")
+            }
+            return persistedCDVideo.first
+        } catch let error {
+            print("CDVideo's fetchByName task failed", error.localizedDescription)
+        }
+        return persistedCDVideo.first
     }
 
     func delete(video: CDVideo) {

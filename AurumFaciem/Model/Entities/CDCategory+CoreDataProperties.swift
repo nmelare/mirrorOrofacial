@@ -2,7 +2,7 @@
 //  CDCategory+CoreDataProperties.swift
 //  AurumFaciem
 //
-//  Created by Rafael Galdino on 11/09/19.
+//  Created by Rafael Galdino on 13/09/19.
 //  Copyright © 2019 Rafael Galdino. All rights reserved.
 //
 //
@@ -17,8 +17,8 @@ extension CDCategory {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var videos: CDVideo?
     @NSManaged public var lessons: NSOrderedSet?
+    @NSManaged public var videos: NSOrderedSet?
 
 }
 
@@ -54,5 +54,40 @@ extension CDCategory {
 
     @objc(removeLessons:)
     @NSManaged public func removeFromLessons(_ values: NSOrderedSet)
+
+}
+
+// MARK: Generated accessors for videos
+extension CDCategory {
+
+    @objc(insertObject:inVideosAtIndex:)
+    @NSManaged public func insertIntoVideos(_ value: CDVideo, at idx: Int)
+
+    @objc(removeObjectFromVideosAtIndex:)
+    @NSManaged public func removeFromVideos(at idx: Int)
+
+    @objc(insertVideos:atIndexes:)
+    @NSManaged public func insertIntoVideos(_ values: [CDVideo], at indexes: NSIndexSet)
+
+    @objc(removeVideosAtIndexes:)
+    @NSManaged public func removeFromVideos(at indexes: NSIndexSet)
+
+    @objc(replaceObjectInVideosAtIndex:withObject:)
+    @NSManaged public func replaceVideos(at idx: Int, with value: CDVideo)
+
+    @objc(replaceVideosAtIndexes:withVideos:)
+    @NSManaged public func replaceVideos(at indexes: NSIndexSet, with values: [CDVideo])
+
+    @objc(addVideosObject:)
+    @NSManaged public func addToVideos(_ value: CDVideo)
+
+    @objc(removeVideosObject:)
+    @NSManaged public func removeFromVideos(_ value: CDVideo)
+
+    @objc(addVideos:)
+    @NSManaged public func addToVideos(_ values: NSOrderedSet)
+
+    @objc(removeVideos:)
+    @NSManaged public func removeFromVideos(_ values: NSOrderedSet)
 
 }

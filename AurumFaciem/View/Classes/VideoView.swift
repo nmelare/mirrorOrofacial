@@ -48,8 +48,8 @@ class VideoView: UIView {
         self.addSubview(reloadButton)
     }
 
-    private func configure(url: String) {
-            player = AVPlayer(url: URL(fileURLWithPath: url))
+    private func configure(url: URL) {
+            player = AVPlayer(url: url)
             playerLayer = AVPlayerLayer(player: player)
             playerLayer?.frame = bounds
             playerLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
@@ -78,16 +78,12 @@ class VideoView: UIView {
         player?.seek(to: CMTime.zero)
     }
 
-    func setVideo(name: String) {
-        if let videoURL = Bundle.main.path(forResource: name, ofType: "MOV") {
-            configure(url: videoURL)
-            play()
-            NotificationCenter.default.addObserver(self, selector: #selector(self.reachTheEndOfTheVideo(_:)),
-                                                   name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-                                                   object: self.player?.currentItem)
-        } else {
-            print ("Couldn't load video")
-        }
+    func setVideo(url: URL) {
+        configure(url: url)
+        play()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reachTheEndOfTheVideo(_:)),
+                                               name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                               object: self.player?.currentItem)
     }
 
     @objc func reloadVideo(_ sender: Any) {

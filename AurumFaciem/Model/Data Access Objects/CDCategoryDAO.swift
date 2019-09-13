@@ -45,11 +45,11 @@ class CDCategoryDAO {
                 try
                     PersistencyManager.getContext().fetch(fetchRequest) as? [CDCategory]
                 else {
-                    fatalError("getAllCategories failure casting as CDCategory")
+                    fatalError("fetchByName failure casting as CDCategory")
             }
             return persistedCDCategory.first
         } catch let error {
-            print("CDCategory's getAllCategories task failed", error.localizedDescription)
+            print("CDCategory's fetchByName task failed", error.localizedDescription)
         }
         return persistedCDCategory.first
     }

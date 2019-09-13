@@ -3,7 +3,7 @@
     <entity name="CDCategory" representedClassName="CDCategory" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="lessons" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CDLesson" inverseName="categories" inverseEntity="CDLesson" syncable="YES"/>
-        <relationship name="videos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDVideo" inverseName="category" inverseEntity="CDVideo" syncable="YES"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CDVideo" inverseName="category" inverseEntity="CDVideo" syncable="YES"/>
     </entity>
     <entity name="CDLesson" representedClassName="CDLesson" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
@@ -17,8 +17,8 @@
         <relationship name="category" toMany="YES" deletionRule="Nullify" destinationEntity="CDCategory" inverseName="videos" inverseEntity="CDCategory" syncable="YES"/>
     </entity>
     <elements>
+        <element name="CDCategory" positionX="30.296875" positionY="-97.6328125" width="86.046875" height="90"/>
         <element name="CDLesson" positionX="194.39453125" positionY="-127.1640625" width="86.40234375" height="103"/>
         <element name="CDVideo" positionX="-109.59375" positionY="-96.96484375" width="86.8359375" height="88"/>
-        <element name="CDCategory" positionX="30.296875" positionY="-97.6328125" width="86.046875" height="88"/>
     </elements>
 </model>
