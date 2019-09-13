@@ -54,6 +54,24 @@ class CDLessonDAO {
         return foundCDCategories
     }
 
+    func fetchByName(_ name: String) -> CDLesson? {
+        let persistedCDLesson: [CDLesson] = []
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: PersistedEntity.lesson)
+        fetchRequest.predicate = NSPredicate(format: "name ==[cd] %@", name)
+        do {
+            guard let persistedCDLesson =
+                try
+                    PersistencyManager.getContext().fetch(fetchRequest) as? [CDLesson]
+                else {
+                    fatalError("fetchByName failure casting as CDLesson")
+            }
+            return persistedCDLesson.first
+        } catch let error {
+            print("CDLesson's fetchByName task failed", error.localizedDescription)
+        }
+        return persistedCDLesson.first
+    }
+
     func delete(lesson: CDLesson) {
         PersistencyManager.getContext().delete(lesson)
         PersistencyManager.saveContext()

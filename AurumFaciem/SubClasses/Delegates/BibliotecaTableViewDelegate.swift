@@ -15,14 +15,17 @@ class BibliotecaTableViewDelegate: NSObject, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
-            if cell.isSelected == true {
-                tableView.deselectRow(at: indexPath,
-                                      animated: true)
-            }
+        guard let cell = (tableView.cellForRow(at: indexPath) as? BibliotecaTableViewCell) else { return }
+        if cell.isSelected == true {
+            tableView.deselectRow(at: indexPath,
+                                  animated: true)
         }
-        let libraryTableViewController = LibraryTableViewController(nibName: nil, bundle: nil)
-        viewController?.changeView(controller: libraryTableViewController)
+        guard let homeVC = viewController else { return }
+        let controller = LibraryTableViewController(nibName: "LibraryTableViewController",
+                                                    bundle: nil,
+                                                    categoryName: cell.textLabel?.text ?? "",
+                                                    CDAccess: homeVC.CDAccess)
+        homeVC.changeView(controller: controller)
     }
 
     func tableView(_ tableView: UITableView,

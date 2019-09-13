@@ -37,8 +37,8 @@
 		F2815AF223295EC3004E759A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AEE23295EC2004E759A /* VideoView.swift */; };
 		F2815AF323295EC3004E759A /* BibliotecaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AEF23295EC2004E759A /* BibliotecaTableViewCell.swift */; };
 		F2815AF423295EC3004E759A /* LibraryInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2815AF023295EC3004E759A /* LibraryInfoViewController.xib */; };
-		F2815AF723296354004E759A /* CDCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AF523296354004E759A /* CDCategory+CoreDataClass.swift */; };
-		F2815AF823296354004E759A /* CDCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2815AF623296354004E759A /* CDCategory+CoreDataProperties.swift */; };
+		F281FFCF232C404A003447CA /* CDCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281FFCD232C404A003447CA /* CDCategory+CoreDataClass.swift */; };
+		F281FFD0232C404A003447CA /* CDCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281FFCE232C404A003447CA /* CDCategory+CoreDataProperties.swift */; };
 		F2996509231CA60E0049E60B /* TreinoCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */; };
 		F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */; };
 		F2A1F3B6231A987F0000B94B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */; };
@@ -237,8 +237,8 @@
 		F2815AEE23295EC2004E759A /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		F2815AEF23295EC2004E759A /* BibliotecaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibliotecaTableViewCell.swift; sourceTree = "<group>"; };
 		F2815AF023295EC3004E759A /* LibraryInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryInfoViewController.xib; sourceTree = "<group>"; };
-		F2815AF523296354004E759A /* CDCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F2815AF623296354004E759A /* CDCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F281FFCD232C404A003447CA /* CDCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F281FFCE232C404A003447CA /* CDCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F2996508231CA60E0049E60B /* TreinoCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		F29B300C231C837E007546CE /* CollectionViewDataSourceObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceObj.swift; sourceTree = "<group>"; };
 		F2A1F3B4231A987F0000B94B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -673,8 +673,8 @@
 		F2FA2DB8232A8A330031236E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				F2815AF523296354004E759A /* CDCategory+CoreDataClass.swift */,
-				F2815AF623296354004E759A /* CDCategory+CoreDataProperties.swift */,
+				F281FFCD232C404A003447CA /* CDCategory+CoreDataClass.swift */,
+				F281FFCE232C404A003447CA /* CDCategory+CoreDataProperties.swift */,
 				F2815ADF23289A5D004E759A /* CDLesson+CoreDataClass.swift */,
 				F2815AE023289A5D004E759A /* CDLesson+CoreDataProperties.swift */,
 				F2815ADD23289A5D004E759A /* CDVideo+CoreDataClass.swift */,
@@ -686,9 +686,9 @@
 		F2FA2DB9232A8ABF0031236E /* Data Managers */ = {
 			isa = PBXGroup;
 			children = (
-				6F3A78212326C15D007096BB /* LessonJSONHandler.swift */,
-				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
 				F20A76C8232AC56D00539ADC /* DAOCoordinator.swift */,
+				F2EE81BB232044930072B99D /* PersistencyManager.swift */,
+				6F3A78212326C15D007096BB /* LessonJSONHandler.swift */,
 				6F3A78232326C5F0007096BB /* VideoJSONHandler.swift */,
 			);
 			path = "Data Managers";
@@ -986,18 +986,18 @@
 				F29B300D231C837E007546CE /* CollectionViewDataSourceObj.swift in Sources */,
 				8C8A2EBD231D8DF20043FD87 /* RoundButton.swift in Sources */,
 				F2815AF123295EC3004E759A /* TreinoCollectionViewCell.swift in Sources */,
+				F281FFCF232C404A003447CA /* CDCategory+CoreDataClass.swift in Sources */,
 				F2FA2DBF232A8C0A0031236E /* CDLessonDAO.swift in Sources */,
 				F2815AF223295EC3004E759A /* VideoView.swift in Sources */,
 				F2704E39231D5FEA00D080B5 /* BibliotecaTableViewDelegate.swift in Sources */,
 				F2E2392D231B40B8005DE28B /* TableViewDataSourceObj.swift in Sources */,
 				F2815AE623289A5D004E759A /* CDLesson+CoreDataProperties.swift in Sources */,
 				F2EE81BC232044930072B99D /* PersistencyManager.swift in Sources */,
-				F2815AF823296354004E759A /* CDCategory+CoreDataProperties.swift in Sources */,
 				F2FA2DC4232A8C3D0031236E /* AppColor.swift in Sources */,
 				8C8A2EC1231DA9CD0043FD87 /* ProgressBar.swift in Sources */,
 				F2815AF323295EC3004E759A /* BibliotecaTableViewCell.swift in Sources */,
-				F2815AF723296354004E759A /* CDCategory+CoreDataClass.swift in Sources */,
 				F2815AE523289A5D004E759A /* CDLesson+CoreDataClass.swift in Sources */,
+				F281FFD0232C404A003447CA /* CDCategory+CoreDataProperties.swift in Sources */,
 				F20A76C9232AC56D00539ADC /* DAOCoordinator.swift in Sources */,
 				F215F1FF2315BB1300D7334B /* AppDelegate.swift in Sources */,
 				F2FA2DBC232A8B630031236E /* VideoJSONHandler.swift in Sources */,

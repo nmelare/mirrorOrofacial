@@ -2,7 +2,7 @@
 //  CDCategory+CoreDataClass.swift
 //  AurumFaciem
 //
-//  Created by Rafael Galdino on 11/09/19.
+//  Created by Rafael Galdino on 13/09/19.
 //  Copyright © 2019 Rafael Galdino. All rights reserved.
 //
 //

@@ -10,15 +10,36 @@ import UIKit
 
 class LibraryTableViewController: UITableViewController {
 
-    var aulas: [String] = ["zero", "um", "dois", "tres", "quatro", "cinco",
-                           "seis", "sete", "oito", "nove", "dez"]
+    var categoria: CDCategory
+    var CDAccess: DAOCoordinator
+    var aulas: [CDVideo]
+
+    init(nibName nibNameOrNil: String?,
+         bundle nibBundleOrNil: Bundle?,
+         categoryName: String,
+         CDAccess: DAOCoordinator) {
+        guard let category = CDAccess.categoryDAO.fetchByName(categoryName) else {
+            fatalError("Biblioteca falhou em iniciar")
+        }
+        self.categoria = category
+        self.CDAccess = CDAccess
+        guard let aulas1 = category.videos?.array as? [CDVideo] else {
+            fatalError("Biblioteca falhou em iniciar")
+        }
+        self.aulas = aulas1
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = categoria.name
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.2509803922, green: 0.2392156863, blue: 0.3450980392, alpha: 1)
-        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2509803922, green: 0.2392156863, blue: 0.3450980392, alpha: 1)
-        navigationItem.title = "Título Genérico"
+        navigationController?.navigationBar.backgroundColor = AppColor.purple
+        navigationController?.navigationBar.barTintColor = AppColor.purple
         tableView.register(UINib(nibName: "InformationTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "Information")
     }
@@ -36,7 +57,7 @@ class LibraryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "Information",
                                                     for: indexPath) as? InformationTableViewCell {
-            cell.titleLesson?.text = aulas[indexPath.row]
+            cell.titleLesson?.text = aulas[indexPath.row].word
             cell.playImage?.image = UIImage(named: "Player")
         return cell
     }
@@ -44,7 +65,10 @@ class LibraryTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let library = LibraryInfoViewController()
+        let library = LibraryInfoViewController(nibName: nil,
+                                                bundle: nil,
+                                                category: categoria,
+                                                CDAccess: CDAccess)
         library.index = indexPath.row
         present(library, animated: true, completion: nil)
     }

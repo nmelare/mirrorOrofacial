@@ -12,8 +12,29 @@ import Foundation
 class LibraryInfoViewController: UIViewController {
 
     var index: Int = 0
-    var explicativeText: [String] = ["zero", "um", "dois", "tres", "quatro", "cinco",
-                                     "seis", "sete", "oito", "nove", "dez"]
+    var videosAmount: Int
+    var explicativeText: [CDVideo]
+    var categoria: CDCategory
+    var CDAccess: DAOCoordinator
+
+    init(nibName nibNameOrNil: String?,
+         bundle nibBundleOrNil: Bundle?,
+         category: CDCategory,
+         CDAccess: DAOCoordinator) {
+        self.categoria = category
+        self.CDAccess = CDAccess
+        guard let videos1 = category.videos?.array as? [CDVideo] else {
+            fatalError("Biblioteca falhou em iniciar")
+        }
+        self.explicativeText = videos1
+        self.videosAmount = videos1.count
+        super.init(nibName: nibNameOrNil,
+                   bundle: nibBundleOrNil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     @IBOutlet weak var video: VideoView!
     @IBOutlet weak var lastInfoImage: UIImageView!
@@ -48,12 +69,14 @@ class LibraryInfoViewController: UIViewController {
 
     func load() {
         lastInformationButton.isHidden = (index == 0) ? true : false
-        newInformationButton.isHidden = (index == 10) ? true : false
+        newInformationButton.isHidden = (index == videosAmount) ? true : false
         newInfoImage.isHidden  = (newInformationButton.isHidden == true) ? true : false
         lastInfoImage.isHidden = (lastInformationButton.isHidden == true) ? true : false
-        informationVideo.text = explicativeText[index]
-        lastInformationButton.setTitle((index == 0) ? nil : explicativeText[index - 1], for: .normal)
-        newInformationButton.setTitle((index == 10) ? nil : explicativeText[index + 1], for: .normal)
-        video.setVideo(name: "IMG_0711.TRIM")
+        informationVideo.text = explicativeText[index].word ?? "<ERRO AO RECUPERAR PALAVRAS>"
+        lastInformationButton.setTitle((index == 0) ? nil : explicativeText[index - 1].word, for: .normal)
+        newInformationButton.setTitle((index == videosAmount) ? nil : explicativeText[index + 1].word, for: .normal)
+        video.setVideo(url: explicativeText[index].path ??
+            URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_0711.TRIM",
+                                                  ofType: "mp4") ?? ""))
     }
 }
