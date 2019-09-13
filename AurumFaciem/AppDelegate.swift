@@ -8,9 +8,12 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let notificationCenter = UNUserNotificationCenter.current()
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -29,7 +32,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        return true
+
+            let options: UNAuthorizationOptions = [.alert, .sound, .badge]
+            let notificationCenter = UNUserNotificationCenter.current()
+            notificationCenter.requestAuthorization(options: options) { (didAllow, error) in
+                if !didAllow {
+                    print("Notifications not allowed by user")
+                }
+            }
+            return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
