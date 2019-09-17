@@ -3,8 +3,6 @@
 //  AurumFaciem
 //
 //  Created by Nathalia Melare on 13/09/19.
-//  Copyright © 2019 Rafael Galdino. All rights reserved.
-//
 
 import Foundation
 import UserNotifications
