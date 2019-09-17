@@ -8,6 +8,7 @@
 // disabled due to forced exception with no clear resolution in lines 37 and 41
 
 import UIKit
+import UserNotifications
 
 class HomeScreenViewController: UIViewController {
     let videos: [CDVideo]
@@ -60,6 +61,31 @@ class HomeScreenViewController: UIViewController {
                                       forCellWithReuseIdentifier: "treinoIdentifier")
         treinoCollectionView.dataSource = treinoDataSource
         treinoCollectionView.delegate = treinoDelegate
+
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.getNotificationSettings { (settings) in
+            if settings.authorizationStatus == .authorized {
+                let content = UNMutableNotificationContent()
+                content.title = NSString.localizedUserNotificationString(forKey: "Continue praticando!", arguments: nil)
+                content.body = NSString.localizedUserNotificationString(
+                    forKey: "Leitura Orofacial precisa de dedicação!",
+                    arguments: nil)
+                content.sound = UNNotificationSound.default
+
+                let date = Date(timeIntervalSinceNow: 3600)
+                let triggerDate = Calendar.current.dateComponents([.day, .hour, .minute, .second], from: date)
+                let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+
+                let request = UNNotificationRequest(identifier: "identifier", content: content, trigger: trigger)
+
+                let center = UNUserNotificationCenter.current()
+                center.add(request) { (error: Error?) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
