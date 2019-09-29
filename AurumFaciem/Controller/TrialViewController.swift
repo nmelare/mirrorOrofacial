@@ -143,11 +143,12 @@ class TrialViewController: UIViewController {
                                                                                      completion: nil)
                                             })
                 })
+                index += 1
             } else {
                 loadTrial()
                 index += 1
-                progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
             }
+            progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
         } else {
             sender.backgroundColor = .gray
         }

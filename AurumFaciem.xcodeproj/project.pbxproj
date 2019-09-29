@@ -221,7 +221,7 @@
 		F20A76C4232ABBDF00539ADC /* VideoJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoJSON.json; sourceTree = "<group>"; };
 		F20A76C5232ABBE000539ADC /* LessonJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LessonJSON.json; sourceTree = "<group>"; };
 		F20A76C8232AC56D00539ADC /* DAOCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOCoordinator.swift; sourceTree = "<group>"; };
-		F215F1FB2315BB1300D7334B /* AurumFaciem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AurumFaciem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F215F1FB2315BB1300D7334B /* Orofacial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orofacial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F1FE2315BB1300D7334B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F215F2062315BB1400D7334B /* AurumFaciem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AurumFaciem.xcdatamodel; sourceTree = "<group>"; };
 		F215F20B2315BB1600D7334B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -589,7 +589,7 @@
 		F215F1FC2315BB1300D7334B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F215F1FB2315BB1300D7334B /* AurumFaciem.app */,
+				F215F1FB2315BB1300D7334B /* Orofacial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -740,7 +740,7 @@
 			);
 			name = AurumFaciem;
 			productName = AurumFaciem;
-			productReference = F215F1FB2315BB1300D7334B /* AurumFaciem.app */;
+			productReference = F215F1FB2315BB1300D7334B /* Orofacial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1146,16 +1146,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 679BRJ4243;
+				DEVELOPMENT_TEAM = RAZG7U3SR6;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Galdineris.AurumFaciem;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Galdineris.Orofacial;
+				PRODUCT_NAME = Orofacial;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1164,16 +1164,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 679BRJ4243;
+				DEVELOPMENT_TEAM = RAZG7U3SR6;
 				INFOPLIST_FILE = AurumFaciem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Galdineris.AurumFaciem;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Galdineris.Orofacial;
+				PRODUCT_NAME = Orofacial;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

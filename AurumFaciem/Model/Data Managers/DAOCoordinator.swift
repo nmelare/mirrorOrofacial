@@ -18,7 +18,7 @@ class DAOCoordinator {
         lessonDAO.deleteAll()
         categoryDAO.deleteAll()
 
-        let defaultCategory = categoryDAO.newCategory(name: "All Words")
+        let defaultCategory = categoryDAO.newCategory(name: "Todas as Palavras")
 
         let lessons = LessonHandler.getAllLessons()
         for lesson in lessons {
