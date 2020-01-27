@@ -112,7 +112,6 @@ class TrialViewController: UIViewController {
         videoView.setVideo(url: CDAccess.videoDAO.fetchByWord(chosenWord)?.path ??
             URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_0711.TRIM",
                                                   ofType: "mp4") ?? ""))
-        videoView.reloadButton?.isHidden = true
     }
 
     func takeRandomString (from array: inout [String]) -> String {
@@ -146,6 +145,7 @@ class TrialViewController: UIViewController {
                                             })
                 })
                 wonTrial = true
+                index += 1
             } else {
                 loadTrial()
                 index += 1

@@ -62,10 +62,7 @@ class VideoView: UIView {
     private func play() {
         if player?.timeControlStatus != AVPlayer.TimeControlStatus.playing {
             player?.play()
-            guard let greyView = self.greyView else {
-                fatalError("VideoView failed to create greyView")
-            }
-            greyView.isHidden = true
+            toggleReloadAndGrey(true)
         }
     }
 
@@ -80,27 +77,30 @@ class VideoView: UIView {
 
     func setVideo(url: URL) {
         configure(url: url)
-        play()
+        player?.play()
+        player?.seek(to: CMTime.zero)
         NotificationCenter.default.addObserver(self, selector: #selector(self.reachTheEndOfTheVideo(_:)),
                                                name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
                                                object: self.player?.currentItem)
+        toggleReloadAndGrey(true)
     }
 
     @objc func reloadVideo(_ sender: Any) {
         self.player?.seek(to: CMTime.zero)
         self.player?.play()
-        guard let greyView = self.greyView, let reloadButton = self.reloadButton else {
-            fatalError("VideoView failed to create greyView and reloadButton")
-        }
-        reloadButton.isHidden = true
-        greyView.isHidden = true
+        toggleReloadAndGrey(true)
     }
 
     @objc func reachTheEndOfTheVideo(_ notification: Notification) {
+        print("end of video")
+        toggleReloadAndGrey(false)
+    }
+    
+    func toggleReloadAndGrey(_ toggle: Bool) {
         guard let greyView = self.greyView, let reloadButton = self.reloadButton else {
             fatalError("VideoView failed to create greyView and reloadButton")
         }
-        reloadButton.isHidden = false
-        greyView.isHidden = false
+        reloadButton.isHidden = toggle
+        greyView.isHidden = toggle
     }
 }
