@@ -47,7 +47,7 @@ class LibraryInfoViewController: UIViewController {
     @IBOutlet weak var informationVideo: UILabel!
 
     @IBAction func lastInformationButton(_ sender: UIButton) {
-        if index != 0 {
+        if index > 0 {
             index -= 1
         }
         load()
@@ -55,7 +55,7 @@ class LibraryInfoViewController: UIViewController {
     @IBOutlet weak var lastInformationButton: UIButton!
 
     @IBAction func newInformationButton(_ sender: UIButton) {
-        if index != 10 {
+        if index <= videosAmount - 1 {
             index += 1
         }
         load()
@@ -69,12 +69,12 @@ class LibraryInfoViewController: UIViewController {
 
     func load() {
         lastInformationButton.isHidden = (index == 0) ? true : false
-        newInformationButton.isHidden = (index == videosAmount) ? true : false
-        newInfoImage.isHidden  = (newInformationButton.isHidden == true) ? true : false
-        lastInfoImage.isHidden = (lastInformationButton.isHidden == true) ? true : false
+        newInformationButton.isHidden = (index == videosAmount - 1) ? true : false
         informationVideo.text = explicativeText[index].word ?? "<ERRO AO RECUPERAR PALAVRAS>"
         lastInformationButton.setTitle((index == 0) ? nil : explicativeText[index - 1].word, for: .normal)
-        newInformationButton.setTitle((index == videosAmount) ? nil : explicativeText[index + 1].word, for: .normal)
+        newInformationButton.setTitle((index == videosAmount - 1) ? nil : explicativeText[index + 1].word, for: .normal)
+        newInfoImage.isHidden  = newInformationButton.isHidden
+        lastInfoImage.isHidden = lastInformationButton.isHidden
         video.setVideo(url: explicativeText[index].path ??
             URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_0711.TRIM",
                                                   ofType: "mp4") ?? ""))

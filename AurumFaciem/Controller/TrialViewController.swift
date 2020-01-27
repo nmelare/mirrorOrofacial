@@ -26,6 +26,7 @@ class TrialViewController: UIViewController {
     var lesson: CDLesson
     var CDAccess: DAOCoordinator
     var confetti = CAEmitterLayer()
+    var wonTrial = false
 
     init(nibName nibNameOrNil: String?,
          bundle nibBundleOrNil: Bundle?,
@@ -111,7 +112,6 @@ class TrialViewController: UIViewController {
         videoView.setVideo(url: CDAccess.videoDAO.fetchByWord(chosenWord)?.path ??
             URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_0711.TRIM",
                                                   ofType: "mp4") ?? ""))
-        videoView.reloadButton?.isHidden = true
     }
 
     func takeRandomString (from array: inout [String]) -> String {
@@ -128,6 +128,7 @@ class TrialViewController: UIViewController {
     }
 
     func checkResponse(sender: UIButton) {
+        if wonTrial { return }
         if sender.titleLabel?.text == chosenWord {
             if index == videosAmount - 1 {
                 // make particles
@@ -143,11 +144,13 @@ class TrialViewController: UIViewController {
                                                                                      completion: nil)
                                             })
                 })
+                wonTrial = true
+                index += 1
             } else {
                 loadTrial()
                 index += 1
-                progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
             }
+            progressBar.setProgress(CGFloat(index)/CGFloat(videosAmount))
         } else {
             sender.backgroundColor = .gray
         }
