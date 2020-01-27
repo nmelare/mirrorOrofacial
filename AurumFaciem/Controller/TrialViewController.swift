@@ -26,6 +26,7 @@ class TrialViewController: UIViewController {
     var lesson: CDLesson
     var CDAccess: DAOCoordinator
     var confetti = CAEmitterLayer()
+    var wonTrial = false
 
     init(nibName nibNameOrNil: String?,
          bundle nibBundleOrNil: Bundle?,
@@ -128,6 +129,7 @@ class TrialViewController: UIViewController {
     }
 
     func checkResponse(sender: UIButton) {
+        if wonTrial { return }
         if sender.titleLabel?.text == chosenWord {
             if index == videosAmount - 1 {
                 // make particles
@@ -143,7 +145,7 @@ class TrialViewController: UIViewController {
                                                                                      completion: nil)
                                             })
                 })
-                index += 1
+                wonTrial = true
             } else {
                 loadTrial()
                 index += 1
